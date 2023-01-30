@@ -1,0 +1,2180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- BS5 CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div id="myOverlay" class="overlay" style="z-index: 9999999">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+        >×</span
+      >
+      <div class="overlay-content">
+        <form
+          action="/action_page.php"
+          class="d-flex justify-content-center align-items-center"
+        >
+          <input
+            type="text"
+            placeholder="Search.."
+            name="search"
+            autocomplete="off"
+          />
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- HEADER SECTION -->
+    <header>
+      <!-- NAVBAR -->
+      <nav>
+        <div class="container-fluid mystyle" id="nav">
+          <div class="container">
+            <div
+              class="row d-flex justify-content-between align-items-center nav1"
+            >
+              <div class="col-3 mystyle1">
+                <img
+                  id="disp2"
+                  src="./img/nav_logo__01.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <img
+                  id="disp"
+                  class="display2 img-fluid"
+                  src="./img/nav_Logo.png"
+                  alt=""
+                />
+              </div>
+              <div class="col-9 top_nav_info">
+                <ul class="top">
+                  <li>Haqqımızda</li>
+                  <li>Müəllimlər</li>
+                  <li>Ən çox verilən suallar</li>
+                  <li>Təklifim var</li>
+                  <li>Əlaqə</li>
+                  <!-- <li><i class="fa-solid fa-magnifying-glass"></i></li> -->
+                  <li>
+                    <!-- <div class="dropdown">
+                      <button
+                        type="button"
+                        class="btn btn-light mybtn4"
+                        data-bs-toggle="dropdown"
+                      >
+                        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                      </button>
+                      <ul class="dropdown-menu mydropdown-menu">
+                        <li class="float-end">
+                          <input type="search" placeholder="Search..." />
+                        </li>
+                        <li class="float-end">
+                          <input type="submit" placeholder="Search..." />
+                        </li>
+                      </ul>
+                    </div> -->
+
+                    <button class="openBtn" onclick="openSearch()">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </li>
+
+                  <style></style>
+                </ul>
+              </div>
+              <!-- djsdj
+              sdrjsrj
+              sj
+              sjr
+              sj
+              sj
+              j
+              jqueryrj
+              sjr
+              sHaraejea
+              aejaeajaejr -->
+
+              <div class="col-9 top_nav_burger d-flex justify-content-end">
+                <div id="mySidepanel" class="sidepanel">
+                  <div>
+                    <a
+                      href="javascript:void(0)"
+                      class="closebtn"
+                      onclick="closeNav()"
+                      >×</a
+                    >
+                    <a href="#">Haqqımızda</a>
+                    <a href="#">Müəllimlər</a>
+                    <a href="#">Ən çox verilən suallar</a>
+                    <a href="#">Təklifim var</a>
+                    <a href="#">Əlaqə</a>
+                    <a
+                      data-bs-toggle="collapse"
+                      href="#collapseExample"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                      >ADNSU <i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <div
+                      class="collapse child_mobile colapse_body"
+                      id="collapseExample"
+                    >
+                      <li class="mobile_header">Rektorun çıxışı</li>
+                      <li><a href="#">ADNSU haqqında</a></li>
+                      <li><a href="#">ADNSU tarixi</a></li>
+                      <li><a href="#">ADNSU struktur</a></li>
+                      <li><a href="#">Azərbaycan Ali Texniki</a></li>
+                      <li><a href="#">Məktəblərinin Xəbərləri</a></li>
+                      <li><a href="#">Stastik məlumatlar</a></li>
+                      <li>
+                        <a href="#">Əlaqə</a>
+                      </li>
+                      <li class="mobile_header">Rəhbərlik</li>
+                      <li><a href="#">Rektor</a></li>
+                      <li><a href="#">Rektor müşairləri</a></li>
+                      <li><a href="#">Prorektorlar</a></li>
+                      <li><a href="#">İT Departament</a></li>
+                      <li><a href="#">Beynəlxalq Əməkdaşlıq Şöbəsi</a></li>
+                      <li>
+                        <a href="#"
+                          >İctimaiyyətlə Əlaqə və Marketing Departamenti</a
+                        >
+                      </li>
+                      <li><a href="#">Tədris metodiki Şöbə</a></li>
+                      <li>
+                        <a href="#">Mühasibatlıq</a>
+                      </li>
+                    </div>
+
+                    <a
+                      data-bs-toggle="collapse"
+                      href="#collapseExample1"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample1"
+                      >Fakültələr <i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <div
+                      class="collapse child_mobile colapse_body"
+                      id="collapseExample1"
+                    >
+                      <li>
+                        <a
+                          data-bs-toggle="collapse"
+                          href="#collapseExample2"
+                          role="button"
+                          aria-expanded="false"
+                          aria-controls="collapseExample2"
+                          style="padding-left: -60px"
+                          >Geoloji-kəşfiyyat fakültəsi
+                          <i class="fa-solid fa-chevron-down"></i
+                        ></a>
+                      </li>
+                      <div
+                        class="collapse child_mobile2 colapse_body"
+                        id="collapseExample2"
+                      >
+                        <li><a href="#">Bakalavr</a></li>
+                        <li><a href="#">Magistr</a></li>
+                      </div>
+
+                      <li>
+                        <a
+                          data-bs-toggle="collapse"
+                          href="#collapseExample3"
+                          role="button"
+                          aria-expanded="false"
+                          aria-controls="collapseExample3"
+                          >Qaz-neft-mədən fakültəsi
+                          <i class="fa-solid fa-chevron-down"></i
+                        ></a>
+                      </li>
+                      <div
+                        class="collapse child_mobile2 colapse_body"
+                        id="collapseExample3"
+                      >
+                        <li>
+                          <a href="#">Bakalavr</a>
+                        </li>
+                        <li>
+                          <a href="#">Magistr</a>
+                        </li>
+                      </div>
+
+                      <li><a href="#">Kimya-texnoloqiya-fakültəsi</a></li>
+                      <li><a href="#">Neft-mexanika fakültəsi</a></li>
+                      <li><a href="#">Energetika fakültəsi</a></li>
+                      <li><a href="#">İT və İdarəetmə fakültəsi</a></li>
+                      <li>
+                        <a href="#">İqtisadiyyat və Menecment fakültəsi</a>
+                      </li>
+                      <li><a href="#">BA proqramları</a></li>
+                      <li><a href="#">Əcnəbi Tələbələr Dekanlığı</a></li>
+                      <li style="border-radius: 0 0 15px 15px">
+                        <a href="#">Azərbaycan-Fransız Universiteti (UFAZ)</a>
+                      </li>
+                    </div>
+
+                    <a
+                      data-bs-toggle="collapse"
+                      href="#collapseExample4"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample4"
+                      >Xidmətlər <i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <div
+                      class="collapse child_mobile colapse_body"
+                      id="collapseExample4"
+                    >
+                      <li class="mobile_header">Onlayn Xidmətlər</li>
+                      <li><a href="#">Lms.adnsu.az</a></li>
+                      <li><a href="#">Azii-e kitav evi</a></li>
+                      <li><a href="#">Xəbərlər</a></li>
+                      <li><a href="#">HPC mərkəzi</a></li>
+                      <li><a href="#">Məzun-Karyera Mərkəzi</a></li>
+                      <li><a href="#">Vətəndaşların qəbulu</a></li>
+                      <li><a href="#">Təklifim var</a></li>
+                      <li>
+                        <a href="#">Akt zalı</a>
+                      </li>
+                    </div>
+
+                    <a
+                      data-bs-toggle="collapse"
+                      href="#collapseExample5"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample5"
+                      >Tələbə<i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <div
+                      class="collapse child_mobile colapse_body"
+                      id="collapseExample5"
+                    >
+                      <li class="mobile_header">Tələbə həyatı</li>
+                      <li><a href="#">Tələbə Həmkarlar istifaqı</a></li>
+                      <li><a href="#">Tələbər Gənclər Təşkilatı</a></li>
+                      <li>
+                        <a
+                          data-bs-toggle="collapse"
+                          href="#collapseExample6"
+                          role="button"
+                          aria-expanded="false"
+                          aria-controls="collapseExample6"
+                          >Klublar <i class="fa-solid fa-chevron-down"></i
+                        ></a>
+                      </li>
+                      <div
+                        class="collapse child_mobile2 colapse_body"
+                        id="collapseExample6"
+                      >
+                        <li><a href="#">Teatr</a></li>
+                        <li><a href="#">Basketbal</a></li>
+                        <li><a href="#">Futbol</a></li>
+                        <li><a href="#">Rəqs</a></li>
+                      </div>
+
+                      <li><a href="#">ADNSU struktur</a></li>
+                      <li><a href="#">Azərbaycan Ali Texniki</a></li>
+                      <li><a href="#">Məktəblərinin Xəbərləri</a></li>
+                      <li><a href="#">Stastik məlumatlar</a></li>
+                      <li>
+                        <a href="#">Əlaqə</a>
+                      </li>
+                      <li class="mobile_header">Şəhsi inkişaf</li>
+                      <li><a href="#">ADNSU Yay məktəbi 2023</a></li>
+                      <li><a href="#">Azerbaijani language</a></li>
+                      <li><a href="#">Trainings</a></li>
+                      <li><a href="#">Sabah Qrupları</a></li>
+                      <li><a href="#">Təcrübə</a></li>
+                      <li><a href="#">eazi START</a></li>
+                      <li><a href="#">AziiEduLab</a></li>
+                    </div>
+                    <a
+                      data-bs-toggle="collapse"
+                      href="#collapseExample7"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample7"
+                      >Tələbə qəbului <i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <div
+                      class="collapse child_mobile colapse_body"
+                      id="collapseExample7"
+                    >
+                      <li>
+                        <a
+                          data-bs-toggle="collapse"
+                          href="#collapseExample8"
+                          role="button"
+                          aria-expanded="false"
+                          aria-controls="collapseExample8"
+                          >Yerli <i class="fa-solid fa-chevron-down"></i
+                        ></a>
+                      </li>
+                      <div
+                        class="collapse child_mobile2 colapse_body"
+                        id="collapseExample8"
+                      >
+                        <li><a href="#">İxtisas üzrə statistika</a></li>
+                        <li><a href="#">Sənədlər</a></li>
+                      </div>
+
+                      <li><a href="#">Əcnəbi</a></li>
+                    </div>
+
+                    <a href="#">Karyera</a>
+                  </div>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                <!-- <div id="myOverlay2" class="overlay">
+                  <span
+                    class="closebtn"
+                    onclick="closeSearch2()"
+                    title="Close Overlay"
+                    >×</span
+                  >
+                  <div class="overlay-content">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search" />
+                      <button type="submit">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div> -->
+                <button class="openBtn" onclick="openSearch()">
+                  <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </button>
+                <script>
+                  function openNav() {
+                    document.getElementById("mySidepanel").style.width = "100%";
+                  }
+
+                  function closeNav() {
+                    document.getElementById("mySidepanel").style.width = "0";
+                  }
+                </script>
+              </div>
+              <!-- djsdj
+              sdrjsrj
+              sj
+              sjr
+              sj
+              sj
+              j
+              jqueryrj
+              sjr
+              sHaraejea
+              aejaeajaejr -->
+            </div>
+            <ul
+              class="bottom pt-3 d-flex justify-content-center align-items-center"
+            >
+              <header id="nav2">
+                <nav class="navbar">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        >ADNSU <i class="fa-solid fa-chevron-down"></i
+                      ></a>
+                      <ul style="width: 250px">
+                        <li
+                          class="main_header"
+                          style="border-top-left-radius: 15px"
+                        >
+                          Haqqımızda
+                        </li>
+                        <li><a href="#">Rektorun çıxışı</a></li>
+                        <li><a href="#">ADNSU haqqında</a></li>
+                        <li><a href="#">ADNSU tarixi</a></li>
+                        <li><a href="#">ADNSU struktur</a></li>
+                        <li><a href="#">Azərbaycan Ali Texniki</a></li>
+                        <li><a href="#">Məktəblərinin Xəbərləri</a></li>
+                        <li><a href="#">Stastik məlumatlar</a></li>
+                        <li
+                          style="
+                            border-bottom-left-radius: 15px;
+                            padding-bottom: 10px;
+                          "
+                        >
+                          <a href="#">Əlaqə</a>
+                        </li>
+                      </ul>
+                      <ul class="second" style="width: 320px; left: 250px">
+                        <li
+                          class="main_header"
+                          style="border-top-right-radius: 15px"
+                        >
+                          Rəhbərlik
+                        </li>
+                        <li><a href="#">Rektor</a></li>
+                        <li><a href="#">Rektor müşairləri</a></li>
+                        <li><a href="#">Prorektorlar</a></li>
+                        <li><a href="#">İT Departament</a></li>
+                        <li><a href="#">Beynəlxalq Əməkdaşlıq Şöbəsi</a></li>
+                        <li>
+                          <a href="#"
+                            >İctimaiyyətlə Əlaqə və Marketing Departamenti</a
+                          >
+                        </li>
+                        <li><a href="#">Tədris metodiki Şöbə</a></li>
+                        <li
+                          style="
+                            border-bottom-right-radius: 15px;
+                            padding-bottom: 10px;
+                          "
+                        >
+                          <a href="#">Mühasibatlıq</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#"
+                        >Fakültələr <i class="fa-solid fa-chevron-down"></i
+                      ></a>
+                      <ul style="width: 350px">
+                        <li style="border-radius: 15px 15px 0 0">
+                          <a href="#"
+                            >Geoloji-kəşfiyyat fakültəsi
+                            <i
+                              class="fa-solid fa-chevron-down fa-rotate-270"
+                            ></i
+                          ></a>
+                          <ul style="left: 350px">
+                            <li
+                              style="
+                                border-radius: 15px 15px 0 0;
+                                padding-left: 8px;
+                              "
+                            >
+                              <a href="#">Bakalavr</a>
+                            </li>
+                            <li
+                              style="
+                                border-radius: 0 0 15px 15px;
+                                padding-left: 8px;
+                              "
+                            >
+                              <a href="#">Magistr</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#"
+                            >Qaz-neft-mədən fakültəsi
+                            <i
+                              class="fa-solid fa-chevron-down fa-rotate-270"
+                            ></i
+                          ></a>
+                          <ul style="left: 350px">
+                            <li
+                              style="
+                                border-radius: 15px 15px 0 0;
+                                padding-left: 8px;
+                              "
+                            >
+                              <a href="#">Bakalavr</a>
+                            </li>
+                            <li
+                              style="
+                                border-radius: 0 0 15px 15px;
+                                padding-left: 8px;
+                              "
+                            >
+                              <a href="#">Magistr</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Kimya-texnoloqiya-fakültəsi</a></li>
+                        <li><a href="#">Neft-mexanika fakültəsi</a></li>
+                        <li><a href="#">Energetika fakültəsi</a></li>
+                        <li><a href="#">İT və İdarəetmə fakültəsi</a></li>
+                        <li>
+                          <a href="#">İqtisadiyyat və Menecment fakültəsi</a>
+                        </li>
+                        <li><a href="#">BA proqramları</a></li>
+                        <li><a href="#">Əcnəbi Tələbələr Dekanlığı</a></li>
+                        <li style="border-radius: 0 0 15px 15px">
+                          <a href="#">Azərbaycan-Fransız Universiteti (UFAZ)</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        >Xidmətlər <i class="fa-solid fa-chevron-down"></i
+                      ></a>
+                      <ul>
+                        <li
+                          class="main_header"
+                          style="
+                            border-radius: 15px 15px 0 0;
+                            padding-left: 10px;
+                          "
+                        >
+                          Onlayn Xidmətlər
+                        </li>
+                        <li><a href="#">Lms.adnsu.az</a></li>
+                        <li><a href="#">Azii-e kitav evi</a></li>
+                        <li><a href="#">Xəbərlər</a></li>
+                        <li><a href="#">HPC mərkəzi</a></li>
+                        <li><a href="#">Məzun-Karyera Mərkəzi</a></li>
+                        <li><a href="#">Vətəndaşların qəbulu</a></li>
+                        <li><a href="#">Təklifim var</a></li>
+                        <li style="border-radius: 0 0 15px 15px">
+                          <a href="#">Akt zalı</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        >Tələbə <i class="fa-solid fa-chevron-down"></i
+                      ></a>
+                      <ul style="width: 250px">
+                        <li
+                          class="main_header"
+                          style="border-top-left-radius: 15px"
+                        >
+                          Tələbə həyatı
+                        </li>
+                        <li><a href="#">Tələbə Həmkarlar istifaqı</a></li>
+                        <li><a href="#">Tələbər Gənclər Təşkilatı</a></li>
+                        <li>
+                          <a href="#"
+                            >Klublar
+                            <i class="fa-solid fa-chevron-down fa-rotate-90"></i
+                          ></a>
+                          <ul style="left: -200px">
+                            <li style="border-radius: 15px 15px 0 0">
+                              <a href="#">Teatr</a>
+                            </li>
+                            <li><a href="#">Basketbal</a></li>
+                            <li><a href="#">Futbol</a></li>
+                            <li style="border-radius: 0 0 15px 15px">
+                              <a href="#">Rəqs</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a href="#">ADNSU struktur</a></li>
+                        <li><a href="#">Azərbaycan Ali Texniki</a></li>
+                        <li><a href="#">Məktəblərinin Xəbərləri</a></li>
+                        <li><a href="#">Stastik məlumatlar</a></li>
+                        <li
+                          style="
+                            border-bottom-left-radius: 15px;
+                            padding-bottom: 10px;
+                          "
+                        >
+                          <a href="#">Əlaqə</a>
+                        </li>
+                      </ul>
+                      <ul class="second" style="width: 220px; left: 250px">
+                        <li
+                          class="main_header"
+                          style="border-top-right-radius: 15px"
+                        >
+                          Şəhsi inkişaf
+                        </li>
+                        <li><a href="#">ADNSU Yay məktəbi 2023</a></li>
+                        <li><a href="#">Azerbaijani language</a></li>
+                        <li><a href="#">Trainings</a></li>
+                        <li><a href="#">Sabah Qrupları</a></li>
+                        <li><a href="#">Təcrübə</a></li>
+                        <li><a href="#">eazi START</a></li>
+                        <li><a href="#">AziiEduLab</a></li>
+                        <li style="color: transparent; padding: 5px 20px">
+                          <br />
+                        </li>
+                        <li
+                          style="
+                            border-bottom-right-radius: 15px;
+                            color: transparent;
+                            padding: 5px 20px;
+                          "
+                        >
+                          <br />
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        >Tələbə qəbulu <i class="fa-solid fa-chevron-down"></i
+                      ></a>
+                      <ul>
+                        <li style="border-radius: 15px 15px 0 0">
+                          <a href="#"
+                            >Yerli
+                            <i class="fa-solid fa-chevron-down fa-rotate-90"></i
+                          ></a>
+                          <ul style="left: -200px; top: 10px">
+                            <li style="border-radius: 15px 15px 0 0">
+                              <a href="#">İxtisas üzrə statistika</a>
+                            </li>
+                            <li style="border-radius: 0 0 15px 15px">
+                              <a href="#">Sənədlər</a>
+                            </li>
+                          </ul>
+                        </li>
+
+                        <li style="border-radius: 0 0 15px 15px">
+                          <a href="#">Əcnəbi</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Karyera</a></li>
+                  </ul>
+                </nav>
+              </header>
+            </ul>
+          </div>
+        </div>
+        <script>
+          window.onscroll = function () {
+            myFunction();
+          };
+
+          function myFunction() {
+            if (document.documentElement.scrollTop < 10) {
+              document.getElementById("nav").className = "mystyle";
+            } else {
+              document.getElementById("nav").className = "mystyle12";
+            }
+
+            if (document.documentElement.scrollTop < 10) {
+              document.getElementById("disp").className = "display2";
+              document.getElementById("disp2").className = "display1";
+            } else {
+              document.getElementById("disp").className = "display1";
+              document.getElementById("disp2").className = "display2";
+            }
+            if (document.documentElement.scrollTop < 380) {
+              document.getElementById("photo").className = "position-fixed";
+            } else {
+              document.getElementById("photo").className = "dispnon";
+            }
+          }
+        </script>
+      </nav>
+      <!-- NAVBAR END  -->
+      <!-- START SECTION -->
+      <div
+        class="container-fluid p-0 secon_ver_mainpage position-relative"
+        style="z-index: -2"
+      >
+        <div
+          class="secon_ver_mainpage_logo d-flex justify-content-center align-items-center"
+        >
+          <h1
+            id="photo"
+            class="position-fixed"
+            style="z-index: -1; transition: 0.5 ease"
+          >
+            <img src="./img/second_var_logo.svg" alt="" />
+          </h1>
+        </div>
+
+        <!-- <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="ss-slide-1">
+                <div class="ss-slide-info container">
+                  <h1>
+                    A Memorandum of Cooperation has been <br />
+                    signed between ASOIU and Polymart LLC
+                  </h1>
+                  <p>
+                    On June 8, Azerbaijan State Oil and Industry University
+                    (ASOIU) hosted a <br />
+                    meeting with Polymart Limited Liability Company (LLC).
+                  </p>
+                  <div class="btn btn-light">
+                    <span>Daha çox oxu</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ss-slide-1 ss-slide-bc-2">
+                <div class="ss-slide-info container">
+                  <h1>
+                    A group of ASOIU students and teachers are <br />
+                    on an excursion to the Chovdar mining field
+                  </h1>
+                  <p>
+                    During the tour, ASOIU students and teachers were acquainted
+                    with <br />
+                    the "HSE & Process,Safety Introduction" and operational
+                    work.
+                  </p>
+                  <div class="btn btn-light">
+                    <span>Daha çox oxu</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ss-slide-1 ss-slide-bc-3">
+                <div class="ss-slide-info container">
+                  <h1>
+                    The closing ceremony of the educational <br />
+                    project CODE FOR FUTURE - ASOIU is held
+                  </h1>
+                  <p>
+                    On June 16, the closing ceremony of the educational project
+                    "Algorithmics" ("CODE FOR <br />
+                    FUTURE" - ASOIU) was held at the Azerbaijan State Oil and
+                    Industry University (ASOIU).
+                  </p>
+                  <div class="btn btn-light">
+                    <span>Daha çox oxu</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next mynext1"></div>
+          <div class="swiper-button-prev myprev1"></div>
+          <div class="swiper-pagination"></div>
+        </div> -->
+      </div>
+    </header>
+    <section>
+      <div class="container-fluid backk pt-5">
+        <div class="container back1">
+          <div class="row">
+            <div class="col-lg-12 col-sm-12 text1 text-center">
+              <h5>Universitetdən daha artığı!</h5>
+              <h6>
+                Tələbələrimiz, fakültələrimiz və işçi heyətimiz həyatın hər
+                sahəsini, bir-birindən fərqli düşüncələri, ölkəmizin və dünyanın
+                müxtəlif yerlərini təmsil edirlər. Çünki böyük bir universitetdə
+                olmağın ən gözəl tərəflərindən biri təhsil almaq, işləmək,
+                əylənmək, yeniliklərlə tanış olmaq, fikir alış-verişi etmək və
+                heç vaxt olmadığın yerlərdən gələn insanlarla ünsiyyət qurmaq
+                şansına sahib olmaqdır.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container-fluid backk pb-5 pt-5" style="overflow-x: hidden">
+      <div class="container back1 js-tilt">
+        <div class="row">
+          <div
+            class="col-lg-12 col-sm-12 back3 justify-content-center d-flex align-items-center"
+          >
+            <h6 class="justify-content-center d-flex align-items-center">
+              <a
+                href="#"
+                class="justify-content-center d-flex align-items-center"
+              >
+                <i class="fa-regular fa-circle-play fa-4x"></i> Virtual tur
+                at</a
+              >
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEBERLER -->
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center">
+        <div
+          class="heber_selector col-lg-12 d-flex justify-content-between align-items-center"
+          id="myBtnContainer"
+        >
+          <div
+            class="btn btn-light mybtn1 active7"
+            onclick="filterSelection('heber')"
+          >
+            ƏN SON XƏBƏRLƏR
+          </div>
+          <div class="btn btn-light mybtn2" onclick="filterSelection('elan')">
+            ƏN SON ELANLAR
+          </div>
+        </div>
+      </div>
+      <div
+        class="all_hebber_select d-flex justify-content-end align-items-center"
+      >
+        <div class="btn btn-light filterDiv heber">BÜTÜN XƏBƏRLƏR</div>
+        <div class="btn btn-light filterDiv elan">BÜTÜN ELANLAR</div>
+      </div>
+      <div class="heberler_content">
+        <div class="swiper mySwiper2 filterDiv heber">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/heber.png"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>28 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>BEYNƏLXALQ</h4>
+                      <p>
+                        ADNSU-nun rektoru Batman Enerji Zirvəsi-2022-də çıxış
+                        edib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/tedbir.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>28 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>TƏDBİRLƏR</h4>
+                      <p>
+                        Milli Mətbuatın 147-ci ildönümü münasibətilə media
+                        nümayəndələri ilə görüş keçirilib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/tedbir2.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>28 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>TƏDBİRLƏR</h4>
+                      <p>
+                        Milli Mətbuatın 147-ci ildönümü münasibətilə media
+                        nümayəndələri ilə görüş keçirilib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/beynalxalg.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>28 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>BEYNƏLXALQ</h4>
+                      <p>
+                        ADNSU-nun rektoru Batman Enerji Zirvəsi-2022-də çıxış
+                        edib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/heber_1_slide2.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>28 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>BEYNƏLXALQ</h4>
+                      <p>
+                        ADNSU-nun rektoru Batman Enerji Zirvəsi-2022-də çıxış
+                        edib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/heber_2_slide_2.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>28 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>TƏDBİRLƏR</h4>
+                      <p>
+                        Milli Mətbuatın 147-ci ildönümü münasibətilə media
+                        nümayəndələri ilə görüş keçirilib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/heber_3_slide_2.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>28 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>TƏDBİRLƏR</h4>
+                      <p>
+                        Milli Mətbuatın 147-ci ildönümü münasibətilə media
+                        nümayəndələri ilə görüş keçirilib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/heber_4_slide2.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>28 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>BEYNƏLXALQ</h4>
+                      <p>
+                        ADNSU-nun rektoru Batman Enerji Zirvəsi-2022-də çıxış
+                        edib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/heber.png"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>28 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>BEYNƏLXALQ</h4>
+                      <p>
+                        ADNSU-nun rektoru Batman Enerji Zirvəsi-2022-də çıxış
+                        edib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/tedbir.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>28 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>TƏDBİRLƏR</h4>
+                      <p>
+                        Milli Mətbuatın 147-ci ildönümü münasibətilə media
+                        nümayəndələri ilə görüş keçirilib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/tedbir2.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>28 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>TƏDBİRLƏR</h4>
+                      <p>
+                        Milli Mətbuatın 147-ci ildönümü münasibətilə media
+                        nümayəndələri ilə görüş keçirilib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/beynalxalg.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>28 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>BEYNƏLXALQ</h4>
+                      <p>
+                        ADNSU-nun rektoru Batman Enerji Zirvəsi-2022-də çıxış
+                        edib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next myprev3"></div>
+          <div class="swiper-button-prev mynext3"></div>
+        </div>
+
+        <div class="swiper mySwiper2 filterDiv elan">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/heber.png"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>27 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>BEYNƏLXALQ</h4>
+                      <p>
+                        ADNSU-nun rektoru Batman Enerji Zirvəsi-2022-də çıxış
+                        edib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/tedbir.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>27 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>TƏDBİRLƏR</h4>
+                      <p>
+                        Milli Mətbuatın 147-ci ildönümü münasibətilə media
+                        nümayəndələri ilə görüş keçirilib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/tedbir2.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>27 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>TƏDBİRLƏR</h4>
+                      <p>
+                        Milli Mətbuatın 147-ci ildönümü münasibətilə media
+                        nümayəndələri ilə görüş keçirilib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/beynalxalg.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>27 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>BEYNƏLXALQ</h4>
+                      <p>
+                        ADNSU-nun rektoru Batman Enerji Zirvəsi-2022-də çıxış
+                        edib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/heber_1_slide2.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>27 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>BEYNƏLXALQ</h4>
+                      <p>
+                        ADNSU-nun rektoru Batman Enerji Zirvəsi-2022-də çıxış
+                        edib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/heber_2_slide_2.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>27 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>TƏDBİRLƏR</h4>
+                      <p>
+                        Milli Mətbuatın 147-ci ildönümü münasibətilə media
+                        nümayəndələri ilə görüş keçirilib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/heber_3_slide_2.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>27 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>TƏDBİRLƏR</h4>
+                      <p>
+                        Milli Mətbuatın 147-ci ildönümü münasibətilə media
+                        nümayəndələri ilə görüş keçirilib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/heber_4_slide2.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>27 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>BEYNƏLXALQ</h4>
+                      <p>
+                        ADNSU-nun rektoru Batman Enerji Zirvəsi-2022-də çıxış
+                        edib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/heber.png"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>27 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>BEYNƏLXALQ</h4>
+                      <p>
+                        ADNSU-nun rektoru Batman Enerji Zirvəsi-2022-də çıxış
+                        edib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/tedbir.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>27 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>TƏDBİRLƏR</h4>
+                      <p>
+                        Milli Mətbuatın 147-ci ildönümü münasibətilə media
+                        nümayəndələri ilə görüş keçirilib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/tedbir2.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>27 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>TƏDBİRLƏR</h4>
+                      <p>
+                        Milli Mətbuatın 147-ci ildönümü münasibətilə media
+                        nümayəndələri ilə görüş keçirilib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-12">
+                  <div class="heber_card position-relative">
+                    <div class="heber_img">
+                      <img
+                        src="./img/beynalxalg.jpeg"
+                        alt=""
+                        width="100%"
+                        height="201.48px"
+                      />
+                    </div>
+                    <div class="heber_date position-absolute">
+                      <i class="fa-solid fa-calendar"></i>
+                      <span>27 İyul, 2022</span>
+                    </div>
+                    <div class="heber_text_data">
+                      <h4>BEYNƏLXALQ</h4>
+                      <p>
+                        ADNSU-nun rektoru Batman Enerji Zirvəsi-2022-də çıxış
+                        edib
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next myprev3"></div>
+          <div class="swiper-button-prev mynext3"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      filterSelection("heber");
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show7");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show7");
+        }
+      }
+
+      // Show filtered elements
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      // Hide elements that are not selected
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current control button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active7");
+          current[0].className = current[0].className.replace(" active7", "");
+          this.className += " active7";
+        });
+      }
+    </script>
+
+    <style></style>
+
+    <!-- AKADEMIK DERECELER -->
+    <div class="container position-relative">
+      <h1 class="content_header">Akademik dərəcələr</h1>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="akadem_card text-center bacalavr_card_hover">
+            <h1><img src="./img/Carbon Icons.svg" alt="" /></h1>
+            <h1 class="bacalavr_hover">
+              <img src="./img/bakalavr_hover.png" alt="" />
+            </h1>
+            <h2>Bakalavr</h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="akadem_card text-center magistr">
+            <h1><img src="./img/magistr.svg" alt="" /></h1>
+            <h1><img src="./img/magistr_hover.png" alt="" /></h1>
+            <h2>Bakalavr</h2>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="akadem_card text-center doktor">
+            <h1><img src="./img/doktor.svg" alt="" /></h1>
+            <h1><img src="./img/doktor_hover.png" alt="" /></h1>
+            <h2>Bakalavr</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GOSTERICILER -->
+    <div class="container goster_section">
+      <h1 class="content_header">Göstəricilərimiz</h1>
+      <div class="row text-center">
+        <div class="col-lg-3">
+          <div class="goster_card">
+            <h1><img src="./img/Group.png" alt="" /></h1>
+            <div class="counter">
+              <div class="gozter_numer" data-count="16183">0</div>
+            </div>
+            <!-- <h2>16183</h2> -->
+
+            <h4>Ümumi tələbələrin sayı</h4>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="goster_card">
+            <h1><img src="./img/telebe_bal.png" alt="" /></h1>
+            <div class="counter">
+              <div class="gozter_numer" data-count="789">0</div>
+            </div>
+            <!-- <h2>789</h2> -->
+            <h4>550+ bal toplayan tələbələr</h4>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="goster_card">
+            <h1><img src="./img/is_tap.png" alt="" /></h1>
+            <div class="counter">
+              <div class="gozter_numer" data-count="1057">0</div>
+            </div>
+            <!-- <h2>1057</h2> -->
+            <h4>İşlə təmin olunmuş tələbələr</h4>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="goster_card">
+            <h1><img src="./img/telebe_bal.png" alt="" /></h1>
+            <div class="counter">
+              <div class="gozter_numer" data-count="142">0</div>
+            </div>
+            <!-- <h2>142</h2> -->
+            <h4>Beynəlxalq layihələr</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FAKULTELER -->
+    <div class="container">
+      <h1 class="content_header pb-3">Fakültələr</h1>
+      <div class="swiper mySwiper4">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="fakulte_card">
+              <h1><img src="./img/geoloji.png" alt="" /></h1>
+              <h2>Geoloji Kəşfiyyat</h2>
+              <p>
+                Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                yanaşı filan şeylər edilir.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="fakulte_card">
+              <h1><img src="./img/gaaz_neft.png" alt="" /></h1>
+              <h2>Qaz-Neft-Mədən</h2>
+              <p>
+                Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                yanaşı filan şeylər edilir.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="fakulte_card">
+              <h1><img src="./img/kimya.png" alt="" /></h1>
+              <h2>Kimya-Texnologiya</h2>
+              <p>
+                Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                yanaşı filan şeylər edilir.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="fakulte_card">
+              <h1><img src="./img/gaaz_neft.png" alt="" /></h1>
+              <h2>Qaz-Neft-Mədən</h2>
+              <p>
+                Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                yanaşı filan şeylər edilir.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="fakulte_card">
+              <h1><img src="./img/geoloji.png" alt="" /></h1>
+              <h2>Geoloji Kəşfiyyat</h2>
+              <p>
+                Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                yanaşı filan şeylər edilir.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="fakulte_card">
+              <h1><img src="./img/gaaz_neft.png" alt="" /></h1>
+              <h2>Qaz-Neft-Mədən</h2>
+              <p>
+                Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                yanaşı filan şeylər edilir.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="fakulte_card">
+              <h1><img src="./img/kimya.png" alt="" /></h1>
+              <h2>Kimya-Texnologiya</h2>
+              <p>
+                Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                yanaşı filan şeylər edilir.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col-lg-4">
+          <div class="fakulte_card">
+            <h1><img src="./img/geoloji.png" alt="" /></h1>
+            <h2>Geoloji Kəşfiyyat</h2>
+            <p>
+              Fakültədə filan sahədə filan bilgilər öyrədilir və bununla yanaşı
+              filan şeylər edilir.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="fakulte_card">
+            <h1><img src="./img/gaaz_neft.png" alt="" /></h1>
+            <h2>Qaz-Neft-Mədən</h2>
+            <p>
+              Fakültədə filan sahədə filan bilgilər öyrədilir və bununla yanaşı
+              filan şeylər edilir.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="fakulte_card">
+            <h1><img src="./img/kimya.png" alt="" /></h1>
+            <h2>Kimya-Texnologiya</h2>
+            <p>
+              Fakültədə filan sahədə filan bilgilər öyrədilir və bununla yanaşı
+              filan şeylər edilir.
+            </p>
+          </div>
+        </div>
+      </div>-->
+    </div>
+
+    <!-- MEZUM_FIKIRLER -->
+    <div class="container-fluid position-relative overflow-hidden">
+      <div class="asoiu_logo_2 position-absolute">
+        <img src="./img/adnsu_logo_2.png" alt="" />
+      </div>
+      <div class="container">
+        <h1 class="content_header pt-3">Məzunların fikirləri</h1>
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="row mezun_card">
+                <div
+                  class="col-lg-6 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./img/heber_1_slide2.jpeg"
+                    alt=""
+                    style="border-radius: 20px"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="mezun_text">
+                    <p>
+                      Mənim üçün bu universitet həyatımın ən doğru seçimi idi.
+                      Mənim üçün bu universitet həyatımın ən doğru seçimi idi.
+                    </p>
+                    <p>
+                      Filankəs Filankəsov, <br />
+                      Filan şirkətdə Mühəndis
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row mezun_card">
+                <div
+                  class="col-lg-6 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./img/heber_1_slide2.jpeg"
+                    alt=""
+                    class="img-fluid"
+                    style="border-radius: 20px"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="mezun_text">
+                    <p>
+                      Mənim üçün bu universitet həyatımın ən doğru seçimi idi.
+                      Mənim üçün bu universitet həyatımın ən doğru seçimi idi.
+                    </p>
+                    <p>
+                      Filankəs Filankəsov, <br />
+                      Filan şirkətdə Mühəndis
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row mezun_card">
+                <div
+                  class="col-lg-6 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./img/heber_1_slide2.jpeg"
+                    alt=""
+                    class="img-fluid"
+                    style="border-radius: 20px"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="mezun_text">
+                    <p>
+                      Mənim üçün bu universitet həyatımın ən doğru seçimi idi.
+                      Mənim üçün bu universitet həyatımın ən doğru seçimi idi.
+                    </p>
+                    <p>
+                      Filankəs Filankəsov, <br />
+                      Filan şirkətdə Mühəndis
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next mynext2"></div>
+          <div class="swiper-button-prev myprev2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROGRAMLAR VE PARTNERLAR -->
+    <!-- swiper Start -->
+    <!-- swiper Start -->
+    <div class="container-fluid">
+      <div class="container">
+        <h4 class="content_header">Önə çıxan proqramlar</h4>
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="itclub">
+                <img src="./img/itclub.png" alt="" />
+                <h4 class="thesame">Azİİ IT Club</h4>
+                <h5>
+                  Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                  yanaşı filan şeylər edilir.
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="itclub eazi">
+                <img src="./img/eazi_start.png" alt="" />
+                <h4 class="thesame">eazi Start</h4>
+                <h5>
+                  Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                  yanaşı filan şeylər edilir.
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="itclub sabah">
+                <img src="./img/sbah_group.png" alt="" class="img-fluid" />
+                <h4 class="thesame">Sabah Qrupları</h4>
+                <h5>
+                  Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                  yanaşı filan şeylər edilir.
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="itclub">
+                <img src="./img/itclub.png" alt="" />
+                <h4 class="thesame">Azİİ IT Club</h4>
+                <h5>
+                  Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                  yanaşı filan şeylər edilir.
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="itclub eazi">
+                <img src="./img/eazi_start.png" alt="" />
+                <h4 class="thesame">eazi Start</h4>
+                <h5>
+                  Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                  yanaşı filan şeylər edilir.
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="itclub sabah">
+                <img src="./img/sbah_group.png" alt="" />
+                <h4 class="thesame">Sabah Qrupları</h4>
+                <h5>
+                  Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                  yanaşı filan şeylər edilir.
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="itclub">
+                <img src="./img/itclub.png" alt="" />
+                <h4 class="thesame">Azİİ IT Club</h4>
+                <h5>
+                  Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                  yanaşı filan şeylər edilir.
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="itclub eazi">
+                <img src="./img/eazi_start.png" alt="" />
+                <h4 class="thesame">eazi Start</h4>
+                <h5>
+                  Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                  yanaşı filan şeylər edilir.
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="itclub sabah">
+                <img src="./img/sbah_group.png" alt="" />
+                <h4 class="thesame">Sabah Qrupları</h4>
+                <h5>
+                  Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
+                  yanaşı filan şeylər edilir.
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- swiper end -->
+    <!-- swiper end -->
+
+    <!-- swiper2 Start -->
+    <!-- swiper2 Start -->
+    <div class="container-fluid">
+      <div class="container">
+        <h4 class="content_header">Partnyorlarımız</h4>
+        <div class="swiper mySwiper3 texnoswper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="texno"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="texno1"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="texno2"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="texno"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="texno1"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="texno2"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="texno"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="texno1"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="texno2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- swiper2 end -->
+    <!-- swiper2 end -->
+
+    <!-- FOOTER SECTION -->
+    <section>
+      <div class="container-fluid mystyle2">
+        <div class="container">
+          <div class="row marg cred">
+            <div class="col-lg-3 col-sm-12 mystyle4 cred">
+              <img src="./img/nav_Logo.png" alt="" />
+              <br />
+              <span class="first"
+                >Azərbaycan <br />
+                Dövlət <br />
+                Neft və <br />
+                Sənaye <br />
+                Universiteti</span
+              >
+            </div>
+            <div class="col-lg-3 col-sm-12 mystyle4 first1">
+              <ul>
+                <h4 class="myclass1">Fakültələr</h4>
+                <li>Geoloji kəşfiyyat</li>
+                <li>Qaz-Neft-Mədən</li>
+                <li>Kimya-Texnologiya</li>
+                <li>Neft</li>
+                <li>Energetika</li>
+                <li>İT və idarəetmə</li>
+                <li>İqtisadiyyat və menecment</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-12 mystyle4 first1">
+              <ul>
+                <h4 class="myclass1">Proqramlar</h4>
+                <li>BA proqramları</li>
+                <li>Yay Məktəbi</li>
+                <li>SABAH Qrupları</li>
+                <li>eazi Start</li>
+                <li>IT Club</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-12 mystyle4 first1">
+              <ul>
+                <h4 class="myclass1">Xidmətlər</h4>
+                <li>LMS</li>
+                <li>Azii e-Kitab evi</li>
+                <li>Məzun-Karyera Mərkəzi</li>
+                <li>HPC Mərkəzi</li>
+                <li>Akt zalı</li>
+                <li>Yataqxana</li>
+                <li>Kitabxana</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="myclass3" />
+          <div class="footer myclass11 first1">
+            <ul class="fff">
+              <li>Haqqımızda</li>
+              <li>Ən çox verilən suallar</li>
+              <li>Təklifim var</li>
+              <li>Əlaqə</li>
+            </ul>
+            <div
+              class="nav social-icons justify-content-center text-sm-center justify-content-md-end mycl"
+            >
+              <a class="myclass1 myclass" href=""
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+
+              <a class="myclass" href=""
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a class="myclass" href=""
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper3", {
+        slidesPerView: 3,
+        freeMode: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        rewind: true,
+        breakpoints: {
+          500: {
+            slidesPerView: 1,
+            spaceBetween: -50,
+            centeredSlides: false,
+          },
+          740: {
+            slidesPerView: 3,
+            spaceBetween: 390,
+            centeredSlides: false,
+          },
+          968: {
+            slidesPerView: 3,
+            spaceBetween: 350,
+            centeredSlides: false,
+          },
+          1324: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: false,
+          },
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper5", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper4", {
+        slidesPerView: 3,
+        freeMode: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        rewind: true,
+        breakpoints: {
+          500: {
+            slidesPerView: 1,
+            spaceBetween: -50,
+            centeredSlides: false,
+          },
+          740: {
+            slidesPerView: 3,
+            spaceBetween: 390,
+            centeredSlides: false,
+          },
+          968: {
+            slidesPerView: 3,
+            spaceBetween: 350,
+            centeredSlides: false,
+          },
+          1399: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: false,
+          },
+        },
+      });
+    </script>
+    <script>
+      //https://stackoverflow.com/questions/23006516/jquery-animated-number-counter-from-zero-to-value
+      $(function () {
+        ////////////////////////////////variables//constant variables
+
+        var winHeight = $(window).height(),
+          eleOffsetTop = $(".counter").offset().top,
+          eleTop = eleOffsetTop - winHeight,
+          current = 0;
+
+        $(window).on("scroll", function () {
+          var scrollTop = $(window).scrollTop();
+
+          if (current == 0 && scrollTop >= eleTop) {
+            $(".counter div").each(function () {
+              var $this = $(this),
+                countTo = $this.attr("data-count");
+
+              $({ countNum: $this.text() }).animate(
+                {
+                  countNum: countTo,
+                },
+
+                {
+                  duration: 2000,
+                  easing: "linear",
+                  step: function () {
+                    $this.text(Math.floor(this.countNum));
+                  },
+                  complete: function () {
+                    $this.text(this.countNum);
+                    //alert('finished');
+
+                    //this inside the step callback isn't the element but the object passed to animate
+                  },
+                }
+              );
+            });
+          }
+        });
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.0/tilt.jquery.min.js"></script>
+    <script>
+      $(".js-tilt").tilt({
+        glare: false,
+        maxGlare: 0.5,
+        perspective: 3000,
+        scale: 1.1,
+      });
+    </script>
+
+    <script>
+      function openSearch() {
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function closeSearch() {
+        document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
+    <script>
+      function openSearch2() {
+        document.getElementById("myOverlay2").style.display = "block";
+      }
+
+      function closeSearch2() {
+        document.getElementById("myOverlay2").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
