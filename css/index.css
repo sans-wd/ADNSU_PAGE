@@ -123,6 +123,9 @@ header .navbar ul li .second {
 .mystyle1 {
   margin-top: 10px;
 }
+.mystyle1 img {
+  scale: 1.1;
+}
 .top {
   display: flex;
   justify-content: flex-end;
@@ -519,11 +522,14 @@ ul li {
 .back3 {
   /* width: 50%; */
   min-height: 350px;
-  background-image: url(../img/uni_daha_art.png);
+  background-image: url(../img/uni_daha_art2.jpg);
   background-size: cover;
 }
+.back4 {
+  padding: 0px;
+}
 .back3 {
-  border-radius: 35px;
+  border-radius: 25px;
 }
 .text1 span {
   font-family: "Albert Sans";
