@@ -152,6 +152,17 @@ header .navbar ul li .second {
   justify-content: space-between;
   margin: 10px;
 }
+.top li a {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #dfe3f6;
+}
+.mystyle12 ul li a {
+  color: #1a265c;
+}
 .bottom {
   display: flex;
   justify-content: center;
@@ -690,6 +701,9 @@ ul li {
   padding: 10px 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: 0.5s ease;
+}
+.akadem_pad {
+  padding-bottom: 35px;
 }
 
 .magistr {

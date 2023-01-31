@@ -37,7 +37,7 @@
     />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".scroll_nav" data-bs-offset="10">
     <div id="myOverlay" class="overlay" style="z-index: 9999999">
       <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
         >×</span
@@ -62,33 +62,35 @@
     <!-- HEADER SECTION -->
     <header>
       <!-- NAVBAR -->
-      <nav>
+      <nav class="scroll_nav">
         <div class="container-fluid mystyle" id="nav">
           <div class="container">
             <div
               class="row d-flex justify-content-between align-items-center nav1"
             >
               <div class="col-3 mystyle1">
-                <img
-                  id="disp2"
-                  src="./img/nav_logo__01.png"
-                  class="img-fluid"
-                  alt=""
-                />
-                <img
-                  id="disp"
-                  class="display2 img-fluid"
-                  src="./img/nav_Logo.png"
-                  alt=""
-                />
+                <a href="#home">
+                  <img
+                    id="disp2"
+                    src="./img/nav_logo__01.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <img
+                    id="disp"
+                    class="display2 img-fluid"
+                    src="./img/nav_Logo.png"
+                    alt=""
+                  />
+                </a>
               </div>
               <div class="col-9 top_nav_info">
                 <ul class="top">
-                  <li>Haqqımızda</li>
-                  <li>Müəllimlər</li>
-                  <li>Ən çox verilən suallar</li>
-                  <li>Təklifim var</li>
-                  <li>Əlaqə</li>
+                  <li><a href="#heber">Xəbərlər</a></li>
+                  <li><a href="#goster">Göstəricilərimiz</a></li>
+                  <li><a href="#partner">Partnyorlarımız</a></li>
+                  <li><a href="#">Təklifim var</a></li>
+                  <li><a href="#">Əlaqə</a></li>
                   <!-- <li><i class="fa-solid fa-magnifying-glass"></i></li> -->
                   <li>
                     <!-- <div class="dropdown">
@@ -138,9 +140,9 @@
                       onclick="closeNav()"
                       >×</a
                     >
-                    <a href="#">Haqqımızda</a>
-                    <a href="#">Müəllimlər</a>
-                    <a href="#">Ən çox verilən suallar</a>
+                    <a href="#">Xəbərlər</a>
+                    <a href="#">Göstəricilərimiz</a>
+                    <a href="#">Partnyorlarımız</a>
                     <a href="#">Təklifim var</a>
                     <a href="#">Əlaqə</a>
                     <a
@@ -291,7 +293,7 @@
                       id="collapseExample5"
                     >
                       <li class="mobile_header">Tələbə həyatı</li>
-                      <li><a href="#">Tələbə Həmkarlar istifaqı</a></li>
+                      <li><a href="#">Tələbə Həmkarlar İttifaqı</a></li>
                       <li><a href="#">Tələbər Gənclər Təşkilatı</a></li>
                       <li>
                         <a
@@ -322,7 +324,7 @@
                       role="button"
                       aria-expanded="false"
                       aria-controls="collapseExample7"
-                      >Tələbə qəbului <i class="fa-solid fa-chevron-down"></i
+                      >Tələbə qəbulu <i class="fa-solid fa-chevron-down"></i
                     ></a>
                     <div
                       class="collapse child_mobile colapse_body"
@@ -524,7 +526,7 @@
                           <a href="#">Qaz-neft-mədən fakültəsi</a>
                         </li>
                         <li>
-                          <a href="#">Kimya-texnoloqiya fakültəsi</a>
+                          <a href="#">Kimya-texnologiya fakültəsi</a>
                         </li>
                         <li>
                           <a href="#">Neft-mexanika fakültəsi</a>
@@ -586,7 +588,7 @@
                         >
                           Tələbə həyatı
                         </li>
-                        <li><a href="#">Tələbə Həmkarlar istifaqı</a></li>
+                        <li><a href="#">Tələbə Həmkarlar İttifaqı</a></li>
                         <li><a href="#">Tələbər Gənclər Təşkilatı</a></li>
                         <li
                           style="
@@ -717,6 +719,7 @@
       <!-- START SECTION -->
       <div
         class="container-fluid p-0 secon_ver_mainpage position-relative"
+        id="home"
         style="z-index: -2"
       >
         <!-- <div
@@ -840,7 +843,7 @@
     </div>
 
     <!-- HEBERLER -->
-    <div class="container">
+    <div class="container" id="heber">
       <div class="d-flex justify-content-center align-items-center">
         <div
           class="heber_selector col-lg-12 d-flex justify-content-between align-items-center"
@@ -1509,10 +1512,10 @@
     <style></style>
 
     <!-- AKADEMIK DERECELER -->
-    <div class="container position-relative">
+    <div class="container position-relative overflow-hidden">
       <h1 class="content_header">Akademik pillələr</h1>
-      <div class="row">
-        <div class="col-lg-4">
+      <div class="row akadem_pad">
+        <div class="col-lg-4 js-tilt2">
           <div class="akadem_card text-center bacalavr_card_hover">
             <h1><img src="./img/Carbon Icons.svg" alt="" /></h1>
             <h1 class="bacalavr_hover">
@@ -1521,14 +1524,14 @@
             <h2>Bakalavriat</h2>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 js-tilt2">
           <div class="akadem_card text-center magistr">
             <h1><img src="./img/magistr.svg" alt="" /></h1>
             <h1><img src="./img/magistr_hover.png" alt="" /></h1>
             <h2>Magistratura</h2>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 js-tilt2">
           <div class="akadem_card text-center doktor">
             <h1><img src="./img/doktor.svg" alt="" /></h1>
             <h1><img src="./img/doktor_hover.png" alt="" /></h1>
@@ -1539,8 +1542,8 @@
     </div>
 
     <!-- GOSTERICILER -->
-    <div class="container goster_section">
-      <h1 class="content_header">Göstəricilərimiz</h1>
+    <div class="container goster_section" id="goster">
+      <h1 class="content_header pt-3">Göstəricilərimiz</h1>
       <div class="row text-center">
         <div class="col-lg-3">
           <div class="goster_card">
@@ -1898,7 +1901,7 @@
 
     <!-- swiper2 Start -->
     <!-- swiper2 Start -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="partner">
       <div class="container">
         <h4 class="content_header">Partnyorlarımız</h4>
         <div class="swiper mySwiper3 texnoswper">
@@ -2174,6 +2177,14 @@
         maxGlare: 0.5,
         perspective: 3000,
         scale: 1,
+      });
+    </script>
+    <script>
+      $(".js-tilt2").tilt({
+        glare: false,
+        maxGlare: 0.5,
+        perspective: 1500,
+        scale: 1.05,
       });
     </script>
 
