@@ -1084,7 +1084,7 @@ ul li {
 
 @media only screen and (max-width: 1399px) {
   .fakulte_card {
-    min-height: 339px;
+    height: 339px;
   }
 }
 
