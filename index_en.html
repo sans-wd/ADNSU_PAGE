@@ -1817,7 +1817,7 @@
             </div>
             <div class="swiper-slide">
               <div class="itclub sabah">
-                <img src="./img/sbah_group.png" alt="" />
+                <img class="img-fluid" src="./img/sbah_group.png" alt="" />
                 <h4 class="thesame">Sabah Qrupları</h4>
                 <h5>
                   Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
@@ -1991,6 +1991,10 @@
         },
         rewind: true,
         breakpoints: {
+          375: {
+            slidesPerView: 1,
+            spaceBetween: 100,
+          },
           // when window width is >= 320px
           420: {
             slidesPerView: 2,
@@ -2084,9 +2088,13 @@
         // Responsive breakpoints
         breakpoints: {
           // when window width is >= 320px
+          375: {
+            slidesPerView: 1,
+            spaceBetween: 100,
+          },
           420: {
             slidesPerView: 2,
-            spaceBetween: 370,
+            spaceBetween: 300,
           },
           // when window width is >= 480px
           576: {

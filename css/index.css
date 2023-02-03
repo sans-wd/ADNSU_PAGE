@@ -885,24 +885,24 @@ ul li {
 
 .itclub {
   width: 350px;
-  height: 300px;
+  height: 261px;
   background: white;
   border-radius: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+  /* margin-left: 15px; */
+  /* margin-right: 15px; */
+  padding: 20px;
 }
 .sabah {
   width: 350px;
-  height: 300px;
+  height: 261px;
   background: white;
   border-radius: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
+  /* margin-left: 15px; */
+  /* margin-right: 15px; */
+  padding: 20px;
 }
 .itclub img {
-  width: 280px;
   height: 91px;
-  margin: 15px;
 }
 .thesame {
   display: flex;
@@ -933,12 +933,9 @@ ul li {
   margin-left: 15px;
 }
 .eazi img {
-  width: 150px;
-  height: 100px;
+  object-fit: contain;
 }
 .sabah img {
-  width: 330px;
-  height: 100px;
 }
 
 /* swiper :end */
@@ -1202,5 +1199,19 @@ ul li {
   }
   .overlay button {
     width: 20% !important;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .fakulte_card {
+    height: 370px;
+    width: 340px;
+  }
+  .itclub {
+    width: 308px;
+    height: 266px;
+    padding: 15px;
+
+    /* margin-left: 15px; */
+    /* margin-right: 15px; */
   }
 }
