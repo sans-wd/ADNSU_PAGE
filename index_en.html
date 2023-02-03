@@ -1838,7 +1838,7 @@
     <div class="container-fluid" id="partner">
       <div class="container">
         <h4 class="content_header">Partners</h4>
-        <div class="swiper mySwiper3 texnoswper">
+        <div class="swiper mySwiper6 texnoswper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="texno"></div>
@@ -1982,34 +1982,82 @@
     </script>
     <script>
       var swiper = new Swiper(".mySwiper3", {
-        slidesPerView: 3,
-        freeMode: true,
-        spaceBetween: 30,
+        loop: true,
+        // freeMode: true,
+
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
         rewind: true,
         breakpoints: {
-          500: {
-            slidesPerView: 1,
-            spaceBetween: -50,
-            centeredSlides: false,
+          // when window width is >= 320px
+          420: {
+            slidesPerView: 2,
+            spaceBetween: 280,
           },
-          740: {
-            slidesPerView: 3,
-            spaceBetween: 390,
-            centeredSlides: false,
+          // when window width is >= 480px
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 240,
           },
-          968: {
-            slidesPerView: 3,
-            spaceBetween: 350,
-            centeredSlides: false,
+          // when window width is >= 640px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 80,
           },
-          1324: {
+          992: {
             slidesPerView: 3,
-            spaceBetween: 30,
-            centeredSlides: false,
+            spaceBetween: 210,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 60,
+          },
+          1400: {
+            slidesPerView: 3,
+            spaceBetween: -90,
+          },
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper6", {
+        loop: true,
+        // freeMode: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        rewind: true,
+        breakpoints: {
+          // when window width is >= 320px
+          420: {
+            slidesPerView: 2,
+            spaceBetween: 140,
+          },
+          // when window width is >= 480px
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 110,
+          },
+          // when window width is >= 640px
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 190,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 70,
+          },
+          1400: {
+            slidesPerView: 4,
+            spaceBetween: 20,
           },
         },
       });
@@ -2028,34 +2076,39 @@
     </script>
     <script>
       var swiper = new Swiper(".mySwiper4", {
-        slidesPerView: 3,
-        freeMode: true,
-        spaceBetween: 30,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        rewind: true,
+        loop: true,
+        // freeMode: true,
+
+        updateOnWindowResize: true,
+
+        // Responsive breakpoints
         breakpoints: {
-          500: {
-            slidesPerView: 1,
-            spaceBetween: -50,
-            centeredSlides: false,
+          // when window width is >= 320px
+          420: {
+            slidesPerView: 2,
+            spaceBetween: 370,
           },
-          740: {
-            slidesPerView: 3,
-            spaceBetween: 390,
-            centeredSlides: false,
+          // when window width is >= 480px
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 340,
           },
-          968: {
+          // when window width is >= 640px
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 170,
+          },
+          992: {
             slidesPerView: 3,
             spaceBetween: 350,
-            centeredSlides: false,
           },
-          1399: {
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 200,
+          },
+          1400: {
             slidesPerView: 3,
             spaceBetween: 30,
-            centeredSlides: false,
           },
         },
       });
