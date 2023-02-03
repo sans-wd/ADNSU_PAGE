@@ -1214,4 +1214,23 @@ ul li {
     /* margin-left: 15px; */
     /* margin-right: 15px; */
   }
+  .texno2,
+  .texno,
+  .texno1 {
+    width: 260px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .fakulte_card {
+    height: 370px;
+    width: 320px;
+  }
+  .itclub {
+    width: 295px;
+    height: 266px;
+    padding: 12px;
+
+    /* margin-left: 15px; */
+    /* margin-right: 15px; */
+  }
 }

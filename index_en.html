@@ -1582,7 +1582,7 @@
           <div class="swiper-slide">
             <div class="fakulte_card">
               <h1><img src="./img/geoloji.png" alt="" /></h1>
-              <h2>Faculty ofGeological Exploration</h2>
+              <h2>Faculty of Geological Exploration</h2>
               <p>
                 Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
                 yanaşı filan şeylər edilir.
@@ -1602,7 +1602,7 @@
           <div class="swiper-slide">
             <div class="fakulte_card">
               <h1><img src="./img/kimya.png" alt="" /></h1>
-              <h2>Chemical Technology</h2>
+              <h2>Faculty of Chemical Technology</h2>
               <p>
                 Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
                 yanaşı filan şeylər edilir.
@@ -1787,7 +1787,7 @@
             </div>
             <div class="swiper-slide">
               <div class="itclub sabah">
-                <img src="./img/sbah_group.png" alt="" />
+                <img class="img-fluid" src="./img/sbah_group.png" alt="" />
                 <h4 class="thesame">Sabah Qrupları</h4>
                 <h5>
                   Fakültədə filan sahədə filan bilgilər öyrədilir və bununla
@@ -2036,32 +2036,43 @@
         },
         rewind: true,
         breakpoints: {
+          375: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            centeredSlides: true,
+          },
           // when window width is >= 320px
-          420: {
+          450: {
             slidesPerView: 2,
             spaceBetween: 140,
+            centeredSlides: false,
           },
           // when window width is >= 480px
           576: {
             slidesPerView: 2,
             spaceBetween: 110,
+            centeredSlides: false,
           },
           // when window width is >= 640px
           768: {
             slidesPerView: 3,
             spaceBetween: 190,
+            centeredSlides: false,
           },
           992: {
             slidesPerView: 3,
             spaceBetween: 20,
+            centeredSlides: false,
           },
           1200: {
             slidesPerView: 4,
             spaceBetween: 70,
+            centeredSlides: false,
           },
           1400: {
             slidesPerView: 4,
             spaceBetween: 20,
+            centeredSlides: false,
           },
         },
       });
@@ -2088,6 +2099,10 @@
         // Responsive breakpoints
         breakpoints: {
           // when window width is >= 320px
+          325: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+          },
           375: {
             slidesPerView: 1,
             spaceBetween: 100,
