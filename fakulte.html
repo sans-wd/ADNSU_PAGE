@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADNSU</title>
+    <!-- BS5 CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/fakulte.css" />
+  </head>
+  <body>
+    <div id="myOverlay" class="overlay" style="z-index: 9999999">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+        >×</span
+      >
+      <div class="overlay-content">
+        <form
+          action="/action_page.php"
+          class="d-flex justify-content-center align-items-center"
+        >
+          <input
+            type="text"
+            placeholder="Search.."
+            name="search"
+            autocomplete="off"
+          />
+          <button type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <nav class="scroll_nav">
+      <div class="mystyle12" id="nav" bis_skin_checked="1">
+        <div class="container" bis_skin_checked="1">
+          <div
+            class="row d-flex justify-content-between align-items-center nav1"
+            bis_skin_checked="1"
+          >
+            <div class="col-3 mystyle1" bis_skin_checked="1">
+              <a href="#home" bis_skin_checked="1" class="active">
+                <img
+                  id="disp2"
+                  src="./img/nav_logo__01.png"
+                  class="display2"
+                  alt=""
+                  width="200px"
+                  height="34"
+                />
+                <img
+                  id="disp"
+                  class="display1"
+                  src="./img/nav_Logo.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="col-9 top_nav_info" bis_skin_checked="1">
+              <ul class="top">
+                <li>
+                  <a href="#heber" bis_skin_checked="1" class="">News</a>
+                </li>
+                <li>
+                  <a href="#goster" bis_skin_checked="1" class=""
+                    >Facts and numbers</a
+                  >
+                </li>
+                <li>
+                  <a href="#partner" bis_skin_checked="1" class="">Partners</a>
+                </li>
+                <li><a href="#">I have an idea</a></li>
+                <li><a href="#">Contact</a></li>
+                <!-- <li><i class="fa-solid fa-magnifying-glass"></i></li> -->
+                <li>
+                  <!-- <div class="dropdown">
+                      <button
+                        type="button"
+                        class="btn btn-light mybtn4"
+                        data-bs-toggle="dropdown"
+                      >
+                        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                      </button>
+                      <ul class="dropdown-menu mydropdown-menu">
+                        <li class="float-end">
+                          <input type="search" placeholder="Search..." />
+                        </li>
+                        <li class="float-end">
+                          <input type="submit" placeholder="Search..." />
+                        </li>
+                      </ul>
+                    </div> -->
+
+                  <button class="openBtn" onclick="openSearch()">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </li>
+
+                <style></style>
+              </ul>
+            </div>
+            <!-- djsdj
+              sdrjsrj
+              sj
+              sjr
+              sj
+              sj
+              j
+              jqueryrj
+              sjr
+              sHaraejea
+              aejaeajaejr -->
+
+            <div
+              class="col-9 top_nav_burger d-flex justify-content-end"
+              bis_skin_checked="1"
+            >
+              <div
+                id="mySidepanel"
+                class="sidepanel"
+                bis_skin_checked="1"
+                style="width: 0px"
+              >
+                <div bis_skin_checked="1">
+                  <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    bis_skin_checked="1"
+                    >×</a
+                  >
+                  <a href="#">News</a>
+                  <a href="#">Facts and numbers</a>
+                  <a href="#">Partners</a>
+                  <a href="#">I have an idea</a>
+                  <a href="#">Contact</a>
+                  <a
+                    data-bs-toggle="collapse"
+                    href="#collapseExample"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                    bis_skin_checked="1"
+                    class="collapsed"
+                    >ASOIU <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div
+                    class="child_mobile colapse_body collapse"
+                    id="collapseExample"
+                    bis_skin_checked="1"
+                    style=""
+                  >
+                    <li class="mobile_header">ASOIU</li>
+                    <li><a href="#">Welcome speech of the rector</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">ASOIU History</a></li>
+                    <li><a href="#">ASOIU Structure</a></li>
+
+                    <li><a href="#">Facts and numbers</a></li>
+                    <li>
+                      <a href="#">Contact</a>
+                    </li>
+
+                    <li><a href="#">Management Board</a></li>
+
+                    <li>
+                      <a
+                        data-bs-toggle="collapse"
+                        href="#collapseExample8"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapseExample8"
+                        bis_skin_checked="1"
+                        class="collapsed"
+                        >Administrative departments
+                        <i class="fa-solid fa-chevron-down"></i
+                      ></a>
+                    </li>
+                    <div
+                      class="child_mobile2 colapse_body collapse"
+                      id="collapseExample8"
+                      bis_skin_checked="1"
+                      style=""
+                    >
+                      <li>
+                        <a href="#">International affairs department</a>
+                      </li>
+                      <li>
+                        <a href="#"
+                          >Public Relations and Communication Department</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Educational-Methodical department</a>
+                      </li>
+                      <li>
+                        <a href="#">Financial department</a>
+                      </li>
+                      <li>
+                        <a href="#">Human resources department</a>
+                      </li>
+                    </div>
+                    <li>
+                      <a
+                        data-bs-toggle="collapse"
+                        href="#collapseExample9"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapseExample9"
+                        bis_skin_checked="1"
+                        >Centers <i class="fa-solid fa-chevron-down"></i
+                      ></a>
+                    </li>
+                    <div
+                      class="collapse child_mobile2 colapse_body"
+                      id="collapseExample9"
+                      bis_skin_checked="1"
+                    >
+                      <li>
+                        <a href="#"
+                          >Digital Development and Innovation Center</a
+                        >
+                      </li>
+
+                      <li><a href="#">Project Management Office</a></li>
+                      <li>
+                        <a href="https://azjhpc.org/" target="_blank"
+                          >HPC center</a
+                        >
+                      </li>
+                    </div>
+                  </div>
+
+                  <a
+                    data-bs-toggle="collapse"
+                    href="#collapseExample1"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample1"
+                    bis_skin_checked="1"
+                    >Academic Offer <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div
+                    class="collapse child_mobile colapse_body"
+                    id="collapseExample1"
+                    bis_skin_checked="1"
+                  >
+                    <li>
+                      <a href="#">Geological Exploration </a>
+                    </li>
+
+                    <li>
+                      <a href="#">Oil and Gas Production </a>
+                    </li>
+
+                    <li><a href="#">Chemical technologies</a></li>
+                    <li>
+                      <a href="#">Oil Mechanical</a>
+                    </li>
+                    <li><a href="#">Power Engineering</a></li>
+                    <li>
+                      <a href="#"> </a>
+                    </li>
+                    <li>
+                      <a href="./fakulte.html"
+                        >Information technologies and Management</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="#">Economy and Management</a>
+                    </li>
+                    <li><a href="#">BA Programs</a></li>
+                    <li>
+                      <a href="http://www.sabah.edu.az/" target="_blank"
+                        >SABAH Groups</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">College of Industry and Technology</a>
+                    </li>
+                    <li><a href="#">IESDRI</a></li>
+                    <li style="border-radius: 0 0 15px 15px">
+                      <a href="#">Azerbaijani – French University (UFAZ)</a>
+                    </li>
+                  </div>
+
+                  <a
+                    data-bs-toggle="collapse"
+                    href="#collapseExample4"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample4"
+                    bis_skin_checked="1"
+                    >Services <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div
+                    class="collapse child_mobile colapse_body"
+                    id="collapseExample4"
+                    bis_skin_checked="1"
+                  >
+                    <li class="mobile_header">Online Services</li>
+                    <li>
+                      <a href="http://lms.adnsu.az/" target="_blank"
+                        >lms.adnsu.az</a
+                      >
+                    </li>
+                    <li><a href="#">Azii Library</a></li>
+                    <li><a href="#">Open doors</a></li>
+                    <li><a href="#">I have an idea</a></li>
+                    <li>
+                      <a href="http://aktzali.asoiu.edu.az/" target="_blank"
+                        >Event’s hall booking</a
+                      >
+                    </li>
+                  </div>
+
+                  <a
+                    data-bs-toggle="collapse"
+                    href="#collapseExample5"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample5"
+                    bis_skin_checked="1"
+                    >Student <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div
+                    class="collapse child_mobile colapse_body"
+                    id="collapseExample5"
+                    bis_skin_checked="1"
+                  >
+                    <li class="mobile_header">Student's life</li>
+                    <li><a href="#">Student's Union</a></li>
+                    <li><a href="#">Student Youth Organization</a></li>
+                    <li>
+                      <a
+                        data-bs-toggle="collapse"
+                        href="#collapseExample6"
+                        role="button"
+                        aria-expanded="false"
+                        aria-controls="collapseExample6"
+                        bis_skin_checked="1"
+                        >Clubs <i class="fa-solid fa-chevron-down"></i
+                      ></a>
+                    </li>
+                    <div
+                      class="collapse child_mobile2 colapse_body"
+                      id="collapseExample6"
+                      bis_skin_checked="1"
+                    >
+                      <li><a href="#">Theatre</a></li>
+                      <li><a href="#">Dance</a></li>
+                      <li><a href="#">Basketball</a></li>
+                      <li><a href="#">Football</a></li>
+                    </div>
+                    <li><a href="#">Student’s Scientific Union</a></li>
+                    <li><a href="#">Social involvment</a></li>
+                    <li><a href="#">Dormitory</a></li>
+                    <li class="mobile_header">Personal development</li>
+
+                    <li><a href="#">eazi START</a></li>
+                    <li><a href="#">AziiEduLab</a></li>
+                  </div>
+                  <a
+                    data-bs-toggle="collapse"
+                    href="#collapseExample7"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample7"
+                    bis_skin_checked="1"
+                    >Admission <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div
+                    class="collapse child_mobile colapse_body"
+                    id="collapseExample7"
+                    bis_skin_checked="1"
+                  >
+                    <li>
+                      <a href="#">Domestic </a>
+                    </li>
+
+                    <li><a href="#">Foreign</a></li>
+                  </div>
+
+                  <a
+                    data-bs-toggle="collapse"
+                    href="#collapseExample10"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample10"
+                    bis_skin_checked="1"
+                    >Careers <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <div
+                    class="collapse child_mobile colapse_body"
+                    id="collapseExample10"
+                    bis_skin_checked="1"
+                  >
+                    <li>
+                      <a href="http://career.asoiu.edu.az/" target="_blank"
+                        >Alumni and career development Center</a
+                      >
+                    </li>
+                    <li><a href="#">ASOIU Summer School 2023</a></li>
+                    <li><a href="#">Azerbaijani Language Courses</a></li>
+                    <li><a href="#">Internship</a></li>
+                  </div>
+                </div>
+              </div>
+
+              <button class="openbtn" onclick="openNav()">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <button class="openBtn" onclick="openSearch()">
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+              </button>
+              <script>
+                function openNav() {
+                  document.getElementById("mySidepanel").style.width = "100%";
+                }
+
+                function closeNav() {
+                  document.getElementById("mySidepanel").style.width = "0";
+                }
+              </script>
+            </div>
+            <!-- djsdj
+              sdrjsrj
+              sj
+              sjr
+              sj
+              sj
+              j
+              jqueryrj
+              sjr
+              sHaraejea
+              aejaeajaejr -->
+          </div>
+          <ul
+            class="bottom pt-3 d-flex justify-content-center align-items-center"
+          >
+            <header id="nav2">
+              <nav class="navbar">
+                <ul>
+                  <li>
+                    <a href="#"
+                      >ASOIU <i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <ul style="width: 230px">
+                      <li
+                        class="main_header"
+                        style="border-top-left-radius: 15px; margin-top: 15px"
+                      >
+                        About US
+                      </li>
+                      <li><a href="#">Welcome speech of the rector</a></li>
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">ASOIU History</a></li>
+                      <li><a href="#">ASOIU Structure</a></li>
+
+                      <li><a href="#">Facts and numbers</a></li>
+                      <li
+                        style="
+                          border-bottom-left-radius: 15px;
+                          padding-bottom: 10px;
+                        "
+                      >
+                        <a href="#">Contact</a>
+                        <br />
+                      </li>
+                    </ul>
+                    <ul class="second" style="width: 190px; left: 230px">
+                      <li
+                        class="main_header"
+                        style="border-top-right-radius: 15px; margin-top: 15px"
+                      >
+                        <br />
+                        <br />
+                      </li>
+                      <li><a href="#">Management Board</a></li>
+                      <li>
+                        <a href="#">Administrative departments &gt;</a>
+                        <ul style="left: 190px">
+                          <li
+                            style="
+                              border-radius: 15px 15px 0 0;
+                              margin-left: 8px;
+                            "
+                          >
+                            <a href="#">International affairs department</a>
+                          </li>
+
+                          <li style="margin-left: 8px">
+                            <a href="#"
+                              >Public Relations and Communication Department</a
+                            >
+                          </li>
+                          <li style="margin-left: 8px">
+                            <a href="#">Educational-Methodical department</a>
+                          </li>
+                          <li style="margin-left: 8px">
+                            <a href="#">Financial departmen</a>
+                          </li>
+
+                          <li
+                            style="
+                              border-radius: 0 0 15px 15px;
+                              margin-left: 8px;
+                            "
+                          >
+                            <a href="#">Human resources department</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Centers &gt;</a>
+                        <ul style="left: 190px">
+                          <li
+                            style="
+                              border-radius: 15px 15px 0 0;
+                              margin-left: 8px;
+                            "
+                          >
+                            <a href="#"
+                              >Digital Development and Innovation Center</a
+                            >
+                          </li>
+
+                          <li style="margin-left: 8px">
+                            <a href="#">Project Management Office</a>
+                          </li>
+
+                          <li
+                            style="
+                              border-radius: 0 0 15px 15px;
+                              margin-left: 8px;
+                            "
+                          >
+                            <a href="https://azjhpc.org/" target="_blank"
+                              >HPC center</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <br />
+                      </li>
+                      <li
+                        style="
+                          padding-bottom: 40px;
+                          border-radius: 0 0 15px 0px;
+                        "
+                      >
+                        <br />
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Academic Offer <i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <ul style="width: 350px">
+                      <li
+                        style="border-radius: 15px 15px 0 0; margin-top: 15px"
+                      >
+                        <a href="#">Geological Exploration </a>
+                      </li>
+                      <li>
+                        <a href="#">Oil and Gas Production</a>
+                      </li>
+                      <li>
+                        <a href="#">Chemical technologies</a>
+                      </li>
+                      <li>
+                        <a href="#">Oil Mechanical</a>
+                      </li>
+                      <li>
+                        <a href="#">Power Engineering</a>
+                      </li>
+                      <li>
+                        <a href="./fakulte.html"
+                          >Information technologies and Management</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#">Economy and Management</a>
+                      </li>
+                      <li>
+                        <a href="#">BA Programs</a>
+                      </li>
+                      <li>
+                        <a href="#">College of Industry and Technology</a>
+                      </li>
+                      <li>
+                        <a href="#">IESDRI</a>
+                      </li>
+                      <li>
+                        <a href="http://www.sabah.edu.az/" target="_blank"
+                          >SABAH Group</a
+                        >
+                      </li>
+                      <li style="border-radius: 0 0 15px 15px">
+                        <a href="#">Azerbaijani – French University (UFAZ)</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="#"
+                      >Services <i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <ul>
+                      <li
+                        class="main_header"
+                        style="
+                          border-radius: 15px 15px 0 0;
+                          padding-left: 10px;
+                          margin-top: 15px;
+                        "
+                      >
+                        Online Services
+                      </li>
+                      <li>
+                        <a href="http://lms.adnsu.az/" target="_blank"
+                          >lms.adnsu.az
+                        </a>
+                      </li>
+                      <li><a href="#">Azii Library</a></li>
+                      <li><a href="#">Open doors</a></li>
+                      <li><a href="#">I have an idea</a></li>
+                      <li style="border-radius: 0 0 15px 15px">
+                        <a href="http://aktzali.asoiu.edu.az/" target="_blank"
+                          >Event’s hall booking</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="#"
+                      >Student <i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <ul style="width: 250px">
+                      <li
+                        class="main_header"
+                        style="border-top-left-radius: 15px; margin-top: 15px"
+                      >
+                        Student's life
+                      </li>
+                      <li><a href="#">Student's Union</a></li>
+                      <li><a href="#">Student Youth Organization</a></li>
+                      <li
+                        style="
+                          border-bottom-left-radius: 15px;
+                          padding-bottom: 10px;
+                        "
+                      >
+                        <a href="#">&lt; Clubs</a>
+                        <br />
+                        <ul style="left: -200px">
+                          <li
+                            style="
+                              border-radius: 15px 15px 0 0;
+                              margin-left: -8px;
+                            "
+                          >
+                            <a href="#">Theatre</a>
+                          </li>
+                          <li style="margin-left: -8px">
+                            <a href="#">Dance</a>
+                          </li>
+                          <li style="margin-left: -8px">
+                            <a href="#">Football</a>
+                          </li>
+                          <li
+                            style="
+                              border-radius: 0 0 15px 15px;
+                              margin-left: -8px;
+                            "
+                          >
+                            <a href="#">Basketball</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <ul class="second" style="width: 230px; left: 250px">
+                      <li
+                        class="main_header"
+                        style="border-top-right-radius: 15px; margin-top: 15px"
+                      >
+                        Personal Development
+                      </li>
+                      <li><a href="#">eazi START</a></li>
+                      <li><a href="#">AziiEduLab</a></li>
+                      <li style="color: transparent; padding: 5px 20px">
+                        <br />
+                      </li>
+                      <li
+                        style="
+                          border-bottom-right-radius: 15px;
+                          color: transparent;
+                          padding: 5px 20px;
+                          padding-bottom: 27px;
+                        "
+                      >
+                        <br />
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="#"
+                      >Admission <i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <ul>
+                      <li
+                        style="border-radius: 15px 15px 0 0; margin-top: 15px"
+                      >
+                        <a href="#">Domestic </a>
+                      </li>
+
+                      <li style="border-radius: 0 0 15px 15px">
+                        <a href="#">Foreign </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Careers <i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <ul>
+                      <li
+                        style="border-radius: 15px 15px 0 0; margin-top: 15px"
+                      >
+                        <a href="http://career.asoiu.edu.az/" target="_blank"
+                          >Alumni and career development Center</a
+                        >
+                      </li>
+                      <li><a href="#">ASOIU Summer School 2023</a></li>
+                      <li><a href="#">Azerbaijani Language Courses</a></li>
+                      <li style="border-radius: 0 0 15px 15px">
+                        <a href="#">Internship</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </header>
+          </ul>
+        </div>
+      </div>
+      <script>
+        window.onscroll = function () {
+          myFunction();
+        };
+
+        function myFunction() {
+          if (document.documentElement.scrollTop < 140) {
+            document.getElementById("nav").className = "mystyle";
+          } else {
+            document.getElementById("nav").className = "mystyle12";
+          }
+
+          if (document.documentElement.scrollTop < 140) {
+            document.getElementById("disp").className = "display2";
+            document.getElementById("disp2").className = "display1";
+          } else {
+            document.getElementById("disp").className = "display1";
+            document.getElementById("disp2").className = "display2";
+          }
+          if (document.documentElement.scrollTop < 380) {
+            document.getElementById("photo").className = "position-fixed";
+          } else {
+            document.getElementById("photo").className = "dispnon";
+          }
+        }
+      </script>
+    </nav>
+    <div class="container-fluid fakulte_header_back">
+      <div class="container">
+        <div
+          class="fakulte_name d-flex justify-content-center align-items-center"
+        >
+          <h1>Information technologies and Management</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div
+        class="fakulte_logo d-flex justify-content-center align-items-center"
+      >
+        <img class="img-fluid" src="./img/Faculty Logo.png" alt="" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="fakulte_content position-relative">
+        <div class="row">
+          <div
+            class="col-lg-10"
+            data-bs-spy="scroll"
+            data-bs-target="#navbar-example3"
+            data-bs-smooth-scroll="true"
+            class="scrollspy-example-2"
+            tabindex="1"
+          >
+            <div class="fakulte_text_content">
+              <div class="faculte_news" id="news">
+                <h1 class="content_header pt-0">Faculty news</h1>
+                <div class="swiper mySwiper2">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div
+                        class="row justify-content-center align-items-center d-flex"
+                      >
+                        <div class="col-xl-3 col-lg-4 col-sm-12">
+                          <a
+                            href="./28 January, 2023/news.html"
+                            target="_blank"
+                          >
+                            <div class="heber_card position-relative">
+                              <div class="heber_img">
+                                <img
+                                  src="./img/eng_heber.jpg"
+                                  alt=""
+                                  width="100%"
+                                  height="201.48px"
+                                />
+                              </div>
+                              <div class="heber_date position-absolute">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>28 January, 2023</span>
+                              </div>
+                              <div class="heber_text_data">
+                                <h4>ASOIU Academic Board in 2023</h4>
+                                <p>
+                                  On January 25, a regular meeting of the
+                                  Academic Board
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-sm-12">
+                          <a href="./24 Junuary/news.html" target="_blank">
+                            <div class="heber_card position-relative">
+                              <div class="heber_img">
+                                <img
+                                  src="./img/heber.png"
+                                  alt=""
+                                  width="100%"
+                                  height="201.48px"
+                                />
+                              </div>
+                              <div class="heber_date position-absolute">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>24 January, 2023</span>
+                              </div>
+                              <div class="heber_text_data">
+                                <h4>Technical-Popular series in ASOIU</h4>
+                                <p>
+                                  On January 24, the Azerbaijan State Oil and
+                                  Industry University
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-12">
+                          <a
+                            href="./19 January, 2023/news.html"
+                            target="_blank"
+                          >
+                            <div class="heber_card position-relative">
+                              <div class="heber_img">
+                                <img
+                                  src="./img/heber_4_en.jpg"
+                                  alt=""
+                                  width="100%"
+                                  height="201.48px"
+                                />
+                              </div>
+                              <div class="heber_date position-absolute">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>20 January, 2023</span>
+                              </div>
+                              <div class="heber_text_data">
+                                <h4>
+                                  ASOIU commemorates martyrs of January 20
+                                </h4>
+                                <p>
+                                  On January 19, an event dedicated to the
+                                  memory of January 20
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div
+                        class="row justify-content-center align-items-center d-flex"
+                      >
+                        <div class="col-xl-3 col-lg-4 col-sm-12">
+                          <a
+                            href="./kitabhana_20yanvar/news.html"
+                            target="_blank"
+                          >
+                            <div class="heber_card position-relative">
+                              <div class="heber_img">
+                                <img
+                                  src="./img/heber_en_6.jpg"
+                                  alt=""
+                                  width="100%"
+                                  height="201.48px"
+                                />
+                              </div>
+                              <div class="heber_date position-absolute">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>18 January, 2023</span>
+                              </div>
+                              <div class="heber_text_data">
+                                <h4>
+                                  AzII e-Book exhibition edicated to the January
+                                  20 tragedy
+                                </h4>
+                                <p>
+                                  On January 18, 2023, a book exhibition was
+                                  organised in AzII e-Book House
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-12">
+                          <a href="./18intership/news.html" target="_blank">
+                            <div class="heber_card position-relative">
+                              <div class="heber_img">
+                                <img
+                                  src="./img/en_heber_8.jpg"
+                                  alt=""
+                                  width="100%"
+                                  height="201.48px"
+                                />
+                              </div>
+                              <div class="heber_date position-absolute">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>18 January, 2023</span>
+                              </div>
+                              <div class="heber_text_data">
+                                <h4>
+                                  ASOIU students receive certificate of
+                                  successfully ending
+                                </h4>
+                                <p>
+                                  On January 18, the Azerbaijan State Oil and
+                                  Industry University hosted a ceremony
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-sm-12">
+                          <a href="./kaspian_energy/news.html" target="_blank">
+                            <div class="heber_card position-relative">
+                              <div class="heber_img">
+                                <img
+                                  src="./img/eng_event2.jpg"
+                                  alt=""
+                                  width="100%"
+                                  height="201.48px"
+                                />
+                              </div>
+                              <div class="heber_date position-absolute">
+                                <i class="fa-solid fa-calendar"></i>
+                                <span>18 January, 2023</span>
+                              </div>
+                              <div class="heber_text_data">
+                                <h4>
+                                  ASOIU and Caspian Energy Club ink memorandum
+                                  of cooperation
+                                </h4>
+                                <p>
+                                  A delegation of up to 30 entrepreneurs headed
+                                  by Telman Aliyev, the Chairman of the Board
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next myprev3"></div>
+                  <div class="swiper-button-prev mynext3"></div>
+                </div>
+              </div>
+
+              <div class="about_faculty" id="about">
+                <h1 class="content_header">About ITM</h1>
+                <p>
+                  “İnformasiya texnologiyaları və idarəetmə” fakültəsinin əsası
+                  1961-ci ildə “İstehsalat proseslərinin avtomatlaşdırılması”
+                  fakültəsinin yaranması ilə qoyulub. Bu fakültə energetika,
+                  neft-qaz və neft-kimya sahələrinin avtomatlaşdırılması,
+                  idarəolunması və onları həyata keçirməyə imkan verən texniki
+                  vasitələrin işlənməsi və istismarı problemləri ilə bağlı
+                  tarixi zərurət nəticəsində yaranıb.
+                </p>
+              </div>
+              <div class="fakulty_departments" id="dep">
+                <h1 class="content_header">Departments</h1>
+                <div class="swiper mySwiper_fakulte">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="fakulte_dep_card">
+                        <h1><img src="./img/fak_pc_engneer.png" alt="" /></h1>
+                        <h2>Computer Engineering</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="fakulte_dep_card">
+                        <h1><img src="./img/fak_inst_control.png" alt="" /></h1>
+                        <h2>Instrument and Control Engineering</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="fakulte_dep_card">
+                        <h1><img src="./img/fak_robotronik.png" alt="" /></h1>
+                        <h2>Robotics Engineering</h2>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="fakulte_dep_card">
+                        <h1><img src="./img/fak_apllied_math.png" alt="" /></h1>
+                        <h2>General and Applied Mathematics</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fakulte_teachers" id="teacher">
+                <div
+                  class="fakulte_teach_selector d-flex justify-content-between align-items-center"
+                >
+                  <h1 class="content_header">Teachers</h1>
+                  <span> <a href="#"> All Teachers</a></span>
+                </div>
+                <div class="swiper mySwiper_techers">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="fak_teach_card">
+                        <div class="techer_img position-relative">
+                          <img src="./img/fak_teacher_1.png" alt="" />
+                          <div class="fak_tech_icons position-absolute">
+                            <a href="#"
+                              ><i class="fa-solid fa-address-book fa-lg"></i
+                            ></a>
+                            <a href="#">
+                              <i class="fa-solid fa-circle-info fa-lg"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="fak_teacher_info pt-1">
+                          <h1>Vaqif Səlimov</h1>
+                          <p>Associate Professor</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="fak_teach_card">
+                        <div class="techer_img position-relative">
+                          <img src="./img/fak_teacher_3.png" alt="" />
+                          <div class="fak_tech_icons position-absolute">
+                            <a href="#"
+                              ><i class="fa-solid fa-address-book fa-lg"></i
+                            ></a>
+                            <a href="#">
+                              <i class="fa-solid fa-circle-info fa-lg"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="fak_teacher_info pt-1">
+                          <h1>Bahar Əsgərova</h1>
+                          <p>Associate Professor</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="fak_teach_card">
+                        <div class="techer_img position-relative">
+                          <img src="./img/fak_teacher_2.png" alt="" />
+                          <div class="fak_tech_icons position-absolute">
+                            <a href="#"
+                              ><i class="fa-solid fa-address-book fa-lg"></i
+                            ></a>
+                            <a href="#">
+                              <i class="fa-solid fa-circle-info fa-lg"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="fak_teacher_info pt-1">
+                          <h1>Yaşar Hacıyev</h1>
+                          <p>Associate Professor</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="fak_teach_card">
+                        <div class="techer_img position-relative">
+                          <img src="./img/fak_teacher_4.png" alt="" />
+                          <div class="fak_tech_icons position-absolute">
+                            <a href="#"
+                              ><i class="fa-solid fa-address-book fa-lg"></i
+                            ></a>
+                            <a href="#">
+                              <i class="fa-solid fa-circle-info fa-lg"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="fak_teacher_info pt-1">
+                          <h1>Elçin Məlikov</h1>
+                          <p>Associate Professor</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fakulte_labs" id="labs">
+                <h1 class="content_header">Lab rooms</h1>
+                <div class="swiper mySwiper_fak_labs">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="lab_card">
+                        <div class="lab_card_back_img">
+                          <div class="lab_card_info">
+                            <h1>PC Room</h1>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="lab_card">
+                        <div class="lab_card_back_img">
+                          <div class="lab_card_info">
+                            <h1>PC Room</h1>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="lab_card">
+                        <div class="lab_card_back_img">
+                          <div class="lab_card_info">
+                            <h1>PC Room</h1>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="lab_card">
+                        <div class="lab_card_back_img">
+                          <div class="lab_card_info">
+                            <h1>PC Room</h1>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 fak_mob_none">
+            <div class="fakulte_stiky_side_bar">
+              <nav id="navbar-example3" class="scrollspy-example-2">
+                <nav class="nav nav-pills flex-column">
+                  <h1 class="fak_side_bar_header">Faculty</h1>
+                  <a class="nav-link" href="#news">News</a>
+
+                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#dep">Departments</a>
+                  <a class="nav-link" href="#teacher">Teaachers</a>
+                  <a class="nav-link" href="#labs">Laboratories</a>
+                  <a class="nav-link" href="#item-3">Contact</a>
+                </nav>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="container-fluid mystyle2">
+        <div class="container">
+          <div class="row marg cred">
+            <div class="col-lg-3 col-sm-12 mystyle4 cred">
+              <img src="./img/nav_Logo.png" alt="" />
+              <br />
+              <span class="first"
+                >Azərbaycan <br />
+                Dövlət <br />
+                Neft və <br />
+                Sənaye <br />
+                Universiteti</span
+              >
+            </div>
+            <div class="col-lg-3 col-sm-12 mystyle4 first1">
+              <ul>
+                <h4 class="myclass1">Academic Offer</h4>
+                <li>Faculty of Geological Exploration</li>
+                <li>Faculty of Oil and Gas Production</li>
+                <li>Faculty of Chemical Technology</li>
+                <li>Faculty of Oil Mechanical Engineering</li>
+                <li>Energetika</li>
+                <li>Faculty of Power Engineering</li>
+                <li>Faculty of Economics and Management</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-12 mystyle4 first1">
+              <ul>
+                <h4 class="myclass1">Programs</h4>
+                <li>BA Programs</li>
+                <li>Yay Məktəbi</li>
+                <li>SABAH Groups</li>
+                <li>eazi Start</li>
+                <li>IT Club</li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-12 mystyle4 first1">
+              <ul>
+                <h4 class="myclass1">Services</h4>
+                <li>LMS</li>
+                <li>Azii – e library</li>
+                <li>Project Management Office</li>
+                <li>HPC</li>
+                <li>Dormitory</li>
+              </ul>
+            </div>
+          </div>
+          <hr class="myclass3" />
+          <div class="footer myclass11 first1">
+            <ul class="fff">
+              <li>About us</li>
+              <li>FAQ</li>
+              <li>I have a suggestion</li>
+              <li>Contact</li>
+            </ul>
+            <div
+              class="nav social-icons justify-content-center text-sm-center justify-content-md-end mycl"
+            >
+              <a class="myclass1 myclass" href=""
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+
+              <a class="myclass" href=""
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a class="myclass" href=""
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+  <script>
+    function openSearch2() {
+      document.getElementById("myOverlay2").style.display = "block";
+    }
+
+    function closeSearch2() {
+      document.getElementById("myOverlay2").style.display = "none";
+    }
+  </script>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+<script>
+  var swiper = new Swiper(".mySwiper_fakulte", {
+    loop: true,
+    breakpoints: {
+      375: {
+        slidesPerView: 1,
+        spaceBetween: 100,
+      },
+      // when window width is >= 320px
+      420: {
+        slidesPerView: 3,
+        spaceBetween: 250,
+      },
+      // when window width is >= 480px
+      576: {
+        slidesPerView: 3,
+        spaceBetween: 240,
+      },
+      // when window width is >= 640px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 150,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 70,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: -80,
+      },
+      1400: {
+        slidesPerView: 3,
+        spaceBetween: -250,
+      },
+    },
+  });
+</script>
+<script>
+  var swiper = new Swiper(".mySwiper_techers", {
+    loop: true,
+    breakpoints: {
+      375: {
+        slidesPerView: 1,
+        spaceBetween: 60,
+      },
+      // when window width is >= 320px
+      420: {
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 100,
+      },
+      // when window width is >= 640px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 250,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 180,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1400: {
+        slidesPerView: 3,
+        spaceBetween: -150,
+      },
+    },
+  });
+</script>
+<script>
+  var swiper = new Swiper(".mySwiper_fak_labs", {
+    loop: true,
+    breakpoints: {
+      375: {
+        slidesPerView: 1,
+        spaceBetween: 110,
+      },
+      // when window width is >= 320px
+      420: {
+        slidesPerView: 1.5,
+        spaceBetween: 100,
+      },
+      // when window width is >= 480px
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 180,
+      },
+      // when window width is >= 640px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 330,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 260,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 100,
+      },
+      1400: {
+        slidesPerView: 4,
+        spaceBetween: 260,
+      },
+    },
+  });
+</script>

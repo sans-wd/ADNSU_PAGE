@@ -1,0 +1,175 @@
+body {
+  position: relative;
+}
+.mystyle1 img {
+  scale: 1 !important;
+}
+.fakulte_header_back {
+  background: url(../img/fakulte_head_background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: gray;
+  background-blend-mode: multiply;
+}
+
+.fakulte_name {
+  height: 48vh;
+}
+.fakulte_text_content {
+  /* padding-right: 10px; */
+}
+.fakulte_name h1 {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.fakulte_logo {
+  margin-top: -121.5px;
+}
+.about_faculty p {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.0008em;
+  color: #1a265c;
+  text-align: justify;
+}
+.fakulte_dep_card {
+  width: 243px;
+  height: 256px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30.88px;
+}
+.fakulte_dep_card h2 {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  color: #1a265c;
+}
+.fakulte_teach_selector span a {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.0008em;
+  color: #617eff;
+  text-decoration: none;
+}
+.fak_teach_card {
+  width: 276px;
+  height: 337px;
+}
+.techer_img {
+  width: 276px;
+  height: 256px;
+}
+.fak_tech_icons {
+  top: 20px;
+  right: 10px;
+}
+.fak_tech_icons a {
+  color: #a4afe5;
+  padding-right: 10px;
+}
+
+.fak_teacher_info h1 {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.0008em;
+  color: #1a265c;
+}
+.fak_teacher_info p {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  color: #617eff;
+}
+
+.lab_card {
+  width: 300px;
+  height: 294px;
+}
+.lab_card_back_img {
+  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
+    url(../img/Lab_room.png);
+  border-radius: 20px;
+  width: 300px;
+  height: 294px;
+  padding: 20px;
+}
+
+.lab_card_info h1 {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  color: #dfe3f6;
+  padding-top: 80%;
+}
+.fakulte_stiky_side_bar {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  position: sticky;
+  top: 130px;
+}
+.fak_side_bar_header {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: #0c122b;
+}
+.fakulte_stiky_side_bar a {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1a265c;
+}
+@media only screen and (max-width: 1399px) {
+  .fak_side_bar_header {
+    font-size: 22px;
+  }
+  .fakulte_stiky_side_bar a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .fak_side_bar_header {
+    font-size: 21px;
+  }
+  .fakulte_stiky_side_bar a {
+    font-size: 14px;
+  }
+  .fakulte_stiky_side_bar {
+    padding: 12px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .fak_mob_none {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+}
