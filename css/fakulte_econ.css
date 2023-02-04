@@ -5,7 +5,7 @@ body {
   scale: 1 !important;
 }
 .fakulte_header_back {
-  background: url(../img/fakulte_head_background.jpg);
+  background: url(../img/fakulte_econ_head_background.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -55,7 +55,7 @@ body {
   font-family: "Albert Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 25px;
   line-height: 38px;
   color: #1a265c;
 }
@@ -76,12 +76,13 @@ body {
 .techer_img {
   width: 100%;
   height: 256px;
-  object-fit: cover;
+  object-fit: fill;
 }
 .techer_img img {
   width: 100%;
   height: 256px;
-  object-fit: fill;
+  object-fit: cover;
+  border-radius: 11px;
 }
 .fak_tech_icons {
   top: 20px;

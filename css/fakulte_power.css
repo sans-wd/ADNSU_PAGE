@@ -5,10 +5,10 @@ body {
   scale: 1 !important;
 }
 .fakulte_header_back {
-  background: url(../img/fakulte_head_background.jpg);
-  background-size: cover;
+  background: url(../img/fakulte_power_head_background.jpg);
+  background-size: initial;
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
   background-color: gray;
   background-blend-mode: multiply;
 }
@@ -34,6 +34,9 @@ body {
 .fakulte_logo {
   margin-top: -121.5px;
 }
+.fakulte_logo img {
+  width: 243px;
+}
 .about_faculty p {
   font-family: "Albert Sans";
   font-style: normal;
@@ -49,15 +52,16 @@ body {
   height: 256px;
   background: #ffffff;
   border-radius: 20px;
-  padding: 30.88px;
+  padding: 20.88px;
 }
 .fakulte_dep_card h2 {
   font-family: "Albert Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 25px;
   line-height: 38px;
   color: #1a265c;
+  word-break: normal;
 }
 .fakulte_teach_selector span a {
   font-family: "Albert Sans";
@@ -77,11 +81,13 @@ body {
   width: 100%;
   height: 256px;
   object-fit: cover;
+  background-color: #dcecfc;
+  border-radius: 11px;
 }
 .techer_img img {
   width: 100%;
   height: 256px;
-  object-fit: fill;
+  object-fit: cover;
 }
 .fak_tech_icons {
   top: 20px;
@@ -116,7 +122,7 @@ body {
 }
 .lab_card_back_img {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room1.jpeg);
+    url(../img/power_lab_room1.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 20px;
@@ -132,35 +138,35 @@ body {
   font-size: 32px;
   line-height: 38px;
   color: #dfe3f6;
-  padding-top: 80%;
+  padding-top: 73%;
 }
 .lab_card_back_img2 {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room2.jpeg);
+    url(../img/power_lab_room2.jpeg);
   background-position: center;
   background-size: cover;
 }
 .lab_card_back_img3 {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room3.jpeg);
+    url(../img/power_lab_room3.jpeg);
   background-position: center;
   background-size: cover;
 }
 .lab_card_back_img4 {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room4.jpeg);
+    url(../img/power_lab_room4.jpeg);
   background-position: center;
   background-size: cover;
 }
 .lab_card_back_img5 {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room5.jpeg);
+    url(../img/power_lab_room5.jpeg);
   background-position: center;
   background-size: cover;
 }
 .lab_card_back_img6 {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room6.jpeg);
+    url(../img/power_lab_room6.jpeg);
   background-position: center;
   background-size: cover;
 }

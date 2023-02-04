@@ -5,16 +5,14 @@ body {
   scale: 1 !important;
 }
 .fakulte_header_back {
-  background: url(../img/fakulte_head_background.jpg);
+  background: url(../img/fakulte_chem_head_background.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-color: gray;
   background-blend-mode: multiply;
 }
-.heber_card {
-  height: 312.47px !important;
-}
+
 .fakulte_name {
   height: 48vh;
 }
@@ -32,7 +30,11 @@ body {
 }
 
 .fakulte_logo {
-  margin-top: -121.5px;
+  margin-top: -101.5px;
+}
+.fakulte_logo img {
+  border-radius: 100px;
+  outline: 10px solid white;
 }
 .about_faculty p {
   font-family: "Albert Sans";
@@ -46,7 +48,7 @@ body {
 }
 .fakulte_dep_card {
   width: 243px;
-  height: 256px;
+  height: 286px;
   background: #ffffff;
   border-radius: 20px;
   padding: 30.88px;
@@ -55,8 +57,8 @@ body {
   font-family: "Albert Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 20px;
+  line-height: 23px;
   color: #1a265c;
 }
 .fakulte_teach_selector span a {
@@ -76,12 +78,13 @@ body {
 .techer_img {
   width: 100%;
   height: 256px;
-  object-fit: cover;
+  object-fit: fill;
 }
 .techer_img img {
   width: 100%;
   height: 256px;
-  object-fit: fill;
+  object-fit: cover;
+  border-radius: 11px;
 }
 .fak_tech_icons {
   top: 20px;
@@ -116,7 +119,7 @@ body {
 }
 .lab_card_back_img {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room1.jpeg);
+    url(../img/chem_lab_room1.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 20px;
@@ -124,7 +127,9 @@ body {
   height: 294px;
   padding: 20px;
 }
-
+.heber_card {
+  height: 312.47px !important;
+}
 .lab_card_info h1 {
   font-family: "Albert Sans";
   font-style: normal;
@@ -132,35 +137,41 @@ body {
   font-size: 32px;
   line-height: 38px;
   color: #dfe3f6;
-  padding-top: 80%;
+  padding-top: 75%;
 }
 .lab_card_back_img2 {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room2.jpeg);
+    url(../img/chem_lab_room2.jpeg);
   background-position: center;
   background-size: cover;
 }
 .lab_card_back_img3 {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room3.jpeg);
+    url(../img/chem_lab_room3.jpeg);
   background-position: center;
   background-size: cover;
 }
 .lab_card_back_img4 {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room4.jpeg);
+    url(../img/chem_lab_room4.jpeg);
   background-position: center;
   background-size: cover;
 }
 .lab_card_back_img5 {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room5.jpeg);
+    url(../img/chem_lab_room5.jpeg);
   background-position: center;
   background-size: cover;
 }
 .lab_card_back_img6 {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room6.jpeg);
+    url(../img/chem_lab_room6.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.lab_card_back_img7 {
+  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
+    url(../img/chem_lab_room7.jpeg);
   background-position: center;
   background-size: cover;
 }

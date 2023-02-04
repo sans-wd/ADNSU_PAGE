@@ -5,7 +5,7 @@ body {
   scale: 1 !important;
 }
 .fakulte_header_back {
-  background: url(../img/fakulte_head_background.jpg);
+  background: url(../img/fakulte_geo_head_background.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -54,9 +54,9 @@ body {
 .fakulte_dep_card h2 {
   font-family: "Albert Sans";
   font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
   color: #1a265c;
 }
 .fakulte_teach_selector span a {
@@ -76,12 +76,13 @@ body {
 .techer_img {
   width: 100%;
   height: 256px;
-  object-fit: cover;
+  object-fit: fill;
 }
 .techer_img img {
   width: 100%;
   height: 256px;
   object-fit: fill;
+  border-radius: 11px;
 }
 .fak_tech_icons {
   top: 20px;
@@ -116,7 +117,7 @@ body {
 }
 .lab_card_back_img {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room1.jpeg);
+    url(../img/geo_lab_room1.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 20px;
@@ -133,36 +134,6 @@ body {
   line-height: 38px;
   color: #dfe3f6;
   padding-top: 80%;
-}
-.lab_card_back_img2 {
-  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room2.jpeg);
-  background-position: center;
-  background-size: cover;
-}
-.lab_card_back_img3 {
-  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room3.jpeg);
-  background-position: center;
-  background-size: cover;
-}
-.lab_card_back_img4 {
-  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room4.jpeg);
-  background-position: center;
-  background-size: cover;
-}
-.lab_card_back_img5 {
-  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room5.jpeg);
-  background-position: center;
-  background-size: cover;
-}
-.lab_card_back_img6 {
-  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room6.jpeg);
-  background-position: center;
-  background-size: cover;
 }
 
 .fakulte_stiky_side_bar {

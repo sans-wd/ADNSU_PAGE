@@ -5,7 +5,7 @@ body {
   scale: 1 !important;
 }
 .fakulte_header_back {
-  background: url(../img/fakulte_head_background.jpg);
+  background: url(../img/fakulte_oil_mech_head_background.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -34,6 +34,9 @@ body {
 .fakulte_logo {
   margin-top: -121.5px;
 }
+.fakulte_logo img {
+  width: 243px;
+}
 .about_faculty p {
   font-family: "Albert Sans";
   font-style: normal;
@@ -49,14 +52,14 @@ body {
   height: 256px;
   background: #ffffff;
   border-radius: 20px;
-  padding: 30.88px;
+  padding: 20.88px;
 }
 .fakulte_dep_card h2 {
   font-family: "Albert Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 25px;
+  line-height: 28px;
   color: #1a265c;
 }
 .fakulte_teach_selector span a {
@@ -81,7 +84,8 @@ body {
 .techer_img img {
   width: 100%;
   height: 256px;
-  object-fit: fill;
+  object-fit: cover;
+  border-radius: 11px;
 }
 .fak_tech_icons {
   top: 20px;
@@ -116,7 +120,7 @@ body {
 }
 .lab_card_back_img {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room1.jpeg);
+    url(../img/oil_mech_lab_room1.jpeg);
   background-position: center;
   background-size: cover;
   border-radius: 20px;
@@ -136,31 +140,25 @@ body {
 }
 .lab_card_back_img2 {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room2.jpeg);
+    url(../img/oil_mech_lab_room2.png);
   background-position: center;
   background-size: cover;
 }
 .lab_card_back_img3 {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room3.jpeg);
+    url(../img/oil_mech_lab_room3.jpg);
   background-position: center;
   background-size: cover;
 }
 .lab_card_back_img4 {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room4.jpeg);
+    url(../img/oil_mech_lab_room4.png);
   background-position: center;
   background-size: cover;
 }
 .lab_card_back_img5 {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room5.jpeg);
-  background-position: center;
-  background-size: cover;
-}
-.lab_card_back_img6 {
-  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room6.jpeg);
+    url(../img/oil_mech_lab_room5.png);
   background-position: center;
   background-size: cover;
 }

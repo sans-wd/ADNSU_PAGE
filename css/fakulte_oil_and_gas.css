@@ -5,7 +5,7 @@ body {
   scale: 1 !important;
 }
 .fakulte_header_back {
-  background: url(../img/fakulte_head_background.jpg);
+  background: url(../img/fakulte_oil_and_gas_head_background.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -13,7 +13,7 @@ body {
   background-blend-mode: multiply;
 }
 .heber_card {
-  height: 312.47px !important;
+  height: 312.47px;
 }
 .fakulte_name {
   height: 48vh;
@@ -34,6 +34,7 @@ body {
 .fakulte_logo {
   margin-top: -121.5px;
 }
+
 .about_faculty p {
   font-family: "Albert Sans";
   font-style: normal;
@@ -46,18 +47,19 @@ body {
 }
 .fakulte_dep_card {
   width: 243px;
-  height: 256px;
+  height: 266px;
   background: #ffffff;
   border-radius: 20px;
-  padding: 30.88px;
+  padding: 20.88px;
 }
 .fakulte_dep_card h2 {
   font-family: "Albert Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: 23px;
+  line-height: 33px;
   color: #1a265c;
+  word-break: normal;
 }
 .fakulte_teach_selector span a {
   font-family: "Albert Sans";
@@ -81,7 +83,8 @@ body {
 .techer_img img {
   width: 100%;
   height: 256px;
-  object-fit: fill;
+  object-fit: cover;
+  border-radius: 11px;
 }
 .fak_tech_icons {
   top: 20px;
@@ -116,7 +119,7 @@ body {
 }
 .lab_card_back_img {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/lab_room1.jpeg);
+    url(../img/oil_and_gas_lab_room1.jpg);
   background-position: center;
   background-size: cover;
   border-radius: 20px;
