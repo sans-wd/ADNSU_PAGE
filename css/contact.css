@@ -1,0 +1,16 @@
+.contact_header_back {
+  background: linear-gradient(
+      0deg,
+      rgba(16, 21, 70, 0.65),
+      rgba(16, 21, 70, 0.65)
+    ),
+    url(../img/about_header_back.png), #eceefe;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center right;
+  background-color: gray;
+  background-blend-mode: multiply;
+}
+.contact_name {
+  height: 48vh;
+}
