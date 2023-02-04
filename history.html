@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADNSU</title>
+    <!-- BS5 CDN -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/history.css">
+</head>
+
+<body>
+    <div id="myOverlay" class="overlay" style="z-index: 9999999">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+            <form action="/action_page.php" class="d-flex justify-content-center align-items-center">
+                <input type="text" placeholder="Search.." name="search" autocomplete="off" />
+                <button type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <nav class="scroll_nav">
+        <div class="mystyle12" id="nav" bis_skin_checked="1">
+            <div class="container" bis_skin_checked="1">
+                <div class="row d-flex justify-content-between align-items-center nav1" bis_skin_checked="1">
+                    <div class="col-3 mystyle1" bis_skin_checked="1">
+                        <a href="#home" bis_skin_checked="1" class="active">
+                            <img id="disp2" src="./img/nav_logo__01.png" class="display2" alt="" width="200px"
+                                height="34" />
+                            <img id="disp" class="display1" src="./img/nav_Logo.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-9 top_nav_info" bis_skin_checked="1">
+                        <ul class="top">
+                            <li>
+                                <a href="#heber" bis_skin_checked="1" class="">News</a>
+                            </li>
+                            <li>
+                                <a href="#goster" bis_skin_checked="1" class="">Facts and numbers</a>
+                            </li>
+                            <li>
+                                <a href="#partner" bis_skin_checked="1" class="">Partners</a>
+                            </li>
+                            <li><a href="#">I have an idea</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <!-- <li><i class="fa-solid fa-magnifying-glass"></i></li> -->
+                            <li>
+                                <!-- <div class="dropdown">
+                      <button
+                        type="button"
+                        class="btn btn-light mybtn4"
+                        data-bs-toggle="dropdown"
+                      >
+                        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                      </button>
+                      <ul class="dropdown-menu mydropdown-menu">
+                        <li class="float-end">
+                          <input type="search" placeholder="Search..." />
+                        </li>
+                        <li class="float-end">
+                          <input type="submit" placeholder="Search..." />
+                        </li>
+                      </ul>
+                    </div> -->
+
+                                <button class="openBtn" onclick="openSearch()">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </li>
+
+                            <style></style>
+                        </ul>
+                    </div>
+                    <!-- djsdj
+              sdrjsrj
+              sj
+              sjr
+              sj
+              sj
+              j
+              jqueryrj
+              sjr
+              sHaraejea
+              aejaeajaejr -->
+
+                    <div class="col-9 top_nav_burger d-flex justify-content-end" bis_skin_checked="1">
+                        <div id="mySidepanel" class="sidepanel" bis_skin_checked="1" style="width: 0px">
+                            <div bis_skin_checked="1">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                                    bis_skin_checked="1">×</a>
+                                <a href="#">News</a>
+                                <a href="#">Facts and numbers</a>
+                                <a href="#">Partners</a>
+                                <a href="#">I have an idea</a>
+                                <a href="#">Contact</a>
+                                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                    aria-controls="collapseExample" bis_skin_checked="1" class="collapsed">ASOIU <i
+                                        class="fa-solid fa-chevron-down"></i></a>
+                                <div class="child_mobile colapse_body collapse" id="collapseExample"
+                                    bis_skin_checked="1" style="">
+                                    <li class="mobile_header">ASOIU</li>
+                                    <li><a href="#">Welcome speech of the rector</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">ASOIU History</a></li>
+                                    <li><a href="#">ASOIU Structure</a></li>
+
+                                    <li><a href="#">Facts and numbers</a></li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+
+                                    <li><a href="#">Management Board</a></li>
+
+                                    <li>
+                                        <a data-bs-toggle="collapse" href="#collapseExample8" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample8" bis_skin_checked="1"
+                                            class="collapsed">Administrative departments
+                                            <i class="fa-solid fa-chevron-down"></i></a>
+                                    </li>
+                                    <div class="child_mobile2 colapse_body collapse" id="collapseExample8"
+                                        bis_skin_checked="1" style="">
+                                        <li>
+                                            <a href="#">International affairs department</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Public Relations and Communication Department</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Educational-Methodical department</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Financial department</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Human resources department</a>
+                                        </li>
+                                    </div>
+                                    <li>
+                                        <a data-bs-toggle="collapse" href="#collapseExample9" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample9"
+                                            bis_skin_checked="1">Centers <i class="fa-solid fa-chevron-down"></i></a>
+                                    </li>
+                                    <div class="collapse child_mobile2 colapse_body" id="collapseExample9"
+                                        bis_skin_checked="1">
+                                        <li>
+                                            <a href="#">Digital Development and Innovation Center</a>
+                                        </li>
+
+                                        <li><a href="#">Project Management Office</a></li>
+                                        <li>
+                                            <a href="https://azjhpc.org/" target="_blank">HPC center</a>
+                                        </li>
+                                    </div>
+                                </div>
+
+                                <a data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample1" bis_skin_checked="1">Academic
+                                    Offer <i class="fa-solid fa-chevron-down"></i></a>
+                                <div class="collapse child_mobile colapse_body" id="collapseExample1"
+                                    bis_skin_checked="1">
+                                    <li>
+                                        <a href="#">Geological Exploration </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Oil and Gas Production </a>
+                                    </li>
+
+                                    <li><a href="#">Chemical technologies</a></li>
+                                    <li>
+                                        <a href="#">Oil Mechanical</a>
+                                    </li>
+                                    <li><a href="#">Power Engineering</a></li>
+                                    <li>
+                                        <a href="#"> </a>
+                                    </li>
+                                    <li>
+                                        <a href="./fakulte.html">Information technologies and Management</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Economy and Management</a>
+                                    </li>
+                                    <li><a href="#">BA Programs</a></li>
+                                    <li>
+                                        <a href="http://www.sabah.edu.az/" target="_blank">SABAH Groups</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">College of Industry and Technology</a>
+                                    </li>
+                                    <li><a href="#">IESDRI</a></li>
+                                    <li style="border-radius: 0 0 15px 15px">
+                                        <a href="#">Azerbaijani – French University (UFAZ)</a>
+                                    </li>
+                                </div>
+
+                                <a data-bs-toggle="collapse" href="#collapseExample4" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample4" bis_skin_checked="1">Services
+                                    <i class="fa-solid fa-chevron-down"></i></a>
+                                <div class="collapse child_mobile colapse_body" id="collapseExample4"
+                                    bis_skin_checked="1">
+                                    <li class="mobile_header">Online Services</li>
+                                    <li>
+                                        <a href="http://lms.adnsu.az/" target="_blank">lms.adnsu.az</a>
+                                    </li>
+                                    <li><a href="#">Azii Library</a></li>
+                                    <li><a href="#">Open doors</a></li>
+                                    <li><a href="#">I have an idea</a></li>
+                                    <li>
+                                        <a href="http://aktzali.asoiu.edu.az/" target="_blank">Event’s hall booking</a>
+                                    </li>
+                                </div>
+
+                                <a data-bs-toggle="collapse" href="#collapseExample5" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample5" bis_skin_checked="1">Student
+                                    <i class="fa-solid fa-chevron-down"></i></a>
+                                <div class="collapse child_mobile colapse_body" id="collapseExample5"
+                                    bis_skin_checked="1">
+                                    <li class="mobile_header">Student's life</li>
+                                    <li><a href="#">Student's Union</a></li>
+                                    <li><a href="#">Student Youth Organization</a></li>
+                                    <li>
+                                        <a data-bs-toggle="collapse" href="#collapseExample6" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample6"
+                                            bis_skin_checked="1">Clubs <i class="fa-solid fa-chevron-down"></i></a>
+                                    </li>
+                                    <div class="collapse child_mobile2 colapse_body" id="collapseExample6"
+                                        bis_skin_checked="1">
+                                        <li><a href="#">Theatre</a></li>
+                                        <li><a href="#">Dance</a></li>
+                                        <li><a href="#">Basketball</a></li>
+                                        <li><a href="#">Football</a></li>
+                                    </div>
+                                    <li><a href="#">Student’s Scientific Union</a></li>
+                                    <li><a href="#">Social involvment</a></li>
+                                    <li><a href="#">Dormitory</a></li>
+                                    <li class="mobile_header">Personal development</li>
+
+                                    <li><a href="#">eazi START</a></li>
+                                    <li><a href="#">AziiEduLab</a></li>
+                                </div>
+                                <a data-bs-toggle="collapse" href="#collapseExample7" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample7"
+                                    bis_skin_checked="1">Admission <i class="fa-solid fa-chevron-down"></i></a>
+                                <div class="collapse child_mobile colapse_body" id="collapseExample7"
+                                    bis_skin_checked="1">
+                                    <li>
+                                        <a href="#">Domestic </a>
+                                    </li>
+
+                                    <li><a href="#">Foreign</a></li>
+                                </div>
+
+                                <a data-bs-toggle="collapse" href="#collapseExample10" role="button"
+                                    aria-expanded="false" aria-controls="collapseExample10" bis_skin_checked="1">Careers
+                                    <i class="fa-solid fa-chevron-down"></i></a>
+                                <div class="collapse child_mobile colapse_body" id="collapseExample10"
+                                    bis_skin_checked="1">
+                                    <li>
+                                        <a href="http://career.asoiu.edu.az/" target="_blank">Alumni and career
+                                            development Center</a>
+                                    </li>
+                                    <li><a href="#">ASOIU Summer School 2023</a></li>
+                                    <li><a href="#">Azerbaijani Language Courses</a></li>
+                                    <li><a href="#">Internship</a></li>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="openbtn" onclick="openNav()">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <button class="openBtn" onclick="openSearch()">
+                            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                        </button>
+                        <script>
+                            function openNav() {
+                                document.getElementById("mySidepanel").style.width = "100%";
+                            }
+
+                            function closeNav() {
+                                document.getElementById("mySidepanel").style.width = "0";
+                            }
+                        </script>
+                    </div>
+                    <!-- djsdj
+              sdrjsrj
+              sj
+              sjr
+              sj
+              sj
+              j
+              jqueryrj
+              sjr
+              sHaraejea
+              aejaeajaejr -->
+                </div>
+                <ul class="bottom pt-3 d-flex justify-content-center align-items-center">
+                    <header id="nav2">
+                        <nav class="navbar">
+                            <ul>
+                                <li>
+                                    <a href="#">ASOIU <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul style="width: 230px">
+                                        <li class="main_header" style="border-top-left-radius: 15px; margin-top: 15px">
+                                            About US
+                                        </li>
+                                        <li><a href="#">Welcome speech of the rector</a></li>
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="#">ASOIU History</a></li>
+                                        <li><a href="#">ASOIU Structure</a></li>
+
+                                        <li><a href="#">Facts and numbers</a></li>
+                                        <li style="
+                          border-bottom-left-radius: 15px;
+                          padding-bottom: 10px;
+                        ">
+                                            <a href="#">Contact</a>
+                                            <br />
+                                        </li>
+                                    </ul>
+                                    <ul class="second" style="width: 190px; left: 230px">
+                                        <li class="main_header" style="border-top-right-radius: 15px; margin-top: 15px">
+                                            <br />
+                                            <br />
+                                        </li>
+                                        <li><a href="#">Management Board</a></li>
+                                        <li>
+                                            <a href="#">Administrative departments &gt;</a>
+                                            <ul style="left: 190px">
+                                                <li style="
+                              border-radius: 15px 15px 0 0;
+                              margin-left: 8px;
+                            ">
+                                                    <a href="#">International affairs department</a>
+                                                </li>
+
+                                                <li style="margin-left: 8px">
+                                                    <a href="#">Public Relations and Communication Department</a>
+                                                </li>
+                                                <li style="margin-left: 8px">
+                                                    <a href="#">Educational-Methodical department</a>
+                                                </li>
+                                                <li style="margin-left: 8px">
+                                                    <a href="#">Financial departmen</a>
+                                                </li>
+
+                                                <li style="
+                              border-radius: 0 0 15px 15px;
+                              margin-left: 8px;
+                            ">
+                                                    <a href="#">Human resources department</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Centers &gt;</a>
+                                            <ul style="left: 190px">
+                                                <li style="
+                              border-radius: 15px 15px 0 0;
+                              margin-left: 8px;
+                            ">
+                                                    <a href="#">Digital Development and Innovation Center</a>
+                                                </li>
+
+                                                <li style="margin-left: 8px">
+                                                    <a href="#">Project Management Office</a>
+                                                </li>
+
+                                                <li style="
+                              border-radius: 0 0 15px 15px;
+                              margin-left: 8px;
+                            ">
+                                                    <a href="https://azjhpc.org/" target="_blank">HPC center</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <br />
+                                        </li>
+                                        <li style="
+                          padding-bottom: 40px;
+                          border-radius: 0 0 15px 0px;
+                        ">
+                                            <br />
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Academic Offer <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul style="width: 350px">
+                                        <li style="border-radius: 15px 15px 0 0; margin-top: 15px">
+                                            <a href="#">Geological Exploration </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Oil and Gas Production</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Chemical technologies</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Oil Mechanical</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Power Engineering</a>
+                                        </li>
+                                        <li>
+                                            <a href="./fakulte.html">Information technologies and Management</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Economy and Management</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">BA Programs</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">College of Industry and Technology</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">IESDRI</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.sabah.edu.az/" target="_blank">SABAH Group</a>
+                                        </li>
+                                        <li style="border-radius: 0 0 15px 15px">
+                                            <a href="#">Azerbaijani – French University (UFAZ)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul>
+                                        <li class="main_header" style="
+                          border-radius: 15px 15px 0 0;
+                          padding-left: 10px;
+                          margin-top: 15px;
+                        ">
+                                            Online Services
+                                        </li>
+                                        <li>
+                                            <a href="http://lms.adnsu.az/" target="_blank">lms.adnsu.az
+                                            </a>
+                                        </li>
+                                        <li><a href="#">Azii Library</a></li>
+                                        <li><a href="#">Open doors</a></li>
+                                        <li><a href="#">I have an idea</a></li>
+                                        <li style="border-radius: 0 0 15px 15px">
+                                            <a href="http://aktzali.asoiu.edu.az/" target="_blank">Event’s hall
+                                                booking</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">Student <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul style="width: 250px">
+                                        <li class="main_header" style="border-top-left-radius: 15px; margin-top: 15px">
+                                            Student's life
+                                        </li>
+                                        <li><a href="#">Student's Union</a></li>
+                                        <li><a href="#">Student Youth Organization</a></li>
+                                        <li style="
+                          border-bottom-left-radius: 15px;
+                          padding-bottom: 10px;
+                        ">
+                                            <a href="#">&lt; Clubs</a>
+                                            <br />
+                                            <ul style="left: -200px">
+                                                <li style="
+                              border-radius: 15px 15px 0 0;
+                              margin-left: -8px;
+                            ">
+                                                    <a href="#">Theatre</a>
+                                                </li>
+                                                <li style="margin-left: -8px">
+                                                    <a href="#">Dance</a>
+                                                </li>
+                                                <li style="margin-left: -8px">
+                                                    <a href="#">Football</a>
+                                                </li>
+                                                <li style="
+                              border-radius: 0 0 15px 15px;
+                              margin-left: -8px;
+                            ">
+                                                    <a href="#">Basketball</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="second" style="width: 230px; left: 250px">
+                                        <li class="main_header" style="border-top-right-radius: 15px; margin-top: 15px">
+                                            Personal Development
+                                        </li>
+                                        <li><a href="#">eazi START</a></li>
+                                        <li><a href="#">AziiEduLab</a></li>
+                                        <li style="color: transparent; padding: 5px 20px">
+                                            <br />
+                                        </li>
+                                        <li style="
+                          border-bottom-right-radius: 15px;
+                          color: transparent;
+                          padding: 5px 20px;
+                          padding-bottom: 27px;
+                        ">
+                                            <br />
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">Admission <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul>
+                                        <li style="border-radius: 15px 15px 0 0; margin-top: 15px">
+                                            <a href="#">Domestic </a>
+                                        </li>
+
+                                        <li style="border-radius: 0 0 15px 15px">
+                                            <a href="#">Foreign </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Careers <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul>
+                                        <li style="border-radius: 15px 15px 0 0; margin-top: 15px">
+                                            <a href="http://career.asoiu.edu.az/" target="_blank">Alumni and career
+                                                development Center</a>
+                                        </li>
+                                        <li><a href="#">ASOIU Summer School 2023</a></li>
+                                        <li><a href="#">Azerbaijani Language Courses</a></li>
+                                        <li style="border-radius: 0 0 15px 15px">
+                                            <a href="#">Internship</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                </ul>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function () {
+                myFunction();
+            };
+
+            function myFunction() {
+                if (document.documentElement.scrollTop < 140) {
+                    document.getElementById("nav").className = "mystyle";
+                } else {
+                    document.getElementById("nav").className = "mystyle12";
+                }
+
+                if (document.documentElement.scrollTop < 140) {
+                    document.getElementById("disp").className = "display2";
+                    document.getElementById("disp2").className = "display1";
+                } else {
+                    document.getElementById("disp").className = "display1";
+                    document.getElementById("disp2").className = "display2";
+                }
+                if (document.documentElement.scrollTop < 380) {
+                    document.getElementById("photo").className = "position-fixed";
+                } else {
+                    document.getElementById("photo").className = "dispnon";
+                }
+            }
+        </script>
+    </nav>
+    <div class="container-fluid about_header_back">
+        <div class="container">
+            <div class="about_name d-flex justify-content-center align-items-center">
+                <h1 class="pt-5">ASOIU History</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about_content position-relative">
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                class="scrollspy-example-2" tabindex="0" data-bs-offset="0">
+                <div class="about_asoiu" id="about">
+                    <h1 class="content_header"> The decree was compiled as follows
+
+                    </h1>
+                    <div class="row pt-4 pb-4">
+
+
+                        <p class="col-lg-6">
+                            During 1896-1905, 50 students graduated from the Mechanical Department and 55 from the
+                            Construction Department of the school. In 1910 the Mechanical department comprised Oil and
+                            Technical and Electromechanical areas. 494 students, including 20 Azerbaijanis, were
+                            enrolled in
+                            the school in 1916. It was named polytechnic school in 1918.
+
+
+
+                            There were 188 students in the Polytechnic from the oil industry, electromechanics,
+                            construction
+                            and architecture departments. During this period, only 62 students in Azerbaijan, including
+                            12
+                            engineers, had higher education. On November 16, 1920, the Decree of the Azerbaijani
+                            Revolutionary Committee was published on establishing the Polytechnic Institute in Baku.
+                        </p>
+                        <div class="col-lg-6">
+
+                            <div class="about_img">
+                                <img class="img-fluid" src="./img/history1.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Establishing Baku Polytechnic Institute named after M. Azizbeyov based on "Oil Field",
+                        "Electromechanical", "Engineering-Construction", "Agriculture" and "Economics". Baku
+                        Polytechnicum buildings, equipment, and the Chemical Technical Laboratory of the Russian
+                        Technical Society will be ordered to Baku Polytechnic Institute.
+
+
+
+                        The inclusion of students from Polytechnic Institute in the first place is provided based on:
+
+                        Students with a sufficient level of general education should be admitted to the 1st-semester
+                        classes;
+                        In addition to the transition to general education subjects to those without such training;
+                        Finally, accepting to the ranks of college students by organising special lessons for high
+                        school students.
+
+
+                        The social security rights available to students of the State University also apply to the
+                        students of the Baku Polytechnic Institute. Even though the professors and teachers involved in
+                        the teaching process at the Polytechnic Institute from universities and other enterprises have
+                        been replaced, they should be paid salaries according to their position in the Polytechnic
+                        Institute. The salaries of the professor-teacher staff should be reimbursed as a salary of a
+                        co-worker at the State University.
+
+
+
+                        On December 12, 1920, the Public Education Commissioner issued a Decree on the opening of the
+                        Institute. The Decree also mentioned the closure of the Baku Polytechnic and the release of
+                        teachers from the duties of the Baku Polytechnic Institute, the completion of the preparatory
+                        work and the beginning of the academic year on January 1, 1921. Under the decree, under the
+                        chairmanship of engineer AI Kozlov, it was planned to complete the admission committee at the
+                        Institute and to complete the admission by January 1, 1921, according to the following norms.
+                        Initially, all candidates were planned to have been accepted as students of Baku Polytechnic
+                        University, students of specialised high schools, second - Turkish speaking, third - workers,
+                        fourth - ACBP MK and BK, fifth - golden army representatives, sixth - council employees, and
+                        seventh – other citizens.
+
+
+
+                        Professor N.A.Dubrovsky was appointed the first rector until September 1, 1921. The first
+                        meeting of the Scientific Council of the Institute was held on December 15, 1920, under the
+                        chairmanship of the first rector, professor N.A.Dubrovskiy. S.Vakilov was elected secretary of
+                        the Scientific Council. Soon, on December 18, the second meeting of the Scientific Council was
+                        held. For the first time, the faculties were: "Oilfield" - mountain engineer B.Dombrovski,
+                        "Electromechanika" - engineer-engineer A.Sizov, "Engineer-construction" - Civil Engineer A.
+                        Shusherov, "Economics" - Professor NADubrovski and "Agriculture" - Agronomist N. Lebedev were
+                        dean of the faculty.
+
+
+
+                        The first call announcing the event's start was held on January 2, 1921, at 9.30 and engineer
+                        S.Vakilov for the first time in the history of the Institute, lectured on higher mathematics. In
+                        the academic year 1920-1921, 1135 students were studying at the Institute.
+
+
+
+                        In 1922, the structure of the Institute in the fields of "Agriculture", "Economics",
+                        "Technological (electrotechnical, mountain-oil and petrochemical departments), and"
+                        Engineer-construction (on the road, hydro-technical and civil construction specialities) ".
+
+
+
+                        In 1922, the strengthening of the material and technical basis of the Institute and the teaching
+                        staff of the Institute was provided by Azneft (repair and supply of equipment and grants for 150
+                        students), People's Commissars Council, Education, Land, Food Commerce Public Commissars.
+
+
+
+                        In the summer of 1923, as a result of the Government of Azerbaijan, the decision of the Central
+                        Executive Committee of the former union was made on August 10, 1923. The Baku Polytechnic
+                        Institute's common unity importance was highlighted, and the Alliance's Commissariat and the
+                        Government of Azerbaijan were requested to take measures to improve the material and technical
+                        basis of the Institute. Was instructed. As a result, a certain percentage of the income of
+                        Azneft was transferred to the fund of the Institute and acquisition of the equipment of
+                        Vladikavkaz Polytechnic.
+
+
+
+                        Since 1923 the Institute has been named the Azerbaijan Polytechnic Institute, named after M.
+                        Azizbayov.
+
+
+
+                        In 1929 alumni of the University Barinov was a rector of the University. On May 12, 1929, the
+                        faculty "Agriculture" was separated from the Institute, and the "Agricultural Institute" was
+                        established freely. On May 29, 1930, the name "Azerbaijan Polytechnic Institute" was renamed,
+                        and it was renamed "Azerbaijan Oil Institute" (AOI).
+
+
+
+                        In 1931, "Azerbaijan Institute of the Kiyabi Industry" was established. Azerbaijan Oil Refinery
+                        Institute was founded on the base of the Azerbaijan Oil Institute in Ganja, Grozny, Ufa and
+                        Ishimbay.
+
+
+
+                        The Institute's name was renamed as the "Azerbaijan Oil Institute", and the training of
+                        engineers was carried out at the following faculties: On June 19, 1930, the Azerbaijan
+                        Construction Institute was established ( On September 1, 1934, he was again transferred to the
+                        Azerbaijan Oil Institute under the name "Architecture and Construction faculty).
+
+
+
+                        In the thirty-third year of the Polytechnic Institute, 3267 students, more than 3,000 listeners
+                        at the faculty of correspondence education, have been transformed into one of the most prominent
+                        universities of the former Soviet Union and became the first high technical school in
+                        Transcaucasia.
+
+
+
+                        In 1931, the Institute was nominated the Red Labor Order of the Government of the Republic of
+                        Azerbaijan for its achievements in the training of specialists in the oil industry.
+
+
+
+                        The rapid development of industry in Azerbaijan in connection with the country's
+                        industrialisation required oil and the engineering staff for other fields. Thus, the creation of
+                        a large-scale industrial institute in the republic was a priority for that time. On October 10,
+                        1934, the Oil Institute became a member of the Engineering Institute of Mechanical Engineering,
+                        Power Engineering etc., for industrial fields and the preparation of engineers.
+                    </p>
+                </div>
+                <div class="about_text_content">
+                    <div class="about_asoiu" id="about">
+                        <h1 class="content_header"> During World War Second
+
+                        </h1>
+                        <p>
+                            On December 25, 1940, the Institute was rewarded with the Red Banner of the Alliance's
+                            highest awards for its achievements over its 20th anniversary. In connection with the
+                            beginning of the war in 1941, new tasks were put in front of the Institute and its
+                            employees, and their concerns had increased. From the beginning of the war, employees and
+                            students of the Institute were sent to the front to give their debts to the country.
+
+
+
+                            In 1941 S.B.Gokayev was appointed rector of the Institute. In these years, a special gang
+                            was created to build defence facilities in the Institute.
+
+
+
+                            Sending workers in the industry and institutional students to the front has led to a large
+                            number of staff shortages in managing production at mining and factories operating under the
+                            motto "Everything is for Frontline". To overcome the shortfall, according to the decision of
+                            the Government of the Republic of Azerbaijan on the measures to improve the training of
+                            staff at the Azerbaijan Industrial Institute named after M. Azizbayov on March 5-12, 1943,
+                            1,000-1200 students were enrolled in 1943/44 academic year. By the Council of People's
+                            Commissars of November 12, 1943, the publication of textbooks, textbooks for students in
+                            Azerbaijan was consolidated, and exceptional closed food and industrial goods stores for
+                            students and academic staff of the Institute were launched.
+
+
+
+                            In 1943 the Institute was accepted 1147 and 844 people 1944. Over 1,000 engineers were
+                            trained during the war. In 1945 there were 4500 students, including listeners of preparatory
+                            faculty.
+
+
+
+                            On March 11, 1944, by the decision of the directive authorities, pre-war rules were
+                            established in higher education institutions, and staff training was promoted as the most
+                            important problem.
+
+
+
+                            After the war, there were fundamental changes in the life of the Institute. At that time,
+                            six of 8 faculties were directly involved in training personnel for the oil industry. The
+                            post-war expansion of the Institute's activities were related to the development of the
+                            industry and, first of all, the oil industry in the country. If before the war, 98% of oil
+                            production fell to Baku, Grozny and Maykop; after the war, rich oil fields in the
+                            Ural-Volga, Emba, Central Asia, Kazakhstan and Far East regions were discovered, and their
+                            mines had sharply increased demand for oil specialists. In those years, the graduates of the
+                            Azerbaijan Industrial Institute played a key role in the development of these fields.
+
+
+
+                            In 1946, the Institute was subordinated to the People's Commissariat of the USSR under the
+                            supervision of the USSR Department of Polytechnic and Industry Higher Education
+                            Institutions.
+
+
+
+                            In the structure of the Institute in 1950 functioned Geological-Exploration, Petroleum,
+                            Technological, Mechanical, Energetic, Engineering-Economy, Transport and
+                            Architecture-Construction faculties.
+
+
+
+                            In 1952, Azerbaijan Polytechnic Institute was established to prepare specialists for civil
+                            construction, transport and mechanical engineering based on the Institute of Architecture
+                            and Construction, Transport, Faculties of Mechanics and the Faculty of Hydromelioration of
+                            the Azerbaijan Institute of Agriculture. From the Azerbaijan Institute of Industry to
+                            Polytechnic Institute, 57 professors and teachers have passed 11 chairs, and the Institute
+                            has only started to prepare specialists in the oil field.
+
+
+
+                            Extension of the evening and part-time education has been done. According to the decision of
+                            the Union Government on March 14, 1959, the Institute has been renamed to Azerbaijan
+                            Institute of Oil and Chemistry named after M. Azizbayov (AzIOC). This was due to the fact
+                            that the chemical industry was declared a priority area in the country. Prior to the AzIOC,
+                            the developing Union has set to prepare highly qualified engineers and scientists for oil
+                            and petrochemical industries.
+
+
+
+                            In 1951-1959 the Institute produced 6695 engineers, of which 3501 were Azerbaijanis,
+                            including 749 girls. In these years, according to the decision of the republican government,
+                            the speciality of industrial economics from the Department of Planned Economics and the
+                            Azerbaijan State University for the development of mineral deposits were transferred to AzOI
+                            and the radio engineering speciality from AzOI Polytechnic Institute.
+
+
+
+                            In the 1958-1959 academic year, a department was established in Sumgait to study at the
+                            evening department of young people working there.
+
+
+
+                            By the decision of the Government of Azerbaijan dated March 30, 1960, a training and
+                            advisory centre was established in Sumgayit for studying evening and part-time departments
+                            of AzIOC. The decision envisages the preparation of a member of the training and
+                            consultation station for synthesis and synthetic rubber, chemical and machine-building
+                            specialities.
+
+
+
+                            In the 1962-1963 academic year, the educational-advisory station in Sumgayit was transformed
+                            into a branch of AzOI as a part of the evening and part-time department.
+
+                            The first admission to the branch was in 1962. The first student admission to the unit was
+                            carried out in 1962, and 225 students were admitted to the evening department and 125
+                            students in the correspondence department.
+
+
+
+                            According to the decision of the Union Government dated June 3, 1965, the branch was
+                            transformed into a factory of technical sciences at the synthetic rubber plant in Sumgayit.
+
+
+
+                            Since there were no appropriate conditions for teaching, most of the courses were held at
+                            the school of Sumgayit No. 11 and the building of the 8-year school in the City of Chemists.
+                            By 1970, most of the teachers were educators invited from AzOI. Since 1992, the branch in
+                            Sumgayit has been functioning as a Free Industrial Industrial Institute, becoming a Sumgayit
+                            State University since June 13, 2000.
+
+
+
+                            In November 1965, the Institute celebrated its 45th anniversary.
+
+
+
+                            The 50th anniversary of AzOI was celebrated on July 5, 1971, with the participation of the
+                            government delegation at the club named after Shahriyar, including the head of our republic,
+                            Heydar Aliyev. The government awarded more than 100 members of the collective honorary
+                            titles and decrees, and 30 were given apartments. The Institute was awarded the Honorary
+                            Decree of the Presidium of the Supreme Soviet of the Republic for services in the training
+                            of qualified personnel for the national economy of Turkmenistan.
+
+
+
+                            In 1978, Professor Ibrahimov was re-appointed as the rector of the Institute. The Azerbaijan
+                            Oil and Chemistry Institute employees named after M. Azizbeyov worked in the legendary "Oil
+                            Rocks" and in Baku Refineries, Sumgayit Large Chemicals Enterprises and Research Institutes
+                            of the Republican Academy of Sciences, Tyumen, Sakhalin, Tatarstan Mines and all corners of
+                            the country. The AzIOC was included in the list of 70 leading universities of the former
+                            Soviet Union in the republican higher educational institutions, under the decision of the
+                            Central Committee of the CPSU and the Council of Ministers of the USSR № 271 of April 6 1978
+                            "Enhancing the effectiveness of scientific research in high schools".
+
+
+
+                            That is why in 1979, the name of the faculty was changed to "Gas-Oil-Mining".
+
+
+
+                            In 1988, under the joint order of the Ministry of the Shipbuilding Industry and the Ministry
+                            of Higher and Secondary Special Education of the Union, Nord Scientific Production
+                            Association and AzNKI established the second educational-scientific-production complex.
+                        </p>
+                    </div>
+                    <div class="about_text_content">
+                        <div class="about_asoiu" id="about">
+                            <h1 class="content_header"> During the period of Independence
+
+                            </h1>
+                            <p>
+                                According to the Decree of the Cabinet of Ministers of the Republic of Azerbaijan dated
+                                18.02.91, the name of the Institute was renamed to the Azerbaijan Industrial University
+                                (AzIU) awarded with the Red Banner of Labor named after M. Azizbayov.
+
+
+
+                                Training-consultation for students studying correspondence in Ali Bayramli (present
+                                Shirvan) by the Decree No 11 / 8-12 of the Cabinet of Ministers, dated May 20, 1991, and
+                                Order 442 of 17.06.91 of the Ministry of Public Education Was established. The precinct
+                                helped the students studying in the correspondence department of the University to
+                                master the curriculum.
+
+
+
+                                On August 24, 1991, the government's decision to open a branch in Mingachevir city of
+                                AzIU, which hosted 87 students in economics and management of lightweight textile
+                                industry, economy economics and management, transport economy and management, electrical
+                                systems and networks, electrical transport has been submitted. Subsequently, this branch
+                                started to function as a Mingachevir Polytechnic Institute freely.
+
+
+
+                                In 1991, the "Republican Business School" organised by the US Department of Higher and
+                                Secondary Education and the US CIA Corporation was created and later became a faculty.
+                                For the first time in this faculty, the specialist in business management in the field
+                                of fuel and energy complex has begun to work. Here, the participants were provided with
+                                modern knowledge on the basics of business organisation.
+
+
+
+                                The Scientific-Research Institute of Oil, Gas Geotechnology and Chemistry of Oil was
+                                established under the Decree of the Cabinet of Ministers No.160 dated 16.03.1992.
+
+
+
+                                In 1991-1998, he worked in the Department of Geological-Exploration, Gas-Oil Mining,
+                                Chemical Technology, Oil-Mechanics, Power Engineering, Automation of Production
+                                Processes, Engineer-Economy Faculties. "Preparing for Foreigners" functioned.
+
+
+
+                                The University was renamed the Azerbaijan State Oil Academy (ASOA) by the Decree of the
+                                Cabinet of Ministers of the Republic of Azerbaijan dated March 21, 1992.
+
+
+
+                                In 1993-1997 Professor Parviz Mammadov served as Rector of ADNA.
+
+
+
+                                Beginning with the 1993/1994 academic year, ASOI has, for the first time, started
+                                preparing specialists at the bachelor's level, and fundamental changes have been made in
+                                all curricula and subject content.
+
+
+
+                                The Scientific-Research Institute of Automation of Control Processes was established in
+                                ASOA under the Decree of the Cabinet of Ministers No.74 dated 10.08.1995.
+
+
+
+                                In 1998, with the support of the United States Agency for International Development, a
+                                Master of Business Administration (MBA) program in English was opened, which was based
+                                on cooperation between Georgia State University and ASOA. The peculiarity of this
+                                project is that the curriculum and the content of the disciplines are adapted to western
+                                standards. The US Department of State teaches the lessons and the most advanced teaching
+                                technologies from ASOA to interns. In 1999, Heydar Aliyev Museum was created at ASOA
+                                with exhibits on Heydar Aliyev's life and activity. The museum was a focus of attention
+                                for students and visitors visiting ASOA. At the beginning of each academic year, student
+                                tickets and price guides for first-year students are presented in this solemn ceremony
+                                in this museum.
+
+
+
+                                Since 1999, with the cooperation of the State Oil Company of the Republic of Azerbaijan
+                                and the Institute of Oil and Engineers of Paris, in cooperation with the French
+                                Sophia-Antipolis (Nitsa) and the Genya University of France, within the EU TEMPUS
+                                program, the European Environment and Sustainable Energy "Preparation of masters for the
+                                speciality" Scientific-technical magazine "News of Azerbaijan Higher Technical Schools"
+                                has been published at ASOI since 1999. During the 1999-2000 edition, 10 issues of the
+                                magazine were published.
+
+
+
+                                By the Decree of the President of the Republic of Azerbaijan Heydar Aliyev "On
+                                Improvement of the Education System in the Republic of Azerbaijan" of June 13, 2000,
+                                ASOA was authorised to act on the principle of self-management.
+
+
+
+                                In 2000, various events (conferences, seminars, meetings, presentations) were held in
+                                faculties, chairs and several industrial enterprises connected with the 80th-anniversary
+                                ASOA. On the eve of the anniversary, the facade of the main building of the ASOA was
+                                renovated, and interior repairs were carried out. With the assistance of the US Embassy
+                                in Azerbaijan, Exxon Azerbaijan and the Open Society Institute, ASOA has been
+                                established and commissioned the first local Internet network.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <h1 class="content_header"> The chronology of naming of the University
+
+
+
+            </h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>History</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table_style">
+                        <td>1</td>
+                        <td>1887</td>
+                        <td>Baku Technical School</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1896</td>
+                        <td>Baku low-level technical school</td>
+                    </tr>
+                    <tr class="table_style">
+                        <td>3</td>
+                        <td>1918</td>
+                        <td>Baku Polytechnic</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>1920</td>
+                        <td>Baku Polytechnic Institute named after M. Azizbayov</td>
+                    </tr>
+                    <tr class="table_style">
+                        <td>5</td>
+                        <td>1923</td>
+                        <td>Azerbaijan Polytechnic Institute named after M. Azizbayov</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>1930</td>
+                        <td>Azerbaijan Oil Institute</td>
+                    </tr>
+                    <tr class="table_style">
+                        <td>7</td>
+                        <td>1934</td>
+                        <td>Azerbaijan Industrial Institute</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>1959</td>
+                        <td>Institute of Oil and Chemistry named after M. Azizbekov</td>
+                    </tr>
+                    <tr class="table_style">
+                        <td>9</td>
+                        <td>1991</td>
+                        <td>Azerbaijan Industrial University with the Red Banner of Labor Award named after M. Azizbayov
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>1992</td>
+                        <td>Azerbaijan State Oil Academy</td>
+                    </tr>
+                    <tr class="table_style">
+                        <td>11</td>
+                        <td>2015</td>
+                        <td>Azerbaijan State Oil and Industrial University</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="about_text_content">
+            <div class="about_asoiu" id="about">
+                <h1 class="content_header"> During the period of Independence
+
+                </h1>
+                <div class="about_img">
+                    <img class="img-fluid" src="./img/history1.jpg" alt="" />
+                </div>
+                <P class="pt-4">
+                    In September 2015, by order of President Ilham Aliyev, the University was named the Azerbaijan State
+                    Oil and Industrial University, which was tasked with training qualified personnel not only for the
+                    oil field but also for the entire domestic industry. In addition, since the new academic year, the
+                    French-Azerbaijan University (UFAZ), established under the Presidential Decree at ASOIU. This year,
+                    143 students were admitted to the UFAZ, which will be taught in English, with the opportunity to
+                    earn a diploma from the University of Strasbourg, one and one of the most prestigious universities
+                    of France in the world, with the ASOIU diploma alumni, and this is a total of 2400 young people
+                    technical and engineering specialities, and grow up as highly qualified personnel for the country's
+                    economy.
+
+
+
+                    One of the crucial steps taken by ASOIU for the synthesis of education and science in the industry
+                    is the creation of the "Eazi START" startup school. Along with talented students and masters, the
+                    aim of the startup school, with the participation of doctoral students, university professors and
+                    professors, is to prepare a business project and build production requiring minimal investment based
+                    on innovations in science. At the end of the 2015-2016 academic year, 15 out of the drafted projects
+                    have been widely presented, and investments are currently being made. At the same time, the AzII-IT
+                    Academy was established at the University to absorb students' information technology deeply. Over
+                    the past year, more than 100 young people have graduated from the IT Academy found around the
+                    world-renowned Oracle, Microsoft, with Autocad resources. They have received certificates on various
+                    levels.
+
+
+
+                    It should be noted that currently, Azerbaijan State Oil and Industry University cooperate closely
+                    with international students, including Georgia State University (USA), Zigen University (Germany),
+                    Ploektti Oil and Gas University (Romania), Trondheim City Science and Technology University
+                    (Norway), Russia's State Oil and Gas University (Russia), Genya University (Italy), Nitsa
+                    Sofia-Antipolis University (France), Athens National Technical University (Greece), Khazar State
+                    University of Technology and Engineering (Kazakhstan). At the same time, a joint Bachelor of
+                    Business Administration (BBA) program with Zigen University in Germany and a Joint Master program in
+                    Business Administration (MBA) with Georgia State University in the United States can be highlighted.
+                </P>
+            </div>
+
+        </div>
+
+
+    </div>
+        <section>
+            <div class="container-fluid mystyle2">
+                <div class="container">
+                    <div class="row marg cred">
+                        <div class="col-lg-3 col-sm-12 mystyle4 cred">
+                            <img src="./img/nav_Logo.png" alt="" />
+                            <br />
+                            <span class="first">Azərbaycan <br />
+                                Dövlət <br />
+                                Neft və <br />
+                                Sənaye <br />
+                                Universiteti</span>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 mystyle4 first1">
+                            <ul>
+                                <h4 class="myclass1">Academic Offer</h4>
+                                <li>Faculty of Geological Exploration</li>
+                                <li>Faculty of Oil and Gas Production</li>
+                                <li>Faculty of Chemical Technology</li>
+                                <li>Faculty of Oil Mechanical Engineering</li>
+                                <li>Energetika</li>
+                                <li>Faculty of Power Engineering</li>
+                                <li>Faculty of Economics and Management</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 mystyle4 first1">
+                            <ul>
+                                <h4 class="myclass1">Programs</h4>
+                                <li>BA Programs</li>
+                                <li>Yay Məktəbi</li>
+                                <li>SABAH Groups</li>
+                                <li>eazi Start</li>
+                                <li>IT Club</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 mystyle4 first1">
+                            <ul>
+                                <h4 class="myclass1">Services</h4>
+                                <li>LMS</li>
+                                <li>Azii – e library</li>
+                                <li>Project Management Office</li>
+                                <li>HPC</li>
+                                <li>Dormitory</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="myclass3" />
+                    <div class="footer myclass11 first1">
+                        <ul class="fff">
+                            <li>About us</li>
+                            <li>FAQ</li>
+                            <li>I have a suggestion</li>
+                            <li>Contact</li>
+                        </ul>
+                        <div class="nav social-icons justify-content-center text-sm-center justify-content-md-end mycl">
+                            <a class="myclass1 myclass" href=""><i class="fa-brands fa-facebook-f"></i></a>
+
+                            <a class="myclass" href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a class="myclass" href=""><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+<script>
+    function openSearch() {
+        document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function closeSearch() {
+        document.getElementById("myOverlay").style.display = "none";
+    }
+</script>
+<script>
+    function openSearch2() {
+        document.getElementById("myOverlay2").style.display = "block";
+    }
+
+    function closeSearch2() {
+        document.getElementById("myOverlay2").style.display = "none";
+    }
+</script>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper_fakulte", {
+        loop: true,
+        breakpoints: {
+            375: {
+                slidesPerView: 1,
+                spaceBetween: 100,
+            },
+            // when window width is >= 320px
+            420: {
+                slidesPerView: 3,
+                spaceBetween: 250,
+            },
+            // when window width is >= 480px
+            576: {
+                slidesPerView: 3,
+                spaceBetween: 240,
+            },
+            // when window width is >= 640px
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 150,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 70,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: -80,
+            },
+            1400: {
+                slidesPerView: 3,
+                spaceBetween: -250,
+            },
+        },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper_techers", {
+        loop: true,
+        breakpoints: {
+            375: {
+                slidesPerView: 1,
+                spaceBetween: 60,
+            },
+            // when window width is >= 320px
+            420: {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+            },
+            // when window width is >= 480px
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 100,
+            },
+            // when window width is >= 640px
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 250,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 180,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1400: {
+                slidesPerView: 3,
+                spaceBetween: -150,
+            },
+        },
+    });
+</script>
+<script>
+    var swiper = new Swiper(".mySwiper_fak_labs", {
+        loop: true,
+        breakpoints: {
+            375: {
+                slidesPerView: 1,
+                spaceBetween: 110,
+            },
+            // when window width is >= 320px
+            420: {
+                slidesPerView: 1.5,
+                spaceBetween: 100,
+            },
+            // when window width is >= 480px
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 180,
+            },
+            // when window width is >= 640px
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 330,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 260,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 100,
+            },
+            1400: {
+                slidesPerView: 4,
+                spaceBetween: 260,
+            },
+        },
+    });
+</script>
