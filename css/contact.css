@@ -12,7 +12,7 @@
   background-blend-mode: multiply;
 }
 .contact_name {
-  height: 48vh;
+  height: 48vh !important;
 }
 .contact_name h1{
   font-family: 'Albert Sans';
@@ -140,7 +140,4 @@ color: #3E5BDB;
 }
 .contact_info span span{
   margin-left: 35px;
-}
-.table_stlye{
-  background-color: #283593;
 }
