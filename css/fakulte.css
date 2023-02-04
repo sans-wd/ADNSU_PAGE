@@ -72,8 +72,14 @@ body {
   height: 337px;
 }
 .techer_img {
-  width: 276px;
+  width: 100%;
   height: 256px;
+  object-fit: fill;
+}
+.techer_img img {
+  width: 100%;
+  height: 256px;
+  object-fit: fill;
 }
 .fak_tech_icons {
   top: 20px;
@@ -108,7 +114,9 @@ body {
 }
 .lab_card_back_img {
   background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
-    url(../img/Lab_room.png);
+    url(../img/lab_room1.jpeg);
+  background-position: center;
+  background-size: cover;
   border-radius: 20px;
   width: 300px;
   height: 294px;
@@ -124,6 +132,37 @@ body {
   color: #dfe3f6;
   padding-top: 80%;
 }
+.lab_card_back_img2 {
+  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
+    url(../img/lab_room2.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.lab_card_back_img3 {
+  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
+    url(../img/lab_room3.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.lab_card_back_img4 {
+  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
+    url(../img/lab_room4.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.lab_card_back_img5 {
+  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
+    url(../img/lab_room5.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.lab_card_back_img6 {
+  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
+    url(../img/lab_room6.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
 .fakulte_stiky_side_bar {
   background-color: white;
   padding: 20px;
