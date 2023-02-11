@@ -14,130 +14,133 @@
 .contact_name {
   height: 48vh !important;
 }
-.contact_name h1{
-  font-family: 'Albert Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 54px;
-line-height: 74px;
-color: #FFFFFF;
+.contact_name h1 {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+  color: #ffffff;
 }
-.contact_info span{
-  font-family: 'Albert Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 31px;
-letter-spacing: -0.0008em;
-color: #3E5BDB;
+.contact_info span {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.0008em;
+  color: #3e5bdb;
 }
-.border_inst{
-  display: flex;
-flex-direction: row;
-align-items: center;
-padding: 14px 20px;
-gap: 10px;
-
-
-height: 66px;
-
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), linear-gradient(98.64deg, #D62976 1.38%, #FA7E1E 98.29%);
-background-blend-mode: multiply, normal;
-box-shadow: 0px 4px 20px rgba(240, 78, 35, 0.25);
-border-radius: 20px;
-justify-content: center;
-margin-bottom: 10px;
-}
-.border_link{
+.border_inst {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 14px 20px;
   gap: 10px;
-  
- 
+
   height: 66px;
-  
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), linear-gradient(98.64deg, #0E76A8 1.38%, #1191CF 98.29%);
-  background-blend-mode: multiply, normal;
-  box-shadow: 0px 4px 20px rgba(14, 119, 170, 0.25);
+  background: #3e5bdb;
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    linear-gradient(98.64deg, #d62976 1.38%, #fa7e1e 98.29%);
+  background-blend-mode: multiply, normal; */
+  box-shadow: 0px 4px 20px #3e5bdb;
   border-radius: 20px;
   justify-content: center;
   margin-bottom: 10px;
 }
-.border_facebook{
+.border_link {
   display: flex;
-flex-direction: row;
-align-items: center;
-padding: 14px 20px;
-gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 20px;
+  gap: 10px;
 
-justify-content: center;
-height: 66px;
+  height: 66px;
+  background: #3e5bdb;
 
-background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), linear-gradient(98.64deg, #293DD6 1.38%, #1EA9FA 98.29%);
-background-blend-mode: multiply, normal;
-box-shadow: 0px 4px 20px rgba(33, 114, 221, 0.25);
-border-radius: 20px;
-margin-bottom: 10px;
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    linear-gradient(98.64deg, #0e76a8 1.38%, #1191cf 98.29%);
+  background-blend-mode: multiply, normal; */
+  box-shadow: 0px 4px 20px #3e5bdb;
+  border-radius: 20px;
+  justify-content: center;
+  margin-bottom: 10px;
 }
-.border_twitter{
+.border_facebook {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 20px;
+  gap: 10px;
+
+  justify-content: center;
+  height: 66px;
+  background: #3e5bdb;
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), linear-gradient(98.64deg, #293DD6 1.38%, #1EA9FA 98.29%);
+background-blend-mode: multiply, normal; */
+  box-shadow: 0px 4px 20px #3e5bdb;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.border_twitter {
   display: flex;
   margin-bottom: 10px;
   flex-direction: row;
   align-items: center;
   padding: 14px 20px;
   gap: 10px;
-  
+
   height: 66px;
+  background: #3e5bdb;
 
   justify-content: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), linear-gradient(98.64deg, #00ACEE 1.38%, #57D0FF 98.29%);
-  background-blend-mode: multiply, normal;
-  box-shadow: 0px 4px 20px rgba(30, 176, 232, 0.25);
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
+    linear-gradient(98.64deg, #00acee 1.38%, #57d0ff 98.29%);
+  background-blend-mode: multiply, normal; */
+  box-shadow: 0px 4px 20px #3e5bdb;
   border-radius: 20px;
 }
-.border_content span{
-  font-family: 'Albert Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 26px;
-line-height: 31px;
-display: flex;
-align-items: center;
-letter-spacing: -0.0008em;
+.border_content span {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.0008em;
 
-/* Ver 2 / Blue BG 3 */
+  /* Ver 2 / Blue BG 3 */
 
-color: #F3F5FC;
+  color: #f3f5fc;
 }
-.zaqolovok_style{
-  font-family: 'Albert Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 38px;
-line-height: 46px;
-/* identical to box height */
+.zaqolovok_style {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+  /* identical to box height */
 
-display: flex;
-align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 
-/* Ver 2/Blue */
+  /* Ver 2/Blue */
 
-color: #1A265C;
-padding-bottom: 20px;
+  color: #1a265c;
+  padding-bottom: 20px;
 }
-.unv_content{
-  font-family: 'Albert Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 31px;
-letter-spacing: -0.0008em;
+.unv_content {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.0008em;
 
-/* Ver 2/Blue Light 2 */
-color: #3E5BDB;
+  /* Ver 2/Blue Light 2 */
+  color: #3e5bdb;
 }
-.contact_info span span{
+.contact_info span span {
   margin-left: 35px;
 }
