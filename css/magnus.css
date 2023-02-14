@@ -5,6 +5,12 @@ body {
   scale: 1 !important;
 }
 .fakulte_header_back {
+  background: url(../img/fakulte_head_background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: gray;
+  background-blend-mode: multiply;
 }
 .heber_card {
   height: 312.47px !important;
@@ -165,7 +171,6 @@ body {
   border-radius: 20px;
   position: sticky;
   top: 130px;
-  margin-top: 60px;
 }
 .fak_side_bar_header {
   font-family: "Albert Sans";
@@ -207,9 +212,9 @@ body {
   .fak_mob_none {
     display: none;
   }
-  /* .about_faculty h1 {
+  .about_faculty h1 {
     padding-top: 0px;
-  } */
+  }
   .heber_card {
     height: 442.47px;
   }

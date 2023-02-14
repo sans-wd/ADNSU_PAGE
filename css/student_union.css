@@ -165,7 +165,6 @@ body {
   border-radius: 20px;
   position: sticky;
   top: 130px;
-  margin-top: 60px;
 }
 .fak_side_bar_header {
   font-family: "Albert Sans";
@@ -207,9 +206,8 @@ body {
   .fak_mob_none {
     display: none;
   }
-  /* .about_faculty h1 {
-    padding-top: 0px;
-  } */
+  .about_faculty h1 {
+  }
   .heber_card {
     height: 442.47px;
   }
@@ -228,11 +226,42 @@ body {
     scale: 0.8;
   }
 }
+@media only screen and (max-width: 420px) {
+  .about_faculty p {
+    font-family: "Albert Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px !important;
+    line-height: 31px;
+    letter-spacing: -0.0008em;
+    color: #1a265c;
+    text-align: left;
+  }
+  .content_header {
+    font-size: 30px !important;
+    line-height: 31px;
+    padding: 30px 0px;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .fakulte_name h1 {
     font-size: 38px;
   }
   .fakulte_logo img {
     scale: 0.7;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .about_faculty p {
+    font-family: "Albert Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px !important;
+    line-height: 31px;
+    letter-spacing: -0.0008em;
+    color: #1a265c;
+    text-align: left;
   }
 }
