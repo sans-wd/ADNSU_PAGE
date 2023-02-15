@@ -45,8 +45,9 @@
   background-blend-mode: multiply, normal; */
   box-shadow: 0px 4px 20px #3e5bdb;
   border-radius: 20px;
-  justify-content: center;
+
   margin-bottom: 10px;
+  width: 66px;
 }
 .border_link {
   display: flex;
@@ -63,8 +64,9 @@
   background-blend-mode: multiply, normal; */
   box-shadow: 0px 4px 20px #3e5bdb;
   border-radius: 20px;
-  justify-content: center;
+
   margin-bottom: 10px;
+  width: 66px;
 }
 .border_facebook {
   display: flex;
@@ -73,7 +75,6 @@
   padding: 14px 20px;
   gap: 10px;
 
-  justify-content: center;
   height: 66px;
   background: #3e5bdb;
   /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), linear-gradient(98.64deg, #293DD6 1.38%, #1EA9FA 98.29%);
@@ -81,6 +82,7 @@ background-blend-mode: multiply, normal; */
   box-shadow: 0px 4px 20px #3e5bdb;
   border-radius: 20px;
   margin-bottom: 10px;
+  width: 66px;
 }
 .border_twitter {
   display: flex;
@@ -89,11 +91,11 @@ background-blend-mode: multiply, normal; */
   align-items: center;
   padding: 14px 20px;
   gap: 10px;
+  width: 66px;
 
   height: 66px;
   background: #3e5bdb;
 
-  justify-content: center;
   /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
     linear-gradient(98.64deg, #00acee 1.38%, #57d0ff 98.29%);
   background-blend-mode: multiply, normal; */
