@@ -1,304 +1,243 @@
-body {
-  position: relative;
+.form-control{
+    font-family: 'Albert Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    
+    /* Blue/BG 1 */
+    
+    color: #A4AFE5;
 }
-.mystyle1 img {
-  scale: 1 !important;
+label{
+    font-family: 'Albert Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 25px;
+
+/* Blue/Blue Light 1 */
+
+color: #3046A8 !important;
 }
-.fakulte_header_back {
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: bottom;
-  background-color: gray;
-  background-blend-mode: multiply;
+.marggg{
+    margin-top: 0px;
+    padding-left: 35px;
 }
-.heber_card {
-  height: 312.47px !important;
+.mystyle1{
+    font-family: 'Albert Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 25px;
+
+/* Blue/Blue Light 1 */
+
+color: #3046A8;
+padding-top: 15px;
 }
-.qebul_name {
-  height: 48vh;
+.form{
+    padding-top: 10px;
 }
-.qebul_text_content {
-  /* padding-right: 10px; */
+.firs{
+width: 90%;
+background-color: #fff;
+background-clip: padding-box;
+ border: 1px solid #ced4da;
+padding: 4px 4px;
+border-radius: 0.375rem;
+padding: 0.375rem 0.75rem;
 }
-.qebul_name h1 {
-  font-family: "Albert Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 54px;
-  line-height: 74px;
-  text-align: center;
-  color: #ffffff;
+.paragraph_Style{
+    font-family: 'Albert Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 38px;
+width: 33%;
+/* Blue/Blue Main */
+
+color: #1A265C;
+border-bottom: 1px solid black;
+padding: 5px;
+}
+.paragraph_Style1{
+    font-family: 'Albert Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 38px;
+width: 17%;
+/* Blue/Blue Main */
+
+color: #1A265C;
+border-bottom: 1px solid black;
+padding: 5px;
+}
+.style1{
+    background: #1A265C;
+border-radius: 15px;
+color: white;
+margin-top: 5px;
+width: 100px;
+}
+.inf{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 14px 22px;
+gap: 10px;
+width: 100%;
+height: 59px;
+
+/* Blue/Blue Light 2 */
+
+background: #3E5BDB;
+/* Blue/Blue Light 2 */
+
+border: 1px solid #3E5BDB;
+border-radius: 15px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+color: white !important;
+font-family: 'Albert Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: -0.0008em;
+
+/* Blue/BG 4 */
+
+color: #F3F5FC;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 10px 0px;
+}
+.inf1{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 22px 30px;
+gap: 8px;
+
+width: 100%;
+height: 154px;
+
+/* Additional / Pure White */
+
+background: #FFFFFF;
+border-radius: 15px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 10px 0px;
+}
+.dizayn{
+    font-family: 'Albert Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+letter-spacing: 0.04em;
+
+/* Blue/Blue Light 2 */
+
+color: #3E5BDB;
+}
+.dizayn2{
+    font-family: 'Albert Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: -0.0008em;
+
+/* Blue/Blue Main */
+
+color: #1A265C;
+}
+.dizayn3{
+    font-family: 'Albert Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 25px;
+
+/* Blue/Blue Main */
+
+color: #1A265C;
+}
+.about_header_back {
+    
+  }
+  
+  .about_name {
+    height: 48vh;
+  }
+  .myst1{
+    font-family: 'Albert Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 35px;
+line-height: 38px;
+
+/* Blue/Blue Main */
+
+color: #1A265C;
+
+  }
+  .overlay-content {
+    display: flex;
+    justify-content: center;
 }
 
-.about_qebul p {
-  font-family: "Albert Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 31px;
-  display: flex;
-  align-items: flex-end;
-  letter-spacing: -0.0008em;
-  color: #3046a8;
-  margin: 0px;
-}
-.about_qebul i {
-  color: #3046a8;
-}
-.qebul_info {
-  background: #dfe3f6;
-  border-radius: 22px;
-  padding: 20px;
-}
-.qebul_user_info label {
-  font-family: "Albert Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 21px;
-  line-height: 25px;
-  color: #3046a8;
-}
-.qebul_user_info input {
-  border: 1px solid #a4afe5;
-  border-radius: 15px;
-  background: #f3f5fc;
-  padding: 15px;
-  font-family: "Albert Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 25px;
-  color: #1a265c;
-}
-.qebul_user_info input::placeholder {
-  font-family: "Albert Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 25px;
-  color: #a4afe5;
-}
-.pasport_info .pasp_num input {
-  width: 100%;
-}
-.pasport_info .pasp_age input {
-  width: 40%;
-}
-.checkbox-wrapper-12 {
-  position: relative;
-}
-.checkbox-wrapper-12 > svg {
-  position: absolute;
-  top: -130%;
-  left: -170%;
-  width: 110px;
-  pointer-events: none;
-}
-.checkbox-wrapper-12 * {
-  box-sizing: border-box;
-}
-.checkbox-wrapper-12 input[type="checkbox"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  -webkit-tap-highlight-color: transparent;
-  cursor: pointer;
-  margin: 0;
-}
-.checkbox-wrapper-12 input[type="checkbox"]:focus {
-  outline: 0;
-}
-.checkbox-wrapper-12 .cbx {
-  width: 24px;
-  height: 24px;
-  top: calc(50vh - 12px);
-  left: calc(50vw - 12px);
-}
-.checkbox-wrapper-12 .cbx input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 24px;
-  height: 24px;
-  border: 2px solid #a4afe5;
-  border-radius: 50%;
-  padding: 0px;
-}
-.checkbox-wrapper-12 .cbx label {
-  width: 24px;
-  height: 24px;
-  background: none;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-filter: url("#goo-12");
-  filter: url("#goo-12");
-  transform: trasnlate3d(0, 0, 0);
-  pointer-events: none;
-}
-.checkbox-wrapper-12 .cbx svg {
-  position: absolute;
-  top: 5px;
-  left: 4px;
-  z-index: 1;
-  pointer-events: none;
-}
-.checkbox-wrapper-12 .cbx svg path {
-  stroke: #fff;
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-dasharray: 19;
-  stroke-dashoffset: 19;
-  transition: stroke-dashoffset 0.3s ease;
-  transition-delay: 0.2s;
-}
-.checkbox-wrapper-12 .cbx input:checked + label {
-  animation: splash-12 0.6s ease forwards;
-}
-.checkbox-wrapper-12 .cbx input:checked + label + svg path {
-  stroke-dashoffset: 0;
-}
-@-moz-keyframes splash-12 {
-  40% {
-    background: #3046a8;
-    box-shadow: 0 -18px 0 -8px #3046a8, 16px -8px 0 -8px #3046a8,
-      16px 8px 0 -8px #3046a8, 0 18px 0 -8px #3046a8, -16px 8px 0 -8px #3046a8,
-      -16px -8px 0 -8px #3046a8;
-  }
-  100% {
-    background: #3046a8;
-    box-shadow: 0 -36px 0 -10px transparent, 32px -16px 0 -10px transparent,
-      32px 16px 0 -10px transparent, 0 36px 0 -10px transparent,
-      -32px 16px 0 -10px transparent, -32px -16px 0 -10px transparent;
-  }
-}
-@-webkit-keyframes splash-12 {
-  40% {
-    background: #3046a8;
-    box-shadow: 0 -18px 0 -8px #3046a8, 16px -8px 0 -8px #3046a8,
-      16px 8px 0 -8px #3046a8, 0 18px 0 -8px #3046a8, -16px 8px 0 -8px #3046a8,
-      -16px -8px 0 -8px #3046a8;
-  }
-  100% {
-    background: #3046a8;
-    box-shadow: 0 -36px 0 -10px transparent, 32px -16px 0 -10px transparent,
-      32px 16px 0 -10px transparent, 0 36px 0 -10px transparent,
-      -32px 16px 0 -10px transparent, -32px -16px 0 -10px transparent;
-  }
-}
-@-o-keyframes splash-12 {
-  40% {
-    background: #3046a8;
-    box-shadow: 0 -18px 0 -8px #3046a8, 16px -8px 0 -8px #3046a8,
-      16px 8px 0 -8px #3046a8, 0 18px 0 -8px #3046a8, -16px 8px 0 -8px #3046a8,
-      -16px -8px 0 -8px #3046a8;
-  }
-  100% {
-    background: #3046a8;
-    box-shadow: 0 -36px 0 -10px transparent, 32px -16px 0 -10px transparent,
-      32px 16px 0 -10px transparent, 0 36px 0 -10px transparent,
-      -32px 16px 0 -10px transparent, -32px -16px 0 -10px transparent;
-  }
-}
-@keyframes splash-12 {
-  40% {
-    background: #3046a8;
-    box-shadow: 0 -18px 0 -8px #3046a8, 16px -8px 0 -8px #3046a8,
-      16px 8px 0 -8px #3046a8, 0 18px 0 -8px #3046a8, -16px 8px 0 -8px #3046a8,
-      -16px -8px 0 -8px #3046a8;
-  }
-  100% {
-    background: #3046a8;
-    box-shadow: 0 -36px 0 -10px transparent, 32px -16px 0 -10px transparent,
-      32px 16px 0 -10px transparent, 0 36px 0 -10px transparent,
-      -32px 16px 0 -10px transparent, -32px -16px 0 -10px transparent;
-  }
-}
-.checkbox_gender {
-  font-family: "Albert Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-
-  color: #3046a8;
-  padding-left: 10px;
-  margin: 0px;
-}
-.fakulte_stiky_side_bar {
-  background-color: white;
-  padding: 20px;
-  border-radius: 20px;
-  position: sticky;
-  top: 130px;
-}
-.fak_side_bar_header {
-  font-family: "Albert Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 34px;
-  color: #0c122b;
-}
-.fakulte_stiky_side_bar a {
-  font-family: "Albert Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #1a265c;
-}
-@media only screen and (max-width: 1399px) {
-  .fak_side_bar_header {
-    font-size: 22px;
-  }
-  .fakulte_stiky_side_bar a {
-    font-size: 15px;
-  }
+  @media only screen and (max-width: 1399px) {
 }
 
 @media only screen and (max-width: 1199px) {
-  .fak_side_bar_header {
-    font-size: 21px;
-  }
-  .fakulte_stiky_side_bar a {
-    font-size: 14px;
-  }
-  .fakulte_stiky_side_bar {
-    padding: 12px;
-  }
 }
 @media only screen and (max-width: 992px) {
-  .fak_mob_none {
-    display: none;
-  }
-  .about_faculty h1 {
-    padding-top: 0px;
-  }
-  .heber_card {
-    height: 442.47px;
-  }
 }
 @media only screen and (max-width: 767px) {
-  .fakulte_name h1 {
-    font-size: 48px;
-    line-height: 40px;
-  }
+    .marggg {
+        margin-top: 0px;
+        padding-left: 14px;
+    }
+    .paragraph_Style {
+       
+        width: 70%;
+       
+    }
 }
 @media only screen and (max-width: 550px) {
-  .fakulte_name h1 {
-    font-size: 40px;
-  }
-  .fakulte_logo img {
-    scale: 0.8;
-  }
+    .marggg {
+        margin-top: 0px;
+        padding-left: 14px;
+    }
+    .paragraph_Style {
+       
+        width: 70%;
+      
+    }
 }
 @media only screen and (max-width: 400px) {
-  .fakulte_name h1 {
-    font-size: 38px;
-  }
-  .fakulte_logo img {
-    scale: 0.7;
-  }
+    .marggg {
+        margin-top: 0px;
+        padding-left: 14px;
+    }
 }

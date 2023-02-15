@@ -1,0 +1,94 @@
+body {
+  position: relative;
+}
+.mystyle1 img {
+  scale: 1 !important;
+}
+.about_header_back {
+  background: linear-gradient(
+      0deg,
+      rgba(16, 21, 70, 0.65),
+      rgba(16, 21, 70, 0.65)
+    ),
+    url(../img/about_header_back.png), #eceefe;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center right;
+  background-color: gray;
+  background-blend-mode: multiply;
+}
+
+.about_name {
+  height: 48vh;
+}
+.about_text_content {
+  /* padding-right: 10px; */
+}
+.about_name h1 {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about_asoiu p {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.0008em;
+  color: #1a265c;
+  text-align: justify;
+}
+.about_img {
+  padding-top: 60px;
+}
+.about_img img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 1399px) {
+}
+
+@media only screen and (max-width: 1199px) {
+}
+@media only screen and (max-width: 992px) {
+}
+@media only screen and (max-width: 767px) {
+}
+@media only screen and (max-width: 550px) {
+}
+@media only screen and (max-width: 400px) {
+}
+
+.table_style{
+  background: #1a265c;
+  color: white !important;
+}
+.kitabxana_text p{
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 31px;
+  letter-spacing: -0.0008em;
+  color: #1a265c;
+  text-align: justify;
+}
+.marg{
+  margin: 0px ;
+  padding: 0px;
+}
+.img-fluid{
+  border-radius: 15px;
+  margin: 10px 0px;
+}
+.top1{
+  top: 120px;
+  position: fixed;
+}

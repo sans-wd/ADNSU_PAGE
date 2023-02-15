@@ -1,0 +1,41 @@
+.overlay input {
+ width: 100%;
+}
+.paragraph_Style2{
+    font-family: 'Albert Sans'; 
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  width: 15%;
+  /* Blue/Blue Main */
+  
+  color: #1A265C;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  }
+  @media only screen and (max-width: 1399px) {
+}
+
+@media only screen and (max-width: 1199px) {
+}
+@media only screen and (max-width: 992px) {
+    .paragraph_Style2{
+        width: 25%;
+        }
+}
+@media only screen and (max-width: 767px) {
+    .paragraph_Style2{
+      width: 25%;
+      }
+}
+@media only screen and (max-width: 550px) {
+    .paragraph_Style2{
+      width: 25%;
+      }
+}
+@media only screen and (max-width: 400px) {
+    .paragraph_Style2{
+      width: 25%;
+      }
+}
