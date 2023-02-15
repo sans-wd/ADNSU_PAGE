@@ -185,7 +185,9 @@ color: #1A265C;
 .about_header_back {
     
   }
-  
+  .dblock1{
+    display: none;
+  }
   .about_name {
     height: 48vh;
   }
@@ -212,6 +214,9 @@ color: #1A265C;
 @media only screen and (max-width: 1199px) {
 }
 @media only screen and (max-width: 992px) {
+    .dblock2{
+        display: block;
+    }
 }
 @media only screen and (max-width: 767px) {
     .marggg {
@@ -222,6 +227,12 @@ color: #1A265C;
        
         width: 70%;
        
+    }
+    .dblock2{
+        display: block;
+    }
+    .dblock3{
+        display: none;
     }
 }
 @media only screen and (max-width: 550px) {
@@ -234,10 +245,22 @@ color: #1A265C;
         width: 70%;
       
     }
+    .dblock2{
+        display: block;
+    }
+    .dblock3{
+        display: none;
+    }
 }
 @media only screen and (max-width: 400px) {
     .marggg {
         margin-top: 0px;
         padding-left: 14px;
+    }
+    .dblock2{
+        display: block;
+    }
+    .dblock3{
+        display: none;
     }
 }
