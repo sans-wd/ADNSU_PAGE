@@ -7,7 +7,7 @@
     line-height: 31px;
     letter-spacing: -0.0008em;
     color: #1a265c;
-    text-align: left;
+    text-align: left !important;
   }
   .content_header {
     font-size: 30px !important;
@@ -20,11 +20,12 @@
   }
   .about_faculty ul li {
     font-size: 20px !important;
+    text-align: left !important;
   }
 }
 @media only screen and (max-width: 575px) {
   .about_faculty p {
-    text-align: left;
+    text-align: left !important;
   }
 }
 @media only screen and (max-width: 390px) {
@@ -36,10 +37,12 @@
     line-height: 31px;
     letter-spacing: -0.0008em;
     color: #1a265c;
-    text-align: left;
+    text-align: left !important;
+
   }
   .about_faculty ul li {
     font-size: 18px !important;
+    text-align: left !important;
   }
   table.GeneratedTable td,
   table.GeneratedTable th {
