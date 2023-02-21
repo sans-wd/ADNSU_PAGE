@@ -5,12 +5,12 @@ body {
   scale: 1 !important;
 }
 .fakulte_header_back {
-  background: url(../img/fakulte_head_background.jpg);
+  /* background: url(../img/fakulte_head_background.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-color: gray;
-  background-blend-mode: multiply;
+  background-blend-mode: multiply; */
 }
 .heber_card {
   height: 312.47px !important;
@@ -43,6 +43,20 @@ body {
   letter-spacing: -0.0008em;
   color: #1a265c;
   text-align: justify;
+}
+.about_faculty ul li {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.0008em;
+  color: #1a265c;
+  text-align: justify;
+  list-style-type: disc;
+}
+.about_faculty ul {
+  padding-left: 24px;
 }
 .fakulte_dep_card {
   width: 243px;

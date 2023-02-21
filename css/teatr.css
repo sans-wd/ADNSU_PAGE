@@ -191,6 +191,18 @@ body {
   line-height: 22px;
   color: #1a265c;
 }
+.btn_txt{
+  font-family: 'Albert Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 22px;
+/* identical to box height */
+height: 55px;
+width: 305px;
+
+color: #1A265C;
+}
 @media only screen and (max-width: 1399px) {
   .fak_side_bar_header {
     font-size: 22px;
