@@ -1078,10 +1078,137 @@ ul li {
 }
 /* SEARC_WINDOW */
 /* PROQRAMLAR VE PARTNYORLAR */
+/* NEW MEZUN FIKIR */
+.gtco-testimonials {
+  position: relative;
+  margin-top: 30px;
+}
+.gtco-testimonials h2 {
+  font-size: 30px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 50px;
+}
+.gtco-testimonials .owl-stage-outer {
+  padding: 30px 0;
+}
+
+.gtco-testimonials .owl-dots {
+  text-align: center;
+}
+.gtco-testimonials .owl-dots span {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: block;
+  background: #fff;
+  border: 2px solid #01b0f8;
+  margin: 0 5px;
+}
+.gtco-testimonials .owl-dots .active {
+  box-shadow: none;
+}
+.gtco-testimonials .owl-dots .active span {
+  background: #01b0f8 !important;
+  box-shadow: none;
+  height: 12px;
+  width: 12px;
+}
+.gtco-testimonials .card {
+  background: #fff;
+  box-shadow: 0 8px 30px -7px #c9dff0;
+  margin: 0 20px;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 0;
+}
+.gtco-testimonials .card .card-img-top {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 15px auto 0;
+  box-shadow: 0 8px 20px -4px #95abbb;
+  width: 100px;
+  height: 100px;
+}
+.gtco-testimonials .card h5 {
+  color: #01b0f8;
+  font-size: 21px;
+  line-height: 1.3;
+}
+.gtco-testimonials .card h5 span {
+  font-size: 18px;
+  color: #666666;
+}
+.gtco-testimonials .card p {
+  font-size: 18px;
+  color: #555;
+  padding-bottom: 15px;
+}
+.gtco-testimonials .active {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+.gtco-testimonials .center {
+  opacity: 1;
+}
+.gtco-testimonials .center h5 {
+  font-size: 24px;
+}
+.gtco-testimonials .center h5 span {
+  font-size: 20px;
+}
+.gtco-testimonials .center .card-img-top {
+  max-width: 100%;
+  height: 120px;
+  width: 120px;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: transparent;
+  color: black;
+  text-decoration: none;
+}
+
+.owl-carousel button.owl-dot {
+  outline: 0;
+}
+.owl-nav > div {
+  margin-top: -26px !important;
+  position: absolute !important;
+  top: 50% !important;
+  color: black !important;
+}
+.owl-nav {
+  display: flex !important;
+  position: relative !important;
+  top: -252px;
+  width: 97%;
+  left: 20px;
+
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.owl-nav i {
+  font-size: 52px !important;
+}
+
+.owl-nav .owl-prev {
+  left: -30px !important;
+}
+
+.owl-nav .owl-next {
+  right: -30px !important;
+}
+/* NEW MEZUN FIKIR */
 
 @media only screen and (max-width: 1399px) {
   .fakulte_card {
     height: 339px;
+  }
+  .owl-nav {
+    left: 23px;
+    width: 96%;
   }
 }
 
@@ -1114,8 +1241,12 @@ ul li {
   body::-webkit-scrollbar {
     display: none;
   }
+  .owl-nav {
+    left: 24px;
+    width: 95%;
+  }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .ss-slide-info {
     padding-top: 430px;
   }
@@ -1169,6 +1300,11 @@ ul li {
   .myprev3 {
     display: none;
   }
+  .owl-nav {
+    left: 22px;
+    width: 94%;
+    top: -240px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .ss-slide-info h1 {
@@ -1200,6 +1336,11 @@ ul li {
   .overlay button {
     width: 20% !important;
   }
+  .owl-nav {
+    left: 21px;
+    width: 92%;
+    top: -240px;
+  }
 }
 @media only screen and (max-width: 550px) {
   .fakulte_card {
@@ -1219,6 +1360,10 @@ ul li {
   .texno1 {
     width: 260px;
   }
+  .owl-nav {
+    width: 91%;
+    top: -240px;
+  }
 }
 @media only screen and (max-width: 420px) {
   .fakulte_card {
@@ -1232,5 +1377,25 @@ ul li {
 
     /* margin-left: 15px; */
     /* margin-right: 15px; */
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .owl-nav {
+    width: 89%;
+    top: -240px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .owl-nav {
+    width: 88%;
+    top: -240px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .owl-nav {
+    width: 86%;
+    top: -240px;
   }
 }
