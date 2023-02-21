@@ -1,0 +1,114 @@
+<!-- ========= OWL CSS ========= -->
+<link
+  rel="stylesheet"
+  href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+/>
+<div class="container">
+  <div class="gtco-testimonials">
+    <h1 class="content_header pt-3">Alumni thoughts</h1>
+    <div class="owl-carousel owl-carousel1 owl-theme">
+      <div>
+        <div class="card text-center">
+          <img class="card-img-top" src="./img/new_mezun1.jpg" alt="" />
+          <div class="card-body">
+            <h5>
+              İbrahim Baxış <br />
+              <span> Designer </span>
+            </h5>
+            <p class="card-text">
+              “ Education is the most powerful weapon which you can use to
+              change the world. ”
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card text-center">
+          <img class="card-img-top" src="./img/new_mezun2.jpg" alt="" />
+          <div class="card-body">
+            <h5>
+              Missy Limana<br />
+              <span> Engineer </span>
+            </h5>
+            <p class="card-text">
+              “ Education is the most powerful weapon which you can use to
+              change the world. ”
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card text-center">
+          <img class="card-img-top" src="./img/new_mezun3.jpg" alt="" />
+          <div class="card-body">
+            <h5>
+              Martha Brown<br />
+              <span> Project Manager </span>
+            </h5>
+            <p class="card-text">
+              “Education is the most powerful weapon which you can use to change
+              the world. ”
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card text-center">
+          <img class="card-img-top" src="./img/new_mezun4.jpg" alt="" />
+          <div class="card-body">
+            <h5>
+              Hanna Lisem<br />
+              <span> Project Manager </span>
+            </h5>
+            <p class="card-text">
+              “Education is the most powerful weapon which you can use to change
+              the world. ”
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script>
+  (function () {
+    "use strict";
+
+    var carousels = function () {
+      $(".owl-carousel1").owlCarousel({
+        loop: true,
+        center: true,
+        margin: 0,
+        responsiveClass: true,
+        nav: true,
+        navText: [
+          "<i class='fa fa-caret-left'></i>",
+          "<i class='fa fa-caret-right'></i>",
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          767: {
+            items: 1,
+          },
+          991: {
+            items: 1,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    };
+
+    (function ($) {
+      carousels();
+    })(jQuery);
+  })();
+</script>
