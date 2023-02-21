@@ -5,10 +5,10 @@ body {
   scale: 1 !important;
 }
 .fakulte_header_back {
-  background: url(../img/fakulte_head_background.jpg);
+  background: url(../img/Theater_Page_Cover_Photo.png);
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: initial;
   background-color: gray;
   background-blend-mode: multiply;
 }
@@ -16,7 +16,7 @@ body {
   height: 312.47px !important;
 }
 .fakulte_name {
-  height: 48vh;
+  height: 58vh;
 }
 .fakulte_text_content {
   /* padding-right: 10px; */
@@ -43,6 +43,9 @@ body {
   letter-spacing: -0.0008em;
   color: #1a265c;
   text-align: justify;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 .fakulte_dep_card {
   width: 243px;
