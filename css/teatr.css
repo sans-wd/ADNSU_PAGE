@@ -191,17 +191,23 @@ body {
   line-height: 22px;
   color: #1a265c;
 }
-.btn_txt{
-  font-family: 'Albert Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 28px;
-line-height: 22px;
-/* identical to box height */
-height: 55px;
-width: 305px;
-
-color: #1A265C;
+.btn_txt {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 22px;
+  /* identical to box height */
+  height: 55px;
+  width: 305px;
+  margin-top: 20px;
+  color: #1a265c;
+}
+.disblock {
+  display: block;
+}
+.dispnone {
+  display: none;
 }
 @media only screen and (max-width: 1399px) {
   .fak_side_bar_header {
@@ -228,16 +234,27 @@ color: #1A265C;
     display: none;
   }
   .about_faculty h1 {
-    padding-top: 0px;
   }
   .heber_card {
     height: 442.47px;
+  }
+  .dispnone {
+    display: block;
+  }
+  .disblock {
+    display: none;
   }
 }
 @media only screen and (max-width: 767px) {
   .fakulte_name h1 {
     font-size: 48px;
     line-height: 40px;
+  }
+  .dispnone {
+    display: block;
+  }
+  .disblock {
+    display: none;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -247,6 +264,12 @@ color: #1A265C;
   .fakulte_logo img {
     scale: 0.8;
   }
+  .dispnone {
+    display: block;
+  }
+  .disblock {
+    display: none;
+  }
 }
 @media only screen and (max-width: 400px) {
   .fakulte_name h1 {
@@ -254,5 +277,11 @@ color: #1A265C;
   }
   .fakulte_logo img {
     scale: 0.7;
+  }
+  .dispnone {
+    display: block;
+  }
+  .disblock {
+    display: none;
   }
 }
