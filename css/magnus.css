@@ -178,6 +178,15 @@ body {
   background-position: center;
   background-size: cover;
 }
+#summer_sch img,
+#ka2 img,
+#first_meet img {
+  width: 40%;
+}
+#summer_meet img,
+#sumer_end img {
+  width: 45%;
+}
 
 .fakulte_stiky_side_bar {
   background-color: white;
@@ -232,11 +241,29 @@ body {
   .heber_card {
     height: 442.47px;
   }
+  #summer_sch img,
+  #ka2 img,
+  #first_meet img {
+    width: 50%;
+  }
+  #summer_meet img,
+  #sumer_end img {
+    width: 55%;
+  }
 }
 @media only screen and (max-width: 767px) {
   .fakulte_name h1 {
     font-size: 48px;
     line-height: 40px;
+  }
+  #summer_sch img,
+  #ka2 img,
+  #first_meet img {
+    width: 100%;
+  }
+  #summer_meet img,
+  #sumer_end img {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 550px) {
@@ -247,11 +274,14 @@ body {
     scale: 0.8;
   }
 }
-@media only screen and (max-width: 400px) {
-  .fakulte_name h1 {
-    font-size: 38px;
+@media only screen and (max-width: 425px) {
+  #summer_sch img,
+  #ka2 img,
+  #first_meet img {
+    width: 100%;
   }
-  .fakulte_logo img {
-    scale: 0.7;
+  #summer_meet img,
+  #sumer_end img {
+    width: 100%;
   }
 }
