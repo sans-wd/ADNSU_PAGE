@@ -161,7 +161,7 @@ body {
 
 .fakulte_stiky_side_bar {
   background-color: white;
-  padding: 20px;
+  padding: 13px;
   border-radius: 20px;
   position: sticky;
   top: 130px;
@@ -181,6 +181,25 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: #1a265c;
+}
+.mystyle {
+  box-shadow: none;
+}
+.content_header {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  color: #1a265c;
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0px;
+}
+.ulstyle li {
+  list-style-type: circle;
 }
 @media only screen and (max-width: 1399px) {
   .fak_side_bar_header {
@@ -205,9 +224,6 @@ body {
 @media only screen and (max-width: 992px) {
   .fak_mob_none {
     display: none;
-  }
-  .about_faculty h1 {
-    padding-top: 0px;
   }
   .heber_card {
     height: 442.47px;
