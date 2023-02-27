@@ -1,0 +1,428 @@
+body {
+  position: relative;
+}
+.mystyle1 img {
+  scale: 1 !important;
+}
+.fakulte_header_back {
+  background: url(../img/fakulte_head_background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: gray;
+  background-blend-mode: multiply;
+}
+.heber_card {
+  height: 312.47px !important;
+}
+.fakulte_name {
+  height: 48vh;
+}
+.fakulte_text_content {
+  /* padding-right: 10px; */
+}
+.fakulte_name h1 {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.fakulte_logo {
+  margin-top: -121.5px;
+}
+.about_faculty p {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.0008em;
+  color: #1a265c;
+  text-align: justify;
+}
+.fakulte_dep_card {
+  width: 243px;
+  height: 256px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30.88px;
+}
+.fakulte_dep_card h2 {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  color: #1a265c;
+}
+.fakulte_teach_selector span a {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.0008em;
+  color: #617eff;
+  text-decoration: none;
+}
+.fak_teach_card {
+  width: 276px;
+  height: 337px;
+}
+.techer_img {
+  width: 100%;
+  height: 256px;
+  
+  
+}
+.techer_img img {
+  width: 100%;
+  height: 256px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.fak_tech_icons {
+  top: 7px;
+  justify-content: space-between;
+  align-items: center;
+  width: 268px!important;
+    
+    margin-left: 9px;
+    display: flex!important;
+}
+.fak_tech_icons a {
+  color: #b6c2ff;
+  padding-right: 10px;
+}
+.fak_tech_icons a i {
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 100px;
+  padding: 8px;
+  font-size: 23px;
+}
+
+.fak_teacher_info h1 {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.0008em;
+  color: #1a265c;
+}
+.fak_teacher_info p {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  color: #617eff;
+}
+
+.lab_card {
+  width: 300px;
+  height: 294px;
+}
+.lab_card_back_img {
+  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
+    url(../img/lab_room1.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  width: 300px;
+  height: 294px;
+  padding: 20px;
+}
+
+.lab_card_info h1 {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  color: #dfe3f6;
+  padding-top: 80%;
+}
+.lab_card_back_img2 {
+  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
+    url(../img/lab_room2.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.lab_card_back_img3 {
+  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
+    url(../img/lab_room3.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.lab_card_back_img4 {
+  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
+    url(../img/lab_room4.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.lab_card_back_img5 {
+  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
+    url(../img/lab_room5.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.lab_card_back_img6 {
+  background: linear-gradient(0deg, #1a265c -5.91%, rgba(26, 38, 92, 0) 58.17%),
+    url(../img/lab_room6.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.fakulte_stiky_side_bar {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  position: sticky;
+  top: 130px;
+}
+.fak_side_bar_header {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: #0c122b;
+}
+.fakulte_stiky_side_bar a {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1a265c;
+}
+
+.search_box{
+  max-width: 100vw;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.wrapper-search,
+.wrapper-content,
+.wrapper-paginations {
+    width: 100%;
+
+    margin: 0px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.wrapper-search {
+    margin: 10px 0 0 0;
+    align-items: center;
+}
+.wrapper-search input {
+    width: 60%;
+    font-size: 18px;
+    font-weight: normal;
+
+    margin: 0 10px 0 0;
+    padding: 10px 20px;
+
+    border: 1px solid #e6e6e6;
+    border-radius: 50px;
+
+    color: #252525;
+    background-color: #fff;
+
+    outline: none;
+}
+
+.wrapper-paginations {
+    justify-content: center;
+
+    transition: all .5s ease;
+}
+.wrapper-paginations.hide {
+    height: 0;
+
+    padding: 0px;
+    
+    overflow: hidden;
+}
+.wrapper-paginations span {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  color: #000;
+  background-color: transparent;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  cursor: pointer;
+  user-select: none;
+  transition: border-radius, background .5s ease;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 45px !important;
+
+}
+.wrapper-paginations span.dot-l {
+    margin: 0 5px 0 25px;
+}
+.wrapper-paginations span.dot-r {
+    margin: 0 25px 0 5px;
+}
+.wrapper-paginations span.dot-l:after,
+.wrapper-paginations span.dot-r:after {
+    content: '...';
+
+    font-size: 22px;
+    font-weight: bold;
+
+    color: #000;
+
+    cursor: initial;
+    user-select: none;
+    pointer-events: none;
+
+    position: absolute;
+    left: -25px;
+    top: 2px;
+    z-index: 1;
+}
+.wrapper-paginations span.dot-r:after {
+    left: unset;
+    right: -25px;
+}
+.wrapper-paginations span.active,
+.wrapper-paginations span:hover {
+  background: #1A265C;
+    border-radius: 5px;
+    color: white;
+}
+.wrapper-paginations span.hide {
+    display: none;
+}
+
+.block {
+    width: 320px;
+    height: 320px;
+
+    margin: 5px;
+
+    color: #fff;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: 25px;
+}
+.block.hide {
+    display: none;
+}
+.block.view {
+    display: flex;
+}
+.wrapper-search span{
+  font-family: 'Albert Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.0008em;
+  
+  /* Blue/Blue Main */
+  
+  color: #1A265C;
+  
+}
+.wrapper-search button{
+  width: 160px;
+height: 57px;
+
+/* Blue/Blue Main */
+
+background: #1A265C;
+border-radius: 15px;
+border: none;
+color: white;
+}
+.wrapper-search input{
+  justify-content: space-between;
+  
+}
+
+
+@media only screen and (max-width: 1399px) {
+  .fak_side_bar_header {
+    font-size: 22px;
+  }
+  .fakulte_stiky_side_bar a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .fak_side_bar_header {
+    font-size: 21px;
+  }
+  .fakulte_stiky_side_bar a {
+    font-size: 14px;
+  }
+  .fakulte_stiky_side_bar {
+    padding: 12px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .fak_mob_none {
+    display: none;
+  }
+  .about_faculty h1 {
+    padding-top: 0px;
+  }
+  .heber_card {
+    height: 442.47px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .fakulte_name h1 {
+    font-size: 48px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .fakulte_name h1 {
+    font-size: 40px;
+  }
+  .fakulte_logo img {
+    scale: 0.8;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .fakulte_name h1 {
+    font-size: 38px;
+  }
+  .fakulte_logo img {
+    scale: 0.7;
+  }
+}
