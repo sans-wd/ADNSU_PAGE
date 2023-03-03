@@ -10,7 +10,7 @@ body {
   height: 312.47px !important;
 }
 .fakulte_name {
-  height: 48vh;
+  height: 45vh;
 }
 .fakulte_text_content {
   /* padding-right: 10px; */
@@ -23,6 +23,8 @@ body {
   line-height: 74px;
   text-align: center;
   color: #ffffff;
+
+  margin-top: 101px;
 }
 .content_header {
   padding: 30px 0px !important;
@@ -257,6 +259,9 @@ body {
   }
   .fakulte_stiky_side_bar {
     padding: 12px;
+  }
+  .fakulte_name h1 {
+    margin-top: 65px;
   }
 }
 @media only screen and (max-width: 992px) {
