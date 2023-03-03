@@ -9,7 +9,7 @@
 }
 
 .gtco-testimonials .owl-dots {
-  display: flex;
+  display: none;
   text-align: center;
   justify-content: center;
 
@@ -170,14 +170,14 @@
   .owl-nav {
     left: 22px;
     width: 94%;
-    top: -240px;
+    top: -222px;
   }
 }
 @media only screen and (max-width: 767px) {
   .owl-nav {
     left: 21px;
     width: 92%;
-    top: -240px;
+    top: -222px;
   }
 }
 @media only screen and (max-width: 550px) {

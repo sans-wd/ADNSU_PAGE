@@ -1771,7 +1771,7 @@
     <div class="container">
       <div class="gtco-testimonials">
         <h1 class="content_header pt-3">Alumni thoughts</h1>
-        <div class="owl-carousel owl-carousel1 owl-theme">
+        <div class="owl-carousel owl-carousel1 owl-theme" style="height: 397px">
           <div>
             <div class="card text-center">
               <img class="card-img-top" src="./img/new_mezun1.jpg" alt="" />
@@ -2066,6 +2066,7 @@
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
+        autoplay: true,
 
         navigation: {
           nextEl: ".swiper-button-next",
@@ -2078,6 +2079,7 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         loop: true,
+        autoplay: true,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -2098,6 +2100,7 @@
           clickable: true,
         },
         rewind: true,
+        autoplay: true,
         breakpoints: {
           375: {
             slidesPerView: 1,
@@ -2143,6 +2146,7 @@
           clickable: true,
         },
         rewind: true,
+        autoplay: true,
         breakpoints: {
           375: {
             slidesPerView: 1,
@@ -2190,6 +2194,7 @@
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
+        autoplay: true,
 
         navigation: {
           nextEl: ".swiper-button-next",
@@ -2200,6 +2205,7 @@
     <script>
       var swiper = new Swiper(".mySwiper4", {
         loop: true,
+        autoplay: true,
         // freeMode: true,
 
         updateOnWindowResize: true,
@@ -2348,11 +2354,12 @@
         loop: true,
         center: true,
         margin: 0,
+        autoplay: true,
         responsiveClass: true,
-        nav: true,
+        nav: false,
         navText: [
-          "<i class='fa fa-caret-left'></i>",
-          "<i class='fa fa-caret-right'></i>",
+          "<i class='fa-solid fa-chevron-left'></i>",
+          "<i class='fa-solid fa-chevron-right'></i>",
         ],
         responsive: {
           0: {

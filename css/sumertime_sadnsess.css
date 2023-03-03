@@ -24,6 +24,31 @@ body {
   text-align: center;
   color: #ffffff;
 }
+.content_header {
+  padding: 30px 0px !important;
+}
+.mylist {
+  list-style-type: disc !important;
+  padding-left: 20px;
+}
+.mylist li {
+  list-style-type: disc !important;
+}
+
+.about_faculty ul li {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: -0.0008em;
+  color: #1a265c;
+  text-align: justify;
+  list-style-type: disc;
+}
+.about_faculty ul {
+  padding-left: 24px;
+}
 
 .fakulte_logo {
   margin-top: -121.5px;
@@ -37,6 +62,16 @@ body {
   letter-spacing: -0.0008em;
   color: #1a265c;
   text-align: justify;
+}
+.miniheader {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 28px !important;
+  line-height: 38px;
+  color: #3e5bdb !important;
+  margin: 0px;
+  padding: 20px 0;
 }
 .fakulte_dep_card {
   width: 243px;
@@ -201,6 +236,9 @@ body {
 .ulstyle li {
   list-style-type: circle;
 }
+.fak_mob_block {
+  display: none;
+}
 @media only screen and (max-width: 1399px) {
   .fak_side_bar_header {
     font-size: 22px;
@@ -224,6 +262,9 @@ body {
 @media only screen and (max-width: 992px) {
   .fak_mob_none {
     display: none;
+  }
+  .fak_mob_block {
+    display: block;
   }
   .heber_card {
     height: 442.47px;
