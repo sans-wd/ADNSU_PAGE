@@ -35,63 +35,24 @@
       href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <!-- GALLERY -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="http://yoursite.com/themify-icons.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <!-- agananga -->
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery.css"
     />
+
+    <!-- serlhmgwsmhe -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css"
+      href="http://www.aak.gov.az/public/frontAssets/css/lightGallery.css"
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-share.css"
+      type="text/css"
+      href="http://www.aak.gov.az/public/frontAssets/fonts/iconic/css/material-design-iconic-font.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="http://yoursite.com/themify-icons.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-share.css"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="http://yoursite.com/themify-icons.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lightgallery.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-zoom.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/css/lg-share.css"
-    />
-    <!-- GALLERY -->
-    <link rel="stylesheet" href="./css/sumer_gallery.css" />
+
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/sumertime_sadnsess.css" />
     <link rel="stylesheet" href="./css/text_responsive.css" />
@@ -1052,206 +1013,424 @@
                       Summer School 2018
                     </p>
                     <h1 class="content_header">Photo album</h1>
-                    <div class="col-12 tedbirimg">
-                      <div
-                        class="row d-flex justify-content-between align-items-center"
-                      >
-                        <div
-                          class="demo-gallery d-flex align-items-center justify-content-between"
-                        >
-                          <ul class="" id="lightgallery">
+
+                    <style>
+                      .demo-gallery > ul {
+                        margin-bottom: 0;
+                        padding-left: 0px;
+                      }
+
+                      .demo-gallery > ul > li {
+                        margin-bottom: 5px;
+                        /*width: 180px;*/
+                        width: auto;
+                        /*height: 130px;*/
+                        display: inline-block;
+                        margin-right: 0px;
+                        list-style: outside none none;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                      }
+
+                      .demo-gallery > ul > li a {
+                        border: 3px solid transparent;
+                        border-radius: 20px;
+                        display: block;
+                        overflow: hidden;
+                        position: relative;
+                        float: left;
+                      }
+
+                      .demo-gallery > ul > li a > img {
+                        -webkit-transition: -webkit-transform 0.15s ease 0s;
+                        -moz-transition: -moz-transform 0.15s ease 0s;
+                        -o-transition: -o-transform 0.15s ease 0s;
+                        transition: transform 0.15s ease 0s;
+                        -webkit-transform: scale3d(1, 1, 1);
+                        transform: scale3d(1, 1, 1);
+                        /*height: 100%;*/
+                        height: 110px;
+                        width: 100%;
+                      }
+
+                      .demo-gallery > ul > li a:hover > img {
+                        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                        transform: scale3d(1.1, 1.1, 1.1);
+                      }
+
+                      .demo-gallery
+                        > ul
+                        > li
+                        a:hover
+                        .demo-gallery-poster
+                        > img {
+                        opacity: 1;
+                      }
+
+                      .demo-gallery > ul > li a .demo-gallery-poster {
+                        background-color: rgba(0, 0, 0, 0.1);
+                        bottom: 0;
+                        left: 0;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        -webkit-transition: background-color 0.15s ease 0s;
+                        -o-transition: background-color 0.15s ease 0s;
+                        transition: background-color 0.15s ease 0s;
+                      }
+
+                      .demo-gallery > ul > li a .demo-gallery-poster > img {
+                        left: 50%;
+                        margin-left: -10px;
+                        margin-top: -10px;
+                        opacity: 0;
+                        position: absolute;
+                        top: 50%;
+                        -webkit-transition: opacity 0.3s ease 0s;
+                        -o-transition: opacity 0.3s ease 0s;
+                        transition: opacity 0.3s ease 0s;
+                      }
+
+                      .demo-gallery > ul > li a:hover .demo-gallery-poster {
+                        background-color: rgba(0, 0, 0, 0.5);
+                      }
+
+                      .demo-gallery .justified-gallery > a > img {
+                        -webkit-transition: -webkit-transform 0.15s ease 0s;
+                        -moz-transition: -moz-transform 0.15s ease 0s;
+                        -o-transition: -o-transform 0.15s ease 0s;
+                        transition: transform 0.15s ease 0s;
+                        -webkit-transform: scale3d(1, 1, 1);
+                        transform: scale3d(1, 1, 1);
+                        height: 100%;
+                        width: 100%;
+                      }
+
+                      .demo-gallery .justified-gallery > a:hover > img {
+                        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                        transform: scale3d(1.1, 1.1, 1.1);
+                      }
+
+                      .demo-gallery
+                        .justified-gallery
+                        > a:hover
+                        .demo-gallery-poster
+                        > img {
+                        opacity: 1;
+                      }
+
+                      .demo-gallery
+                        .justified-gallery
+                        > a
+                        .demo-gallery-poster {
+                        background-color: rgba(0, 0, 0, 0.1);
+                        bottom: 0;
+                        left: 0;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        -webkit-transition: background-color 0.15s ease 0s;
+                        -o-transition: background-color 0.15s ease 0s;
+                        transition: background-color 0.15s ease 0s;
+                      }
+
+                      .demo-gallery
+                        .justified-gallery
+                        > a
+                        .demo-gallery-poster
+                        > img {
+                        left: 50%;
+                        margin-left: -10px;
+                        margin-top: -10px;
+                        opacity: 0;
+                        position: absolute;
+                        top: 50%;
+                        -webkit-transition: opacity 0.3s ease 0s;
+                        -o-transition: opacity 0.3s ease 0s;
+                        transition: opacity 0.3s ease 0s;
+                      }
+
+                      .demo-gallery
+                        .justified-gallery
+                        > a:hover
+                        .demo-gallery-poster {
+                        background-color: rgba(0, 0, 0, 0.5);
+                      }
+
+                      .demo-gallery .video .demo-gallery-poster img {
+                        height: 48px;
+                        margin-left: -24px;
+                        margin-top: -24px;
+                        opacity: 0.8;
+                        width: 48px;
+                      }
+
+                      .demo-gallery.dark > ul > li a {
+                        border: 3px solid #04070a;
+                      }
+                    </style>
+                    <div class="col-12">
+                      <div class="cont">
+                        <div class="demo-gallery">
+                          <ul id="lightgallery">
                             <li
+                              data-responsive="./img/sumerphoto1.jpg"
                               data-src="./img/sumerphoto1.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto1.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
+
                             <li
+                              data-responsive="./img/sumerphoto2.jpg"
                               data-src="./img/sumerphoto2.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto2.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
+
                             <li
+                              data-responsive="./img/sumerphoto3.jpg"
                               data-src="./img/sumerphoto3.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto3.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
+
                             <li
+                              data-responsive="./img/sumerphoto4.jpg"
                               data-src="./img/sumerphoto4.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto4.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
+
                             <li
+                              data-responsive="./img/sumerphoto5.jpg"
                               data-src="./img/sumerphoto5.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto5.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
+
                             <li
+                              data-responsive="./img/sumerphoto6.jpg"
                               data-src="./img/sumerphoto6.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto6.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
+
                             <li
+                              data-responsive="./img/sumerphoto7.jpg"
                               data-src="./img/sumerphoto7.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto7.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
+
                             <li
+                              data-responsive="./img/sumerphoto8.jpg"
                               data-src="./img/sumerphoto8.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto8.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
-
                             <li
+                              data-responsive="./img/sumerphoto9.jpg"
+                              data-src="./img/sumerphoto9.jpg"
+                            >
+                              <a href="">
+                                <img
+                                  class="img-responsive"
+                                  src="./img/sumerphoto9.jpg"
+                                />
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
+                              </a>
+                            </li>
+                            <li
+                              data-responsive="./img/sumerphoto10.jpg"
                               data-src="./img/sumerphoto10.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto10.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
+                              data-responsive="./img/sumerphoto11.jpg"
                               data-src="./img/sumerphoto11.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto11.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
+                              data-responsive="./img/sumerphoto12.jpg"
                               data-src="./img/sumerphoto12.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto12.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
+                              data-responsive="./img/sumerphoto13.jpg"
                               data-src="./img/sumerphoto13.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto13.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
+                              data-responsive="./img/sumerphoto14.jpg"
                               data-src="./img/sumerphoto14.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto14.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
+                              data-responsive="./img/sumerphoto15.jpg"
                               data-src="./img/sumerphoto15.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto15.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
-
                             <li
+                              data-responsive="./img/sumerphoto16.jpg"
+                              data-src="./img/sumerphoto16.jpg"
+                            >
+                              <a href="">
+                                <img
+                                  class="img-responsive"
+                                  src="./img/sumerphoto16.jpg"
+                                />
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
+                              </a>
+                            </li>
+                            <li
+                              data-responsive="./img/sumerphoto17.jpg"
                               data-src="./img/sumerphoto17.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto17.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
+                              data-responsive="./img/sumerphoto18.jpg"
                               data-src="./img/sumerphoto18.jpg"
-                              data-sub-html=""
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/sumerphoto18.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                           </ul>
@@ -1645,156 +1824,176 @@
                       <li>24/7 security</li>
                       <li>Full access to all facilities and amenities</li>
                     </ul>
-                    <div class="col-12 tedbirimg">
-                      <div
-                        class="row d-flex justify-content-between align-items-center"
-                      >
-                        <div
-                          class="demo-gallery d-flex align-items-center justify-content-between"
-                        >
+                    <div class="col-12">
+                      <div class="cont">
+                        <div class="demo-gallery">
                           <ul class="" id="lightgallery2">
                             <li
                               data-src="./img/summer_palce_1.jpg"
-                              data-sub-html=""
+                              data-responsive="./img/summer_palce_1.jpg"
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/summer_palce_1.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
                               data-src="./img/summer_palce_2.jpg"
-                              data-sub-html=""
+                              data-responsive="./img/summer_palce_2.jpg"
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/summer_palce_2.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
                               data-src="./img/summer_palce_3.jpg"
-                              data-sub-html=""
+                              data-responsive="./img/summer_palce_3.jpg"
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/summer_palce_3.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
                               data-src="./img/summer_palce_4.jpg"
-                              data-sub-html=""
+                              data-responsive="./img/summer_palce_4.jpg"
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/summer_palce_4.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
                               data-src="./img/summer_palce_5.jpg"
-                              data-sub-html=""
+                              data-responsive="./img/summer_palce_5.jpg"
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/summer_palce_5.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
                               data-src="./img/summer_palce_6.jpg"
-                              data-sub-html=""
+                              data-responsive="./img/summer_palce_6.jpg"
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/summer_palce_6.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
                               data-src="./img/summer_palce_7.jpg"
-                              data-sub-html=""
+                              data-responsive="./img/summer_palce_7.jpg"
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/summer_palce_7.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
                               data-src="./img/summer_palce_8.jpg"
-                              data-sub-html=""
+                              data-responsive="./img/summer_palce_8.jpg"
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/summer_palce_8.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
                               data-src="./img/summer_palce_9.jpg"
-                              data-sub-html=""
+                              data-responsive="./img/summer_palce_9.jpg"
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/summer_palce_9.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
                               data-src="./img/summer_palce_10.jpg"
-                              data-sub-html=""
+                              data-responsive="./img/summer_palce_10.jpg"
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/summer_palce_10.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
                               data-src="./img/summer_palce_11.jpg"
-                              data-sub-html=""
+                              data-responsive="./img/summer_palce_11.jpg"
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/summer_palce_11.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                             <li
                               data-src="./img/summer_palce_12.jpg"
-                              data-sub-html=""
+                              data-responsive="./img/summer_palce_12.jpg"
                             >
                               <a href="">
                                 <img
                                   class="img-responsive"
                                   src="./img/summer_palce_12.jpg"
                                 />
-                                <div class="demo-gallery-poster"></div>
+                                <div class="demo-gallery-poster">
+                                  <img src="" />
+                                </div>
                               </a>
                             </li>
                           </ul>
@@ -2347,208 +2546,24 @@
     }
   </script>
 </html>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-  var swiper = new Swiper(".mySwiper2", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
 
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-</script>
-<script>
-  var swiper = new Swiper(".mySwiper_fakulte", {
-    loop: true,
-    breakpoints: {
-      375: {
-        slidesPerView: 1,
-        spaceBetween: 100,
-      },
-      // when window width is >= 320px
-      420: {
-        slidesPerView: 3,
-        spaceBetween: 250,
-      },
-      // when window width is >= 480px
-      576: {
-        slidesPerView: 3,
-        spaceBetween: 240,
-      },
-      // when window width is >= 640px
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 150,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 70,
-      },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: -80,
-      },
-      1400: {
-        slidesPerView: 3,
-        spaceBetween: -250,
-      },
-    },
-  });
-</script>
-<script>
-  var swiper = new Swiper(".mySwiper_techers", {
-    loop: true,
-    breakpoints: {
-      375: {
-        slidesPerView: 1,
-        spaceBetween: 60,
-      },
-      // when window width is >= 320px
-      420: {
-        slidesPerView: 1.5,
-        spaceBetween: 20,
-      },
-      // when window width is >= 480px
-      576: {
-        slidesPerView: 2,
-        spaceBetween: 100,
-      },
-      // when window width is >= 640px
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 250,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 180,
-      },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1400: {
-        slidesPerView: 3,
-        spaceBetween: -150,
-      },
-    },
-  });
-</script>
-<script>
-  var swiper = new Swiper(".mySwiper_fak_labs", {
-    loop: true,
-    breakpoints: {
-      375: {
-        slidesPerView: 1,
-        spaceBetween: 110,
-      },
-      // when window width is >= 320px
-      420: {
-        slidesPerView: 1.5,
-        spaceBetween: 100,
-      },
-      // when window width is >= 480px
-      576: {
-        slidesPerView: 2,
-        spaceBetween: 180,
-      },
-      // when window width is >= 640px
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 330,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 260,
-      },
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 100,
-      },
-      1400: {
-        slidesPerView: 4,
-        spaceBetween: 260,
-      },
-    },
-  });
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- =========================================================== -->
 
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"
-  integrity="sha512-dSI4QnNeaXiNEjX2N8bkb16B7aMu/8SI5/rE6NIa3Hr/HnWUO+EAZpizN2JQJrXuvU7z0HTgpBVk/sfGd0oW+w=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-></script>
+<script src="http://www.aak.gov.az/public/frontAssets/js/newsPageJs.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/lightgallery.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/zoom/lg-zoom.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.3/plugins/thumbnail/lg-thumbnail.umd.js"></script>
 <script>
-  jQuery("#animated-thumbnails-gallery")
-    .justifiedGallery({
-      captions: false,
-      lastRow: "hide",
-      rowHeight: 180,
-      margins: 5,
-    })
-    .on("jg.complete", function () {
-      window.lightGallery(
-        document.getElementById("animated-thumbnails-gallery"),
-        {
-          autoplayFirstVideo: false,
-          pager: false,
-          galleryId: "nature",
-          plugins: [lgZoom, lgThumbnail],
-          mobileSettings: {
-            controls: false,
-            showCloseIcon: false,
-            download: false,
-            rotate: false,
-          },
-        }
-      );
+  $(document).ready(() => {
+    $("#lightgallery").lightGallery({
+      pager: true,
     });
-
-  lightGallery(document.getElementById("lightgallery"), {
-    download: false,
-    share: false,
   });
 </script>
 <script>
-  jQuery("#animated-thumbnails-gallery2")
-    .justifiedGallery({
-      captions: false,
-      lastRow: "hide",
-      rowHeight: 180,
-      margins: 5,
-    })
-    .on("jg.complete", function () {
-      window.lightGallery(
-        document.getElementById("animated-thumbnails-gallery2"),
-        {
-          autoplayFirstVideo: false,
-          pager: false,
-          galleryId: "nature",
-          plugins: [lgZoom, lgThumbnail],
-          mobileSettings: {
-            controls: false,
-            showCloseIcon: false,
-            download: false,
-            rotate: false,
-          },
-        }
-      );
+  $(document).ready(() => {
+    $("#lightgallery2").lightGallery({
+      pager: true,
     });
-
-  lightGallery(document.getElementById("lightgallery2"), {
-    download: false,
-    share: false,
   });
 </script>
