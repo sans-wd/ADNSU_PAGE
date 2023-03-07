@@ -1,3 +1,179 @@
+.heber_card {
+  min-height: 312px !important;
+}
+@media only screen and (max-width: 5000px) {
+  .heber_text_data p {
+    font-size: 20px !important;
+  }
+  .lab_card_info h1 {
+    font-size: 26px;
+  }
+  .fak_teacher_info h1 {
+    font-size: 22px;
+  }
+  .fak_teacher_info p {
+    font-size: 19px;
+  }
+  .teatr_header {
+    font-size: 35px !important;
+  }
+  .about_asoiu p {
+    font-size: 20px !important;
+
+    text-align: left !important;
+  }
+  .about_faculty p {
+    font-size: 20px !important;
+
+    text-align: left !important;
+  }
+  .content_header {
+    font-size: 35px !important;
+    line-height: normal !important;
+    padding: 30px 0px;
+  }
+  .miniheader {
+    font-weight: 600 !important;
+    font-size: 26px !important;
+
+    padding: 20px 0;
+  }
+  table.GeneratedTable td,
+  table.GeneratedTable th {
+    font-size: 18px !important;
+  }
+  .about_faculty ul li {
+    font-size: 20px !important;
+    text-align: left !important;
+  }
+  .content_header_starter {
+    padding-top: 0px !important;
+  }
+
+  .teatr_editor .about_faculty p {
+    font-size: 22px !important;
+    line-height: 35px;
+
+    text-align: left !important;
+  }
+  .stuc_editor .pt-0 {
+    padding-top: 0px;
+  }
+  .stuc_editor .pb-0 {
+    padding-bottom: 0px;
+  }
+  .index_editor .back1 {
+    min-height: 180px;
+  }
+  .index_editor .text1 h6 {
+    font-size: 20px;
+    line-height: normal;
+  }
+  .index_editor .text1 h5 {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 1399px) {
+  .heber_text_data p {
+    font-size: 18px !important;
+  }
+  .lab_card_info h1 {
+    font-size: 24px;
+  }
+  .fak_teacher_info h1 {
+    font-size: 20px;
+    margin: 0px;
+  }
+  .fak_teacher_info p {
+    font-size: 17px;
+    margin: 0px;
+  }
+  .teatr_header {
+    font-size: 30px !important;
+    line-height: normal;
+  }
+  .about_faculty p {
+    font-size: 18px !important;
+
+    text-align: left !important;
+  }
+
+  .content_header {
+    font-size: 32px !important;
+    line-height: normal !important;
+    padding: 20px 0px !important;
+  }
+  .miniheader {
+    font-weight: 600 !important;
+    font-size: 24px !important;
+
+    padding: 15px 0;
+  }
+  .content_header_starter {
+    padding-top: 0px !important;
+  }
+  table.GeneratedTable td,
+  table.GeneratedTable th {
+    font-size: 18px !important;
+  }
+  .about_faculty ul li {
+    font-size: 18px !important;
+    text-align: left !important;
+  }
+  .teatr_editor .about_faculty p {
+    font-size: 20px !important;
+    line-height: 30px;
+
+    text-align: left !important;
+  }
+  .stuc_editor .pt-0 {
+    padding-top: 0px !important;
+  }
+  .stuc_editor .pb-0 {
+    padding-bottom: 0px !important;
+  }
+  .index_editor .text1 h6 {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .index_editor .text1 h5 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  table.GeneratedTable td,
+  table.GeneratedTable th {
+    font-size: 16px !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .teatr_header {
+    font-size: 26px !important;
+    line-height: normal;
+  }
+  .teatr_editor .about_faculty p {
+    font-size: 18px !important;
+    line-height: normal;
+
+    text-align: left !important;
+  }
+  .index_editor .text1 h6 {
+    font-size: 17px;
+    line-height: normal;
+  }
+  .index_editor .text1 h5 {
+    font-size: 31px;
+  }
+}
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 575px) {
+  .about_faculty p {
+    text-align: left !important;
+  }
+}
 @media only screen and (max-width: 420px) {
   .about_faculty p {
     font-family: "Albert Sans";
@@ -22,12 +198,17 @@
     font-size: 20px !important;
     text-align: left !important;
   }
-}
-@media only screen and (max-width: 575px) {
-  .about_faculty p {
-    text-align: left !important;
+  .content_header_starter {
+    padding-top: 0px !important;
+  }
+  .stuc_editor .pt-0 {
+    padding-top: 8px !important;
+  }
+  .stuc_editor .pb-0 {
+    padding-bottom: 8px !important;
   }
 }
+
 @media only screen and (max-width: 390px) {
   .about_faculty p {
     font-family: "Albert Sans";
@@ -38,7 +219,6 @@
     letter-spacing: -0.0008em;
     color: #1a265c;
     text-align: left !important;
-
   }
   .about_faculty ul li {
     font-size: 18px !important;
@@ -47,5 +227,8 @@
   table.GeneratedTable td,
   table.GeneratedTable th {
     font-size: 15px !important;
+  }
+  .content_header_starter {
+    padding-top: 0px !important;
   }
 }
