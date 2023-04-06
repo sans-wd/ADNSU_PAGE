@@ -41,6 +41,11 @@ body {
   flex-wrap: wrap;
 }
 
+.about_faculty ul {
+  padding-top: 0px !important;
+  margin: 0px !important;
+}
+
 .about_faculty ul li {
   font-family: "Albert Sans";
   font-style: normal;
@@ -51,6 +56,7 @@ body {
   color: #1a265c;
   text-align: justify;
   list-style-type: disc;
+  cursor: default !important;
 }
 .about_faculty ul {
   padding-left: 24px;
@@ -122,6 +128,7 @@ body {
   top: 20px;
   right: 10px;
 }
+
 .fak_tech_icons a {
   color: #a4afe5;
   padding-right: 10px;

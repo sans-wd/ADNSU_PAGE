@@ -94,6 +94,18 @@ body {
   color: #a4afe5;
   padding-right: 10px;
 }
+.teatr_header {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+
+  /* Blue/Blue Main */
+
+  color: #1a265c;
+}
 
 .fak_teacher_info h1 {
   font-family: "Albert Sans";
