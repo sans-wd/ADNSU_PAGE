@@ -1,3 +1,6 @@
+html {
+  scroll-padding-top: 122px;
+}
 body {
   position: relative;
 }

@@ -26,6 +26,7 @@ body {
 
   margin-top: 101px;
 }
+
 .content_header {
   padding: 30px 0px !important;
 }
@@ -35,6 +36,9 @@ body {
 }
 .mylist li {
   list-style-type: disc !important;
+}
+.mobile_nav_summer {
+  flex-wrap: wrap;
 }
 
 .about_faculty ul li {
@@ -264,7 +268,7 @@ body {
     margin-top: 65px;
   }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .fak_mob_none {
     display: none;
   }
@@ -273,6 +277,12 @@ body {
   }
   .heber_card {
     height: 442.47px;
+  }
+  #lightgallery,
+  #lightgallery2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 @media only screen and (max-width: 767px) {
